@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Construct-O-Genie design samples</title>
+		<meta name="description"
+				 content="Design samples for Construct-O-Genie — a multi-tenant ERP for Indian interior fit-out contractors.
+					Synthetic data throughout.">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+		<link rel="stylesheet" href="tokens.css">
+		<link rel="stylesheet" href="design.css">
+		</head>
+	<body> <a class="dsx-skip" href="#contents">Skip to content</a>
+			<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="i-home" viewBox="0 0 16 16">
+			<path d="M2.75 7.25 8 2.75l5.25 4.5v6H2.75z"/>
+			<path d="M6.5 13.25v-3.5h3v3.5"/>
+			</symbol>
+		<symbol id="i-sales" viewBox="0 0 16 16">
+			<path d="M2.75 11.25 6.25 7.75l2.5 2.5 4.5-4.5"/>
+			<path d="M10.25 5.75h3v3"/>
+			</symbol>
+		<symbol id="i-projects" viewBox="0 0 16 16">
+			<path d="M2.75 4.25a1 1 0 0 1 1-1h2.5l1.5 1.5h4.5a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1z"/>
+			</symbol>
+		<symbol id="i-cart" viewBox="0 0 16 16">
+			<path d="M1.75 2.75h1.5l1.5 7h7l1.25-5H4"/>
+			<path d="M6 12.75h.01M11 12.75h.01" stroke-width="2"/>
+			</symbol>
+		<symbol id="i-site" viewBox="0 0 16 16">
+			<path d="M2.25 13.25h11.5"/>
+			<path d="M4.25 13.25v-7l3.75-3 3.75 3v7"/>
+			<path d="M6.5 13.25v-3h3v3"/>
+			</symbol>
+		<symbol id="i-check-sq" viewBox="0 0 16 16">
+			<rect x="2.75" y="2.75" width="10.5" height="10.5" rx="1.5"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-rupee" viewBox="0 0 16 16">
+			<path d="M4.75 2.75h6.5M4.75 5.75h6.5"/>
+			<path d="M4.75 2.75c3.25 0 4.5 1.25 4.5 2.75s-1.25 2.75-4.5 2.75l4.5 5"/>
+			</symbol>
+		<symbol id="i-cog" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="i-menu" viewBox="0 0 16 16">
+			<path d="M2.75 4.25h10.5M2.75 8h10.5M2.75 11.75h10.5"/>
+			</symbol>
+		<symbol id="i-search" viewBox="0 0 16 16">
+			<circle cx="7" cy="7" r="4.25"/>
+			<path d="m10.25 10.25 3 3"/>
+			</symbol>
+		<symbol id="i-bell" viewBox="0 0 16 16">
+			<path d="M4.25 11V7.25a3.75 3.75 0 0 1 7.5 0V11l1 1.25H3.25z"/>
+			<path d="M6.75 14h2.5"/>
+			</symbol>
+		<symbol id="i-plus" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5M3.25 8h9.5"/>
+			</symbol>
+		<symbol id="i-download" viewBox="0 0 16 16">
+			<path d="M8 2.75v7"/>
+			<path d="M5 7l3 3 3-3"/>
+			<path d="M3.25 13.25h9.5"/>
+			</symbol>
+		<symbol id="i-link" viewBox="0 0 16 16">
+			<path d="M6.75 9.25a2.5 2.5 0 0 0 3.5 0l2-2a2.5 2.5 0 0 0-3.5-3.5l-.75.75"/>
+			<path d="M9.25 6.75a2.5 2.5 0 0 0-3.5 0l-2 2a2.5 2.5 0 0 0 3.5 3.5l.75-.75"/>
+			</symbol>
+		<symbol id="i-x" viewBox="0 0 16 16">
+			<path d="m4.25 4.25 7.5 7.5M11.75 4.25l-7.5 7.5"/>
+			</symbol>
+		<symbol id="i-check" viewBox="0 0 16 16">
+			<path d="M3.25 8.5l3 3 6.5-7"/>
+			</symbol>
+		<symbol id="i-alert" viewBox="0 0 16 16">
+			<path d="M8 2.5l6 10.75H2z"/>
+			<path d="M8 6.5v2.75M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-info" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 7.25v4M8 4.75h.01"/>
+			</symbol>
+		<symbol id="i-refresh" viewBox="0 0 16 16">
+			<path d="M12.75 8a4.75 4.75 0 0 1-8.4 3.05M3.25 8a4.75 4.75 0 0 1 8.4-3.05"/>
+			<path d="M11.75 2.25V5H9M4.25 13.75V11H7"/>
+			</symbol>
+		<symbol id="i-copy" viewBox="0 0 16 16">
+			<rect x="5.75" y="5.75" width="7.5" height="7.5" rx="1"/>
+			<path d="M3.25 10.25v-6.5a1 1 0 0 1 1-1h6.5"/>
+			</symbol>
+		<symbol id="i-pen" viewBox="0 0 16 16">
+			<path d="M3 13l.75-3L10.5 3.25l2.25 2.25L6 12.25z"/>
+			<path d="M9 4.75l2.25 2.25"/>
+			</symbol>
+		<symbol id="i-clock" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 4.75V8l2.25 1.5"/>
+			</symbol>
+		<symbol id="i-inbox" viewBox="0 0 16 16">
+			<path d="M2.75 8.75h3l1 1.5h2.5l1-1.5h3"/>
+			<path d="M2.75 8.75l1.5-5.5h7.5l1.5 5.5v4.5H2.75z"/>
+			</symbol>
+		<symbol id="i-bill" viewBox="0 0 16 16">
+			<path d="M3.75 2.25h8.5v11.5l-2-1.25-2.25 1.25-2.25-1.25-2 1.25z"/>
+			<path d="M6 5.75h4M6 8.25h4"/>
+			</symbol>
+		<symbol id="i-doc" viewBox="0 0 16 16">
+			<path d="M4.25 1.75H9l2.75 2.75v9.75h-7.5z"/>
+			<path d="M9 1.75V4.5h2.75M6.25 8.25h3.5M6.25 10.75h3.5"/>
+			</symbol>
+		<symbol id="i-users" viewBox="0 0 16 16">
+			<circle cx="6" cy="5.25" r="2.25"/>
+			<path d="M2.25 13.25a3.75 3.75 0 0 1 7.5 0"/>
+			<path d="M10.25 3a2.25 2.25 0 0 1 0 4.5M11.25 9.75a3.5 3.5 0 0 1 2.5 3.5"/>
+			</symbol>
+		<symbol id="i-monitor" viewBox="0 0 16 16">
+			<rect x="1.75" y="2.75" width="12.5" height="8.5" rx="1"/>
+			<path d="M5.5 13.75h5M8 11.25v2.5"/>
+			</symbol>
+		<symbol id="i-sun" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2.75"/>
+			<path d="M8 1.75v1M8 13.25v1M1.75 8h1M13.25 8h1M3.58 3.58l.7.7M11.72 11.72l.7.7M3.58 12.42l.7-.7M11.72 4.28l.7-.7"/>
+			</symbol>
+		<symbol id="i-moon" viewBox="0 0 16 16">
+			<path d="M13 9.5A5.5 5.5 0 0 1 6.5 3a5.5 5.5 0 1 0 6.5 6.5z"/>
+			</symbol>
+		<symbol id="i-caret" viewBox="0 0 16 16">
+			<path d="M4 6.5h8L8 11z" fill="currentColor" stroke="none"/>
+			</symbol>
+		<symbol id="i-paperclip" viewBox="0 0 16 16">
+			<path d="M10.5 5.5 6.2 9.8a1.5 1.5 0 0 0 2.1 2.1l4.6-4.6a3 3 0 0 0-4.2-4.2L4.1 7.7a4.5 4.5 0 0 0 6.4 6.4l3.5-3.5"/>
+			</symbol>
+		<symbol id="i-star" viewBox="0 0 16 16">
+			<path d="m8 2.2 1.8 3.7 4 .6-2.9 2.8.7 4L8 11.4l-3.6 1.9.7-4L2.2 6.5l4-.6z"/>
+			</symbol>
+		<symbol id="i-mark" viewBox="0 0 16 16">
+			<path d="M2.5 8.5 8 3l5.5 5.5M4 7.5V13h8V7.5"/>
+			<path d="M6.5 13v-3h3v3"/>
+			</symbol>
+		<symbol id="i-hammer" viewBox="0 0 16 16">
+			<path d="m9.5 6.5 4 4-1.5 1.5-4-4M3 13l4.5-4.5M6 3.5l3 3M4.5 5 6 3.5l2 2L6.5 7z"/>
+			</symbol>
+		<symbol id="i-flag" viewBox="0 0 16 16">
+			<path d="M4 14V2.5M4 3h8l-2 3 2 3H4"/>
+			</symbol>
+		<symbol id="i-chart" viewBox="0 0 16 16">
+			<path d="M3 13h10M4.5 11V7M8 11V4M11.5 11V8.5"/>
+			</symbol>
+		<symbol id="i-ruler" viewBox="0 0 16 16">
+			<path d="m2.5 10.5 8-8 3 3-8 8zM5 8l1.5 1.5M7 6l1.5 1.5M9 4l1.5 1.5"/>
+			</symbol>
+		<symbol id="i-shield" viewBox="0 0 16 16">
+			<path d="M8 2.5 3.5 4v4c0 2.8 2 4.6 4.5 5.5 2.5-.9 4.5-2.7 4.5-5.5V4z"/>
+			</symbol>
+		<symbol id="i-grid" viewBox="0 0 16 16">
+			<path d="M3 3h4v4H3zM9 3h4v4H9zM3 9h4v4H3zM9 9h4v4H9z"/>
+			</symbol>
+		<symbol id="i-timeline" viewBox="0 0 16 16">
+			<path d="M2.5 8h11M5 8V5M8 8v3M11 8V5"/>
+			<circle cx="5" cy="4" r="1"/>
+			<circle cx="8" cy="12" r="1"/>
+			<circle cx="11" cy="4" r="1"/>
+			</symbol>
+		<symbol id="i-upload" viewBox="0 0 16 16">
+			<path d="M8 11V3M4.5 6.5 8 3l3.5 3.5M3 13h10"/>
+			</symbol>
+		<symbol id="i-chevron" viewBox="0 0 16 16">
+			<path d="M4.75 6.5 8 9.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-sort" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5"/>
+			<path d="M5 9.75l3 3 3-3"/>
+			</symbol>
+		<symbol id="i-left" viewBox="0 0 16 16">
+			<path d="M10 3.75 5.75 8 10 12.25"/>
+			</symbol>
+		<symbol id="i-right" viewBox="0 0 16 16">
+			<path d="M6 3.75 10.25 8 6 12.25"/>
+			</symbol>
+		<symbol id="i-up" viewBox="0 0 16 16">
+			<path d="M8 12.75V3.5"/>
+			<path d="M4.75 6.5 8 3.25l3.25 3.25"/>
+			</symbol>
+		<symbol id="i-down" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.25"/>
+			<path d="M4.75 9.5 8 12.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-layers" viewBox="0 0 16 16">
+			<path d="M8 2.25l5.75 3L8 8.25l-5.75-3z"/>
+			<path d="M2.25 8.75 8 11.75l5.75-3"/>
+			</symbol>
+		<symbol id="i-more" viewBox="0 0 16 16">
+			<path d="M3.5 8h.01M8 8h.01M12.5 8h.01" stroke-width="2.25"/>
+			</symbol>
+		<symbol id="i-columns" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="9.5" rx="1"/>
+			<path d="M6.25 3.25v9.5M9.75 3.25v9.5"/>
+			</symbol>
+		<symbol id="i-lock" viewBox="0 0 16 16">
+			<rect x="3.25" y="7.25" width="9.5" height="6.5" rx="1"/>
+			<path d="M5.25 7.25v-2a2.75 2.75 0 0 1 5.5 0v2"/>
+			</symbol>
+		<symbol id="i-expand" viewBox="0 0 16 16">
+			<path d="M9.5 2.75h3.75V6.5M13.25 2.75 9 7M6.5 13.25H2.75V9.5M2.75 13.25 7 9"/>
+			</symbol>
+		<symbol id="i-calendar" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="10" rx="1"/>
+			<path d="M2.25 6.25h11.5M5.25 1.75v3M10.75 1.75v3"/>
+			</symbol>
+		<symbol id="i-check-circle" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-help" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M6.25 6.5a1.75 1.75 0 1 1 2.5 1.6c-.55.3-.75.6-.75 1.15M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-collapse" viewBox="0 0 16 16">
+			<path d="M13.25 3.25v9.5"/>
+			<path d="M9.5 4.75 6.25 8l3.25 3.25M6.25 8h-4"/>
+			</symbol>
+		<symbol id="i-settings" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="d-margin" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 12h14v4H5z"/>
+			<path class="l" d="M5 3h10l4 4v14H5z"/>
+			<path class="l" d="M15 3v4h4M8 8h4M8 19h7"/>
+			</symbol>
+		<symbol id="d-bill" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 2.5h14v19l-2.33-1.8-2.34 1.8-2.33-1.8-2.33 1.8-2.34-1.8L5 21.5z"/>
+			<path class="l" d="M8.5 6h7M8.5 9.5h7"/>
+			<path class="l" d="M10 6c2.75 0 4.5 1 4.5 3.5S12.75 13 10 13l5.5 5"/>
+			</symbol>
+		<symbol id="d-ceiling" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l6.5-3.5"/>
+			</symbol>
+		<symbol id="d-contract" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l-3-7"/>
+			</symbol>
+		<symbol id="d-site" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 19.5h8.5L10 9H6.5z"/>
+			<path class="l" d="M2.5 19.5h11.5M4 19.5L6.5 9h3.5l2.5 10.5"/>
+			<path class="l" d="M17.5 20.5c-2.8-3.2-4.2-5.6-4.2-8a4.2 4.2 0 0 1 8.4 0c0 2.4-1.4 4.8-4.2 8z"/>
+			<path class="l" d="M17.5 12.5h.01"/>
+			</symbol>
+		<symbol id="d-tray" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3 12h5l1.5 2.5h5L16 12h5v8H3z"/>
+			<path class="l" d="M3 12l2.5-7h13l2.5 7v8H3z"/>
+			<path class="l" d="M3 12h5l1.5 2.5h5L16 12h5"/>
+			</symbol>
+		<symbol id="d-voucher" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M14.5 6.5h6v11h-6z"/>
+			<path class="l" d="M3.5 6.5h17v11h-17z"/>
+			<path class="l" stroke-dasharray="2 2" d="M14.5 6.5v11"/>
+			<path class="l" d="M7 10.5h4M7 13.5h3"/>
+			</symbol>
+		<symbol id="d-invoice-in" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M21.5 12H14M17 9l-3 3 3 3"/>
+			</symbol>
+		<symbol id="d-invoice-out" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M14 12h7.5M18.5 9l3 3-3 3"/>
+			</symbol>
+		<symbol id="d-orders" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M5 5h14v16.5H5z"/>
+			<path class="l" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/>
+			</symbol>
+		<symbol id="d-due" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M12 12V4.5a7.5 7.5 0 0 1 7.5 7.5z"/>
+			<path class="l" d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 1 0 0-15z"/>
+			<path class="l" d="M12 7.5V12l3.5 2"/>
+			</symbol>
+		<symbol id="d-stock" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3.5 9.5h11v11h-11z"/>
+			<path class="l" d="M3.5 9.5h11v11h-11zM14.5 9.5l5-4v11l-5 4M3.5 9.5l5-4h11"/>
+			<path class="l" d="M9 9.5v11"/>
+			</symbol>
+		<symbol id="d-count" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h14v5H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M8 12h8M8 16h5"/>
+			</symbol>
+		<symbol id="d-people" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M16 5.5a3 3 0 1 1 0 6a3 3 0 1 1 0-6zM11 20v-1.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5V20z"/>
+			<path class="l" d="M9 5.5a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 1 0 0-6.5z"/>
+			<path class="l" d="M2.5 20v-1.5c0-3 3-4.5 6.5-4.5s6.5 1.5 6.5 4.5V20z"/>
+			</symbol>
+		<symbol id="d-held" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 11h14v10H5z"/>
+			<path class="l" d="M5 11h14v10H5z"/>
+			<path class="l" d="M8 11V8a4 4 0 0 1 8 0v3"/>
+			<path class="l" d="M12 15v2.5"/>
+			</symbol>
+		<symbol id="d-firm" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 21V6l7-3 7 3v15z"/>
+			<path class="l" d="M5 21V6l7-3 7 3v15H5z"/>
+			<path class="l" d="M9 10h2M13 10h2M9 14h2M13 14h2M10 21v-4h4v4"/>
+			</symbol>
+		<symbol id="d-flow" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M2.5 8h7v8h-7z"/>
+			<path class="l" d="M2.5 8h7v8h-7zM14.5 8h7v8h-7z"/>
+			<path class="l" d="M9.5 12h4M11.5 10l2 2-2 2"/>
+			</symbol>
+		<symbol id="d-record" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h4v18H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M9 3v18M12.5 8h3M12.5 11.5h3"/>
+			</symbol>
+		<symbol id="d-yours" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 9.5h5v5H6z"/>
+			<path class="l" d="M2.5 5.5h19v13h-19z"/>
+			<path class="l" d="M6 9.5h5v5H6zM13.5 10h5M13.5 14h3.5"/>
+			</symbol>
+		</svg>
+		<div class="dsx-layout">
+			<nav class="dsx-nav" aria-label="Sections">
+				<h1 class="brand">
+					<a href="index.html">Construct-O-Genie
+						<small>Design samples · synthetic data</small>
+						</a>
+					</h1>
+				<ol>
+					<li><a href="00-foundations.html"><b class="n">0</b><span class="t">Foundations</span></a></li>
+					<li><a href="01-components.html"><b class="n">1</b><span class="t">Components</span></a></li>
+					<li><a href="02-motion.html"><b class="n">2</b><span class="t">Motion</span></a></li>
+					<li><a href="03-navigation.html"><b class="n">3</b><span class="t">Navigation</span></a></li>
+					<li class="grp" role="presentation">The product</li>
+					<li><a href="04-today.html"><b class="n">4</b><span class="t">Today & Notifications</span></a></li>
+					<li><a href="05-sales.html"><b class="n">5</b><span class="t">Sales</span></a></li>
+					<li><a href="06-projects.html"><b class="n">6</b><span class="t">Projects</span></a></li>
+					<li><a href="07-buying.html"><b class="n">7</b><span class="t">Buying</span></a></li>
+					<li><a href="08-site.html"><b class="n">8</b><span class="t">Site</span></a></li>
+					<li><a href="09-approvals-money.html"><b class="n">9</b><span class="t">Approvals, Tasks & Money</span></a></li>
+					<li><a href="10-portals.html"><b class="n">10</b><span class="t">Portals</span></a></li>
+					<li><a href="11-settings.html"><b class="n">11</b><span class="t">Reports, Settings & operator</span></a></li>
+					<li class="grp" role="presentation">The record</li>
+					<li><a href="12-states-roles.html"><b class="n">12</b><span class="t">States & roles</span></a></li>
+					<li><a href="13-decisions.html"><b class="n">13</b><span class="t">Decisions</span></a></li>
+					<li><a href="14-demo.html"><b class="n">14</b><span class="t">The five-minute demo</span></a></li>
+					</ol>
+				<div class="dsx-theme">
+					<fieldset>
+						<legend>Theme</legend>
+						<div class="seg" role="radiogroup" aria-label="Colour theme"> <label><input type="radio" name="theme"
+									 value="system" checked><span><svg class="i sm" aria-hidden="true"><use href="#i-monitor"/>
+								</svg>System</span></label> <label><input type="radio" name="theme" value="light"><span><svg class="i sm"
+									 aria-hidden="true"><use href="#i-sun"/></svg>Light</span></label> <label><input type="radio" name="theme"
+									 value="dark"><span><svg class="i sm" aria-hidden="true"><use href="#i-moon"/></svg>Dark</span>
+								</label> </div>
+						<p>Not remembered. Reload and it follows your system again.</p>
+						</fieldset>
+					</div>
+				</nav>
+			<main class="dsx-main" id="main">
+				<section class="dsx-section" id="contents" aria-labelledby="hc">
+					<h2 id="hc">The set</h2>
+					<p class="lede">15 parts and this contents page. Three files beside them are shared by every page:
+							<code>tokens.css</code> holds every colour, space, radius and type step in the system — 1551 values, in three
+							layers: the published palette, the published semantic tokens in light and dark, and this product’s own names for
+							them — and nothing else in the set defines one, so changing a line there changes every page at once;
+							<code>design.css</code> holds every component rule; <code>design.js</code> the theme control and the demos. The
+							folder opens from disk with no server: double-click any page.</p>
+					<ol class="dsx-contents">
+						<li><a href="00-foundations.html"><b class="n">0</b><span>
+							<strong>Foundations</strong>
+							<small>
+									The palette and how it was chosen, the type, the spacing scale, the icons, the illustration system, every token
+									with the number that justifies it — and the patterns every screen is built from: one page header, one list, one
+									set of states, one form.</small>
+							</span></a></li>
+						<li><a href="01-components.html"><b class="n">1</b><span>
+							<strong>Components</strong>
+							<small>
+									Every element the set draws, the published component it is, and each one in its states — default, hover,
+									pressed, focused, selected, disabled and loading — in light and dark.</small>
+							</span></a></li>
+						<li><a href="02-motion.html"><b class="n">2</b><span>
+							<strong>Motion</strong>
+							<small>
+									Every motion the product makes, named by its token and played on the page — and the same page under reduced
+									motion, where nothing moves.</small>
+							</span></a></li>
+						<li><a href="03-navigation.html"><b class="n">3</b><span>
+							<strong>Navigation</strong>
+							<small>
+									Two navigations, one shell — the firm’s functions or a project’s lifecycle in the sidebar, the switcher that
+									changes between them, the search and quick-create that follow, the edge states a link can land on, and every
+									route mapped to its level, module and action. Numbers, not opinions: which of 65 routes is the firm’s, which a
+									project’s, and what a link to a hidden one draws.</small>
+							</span></a></li>
+						<li><a href="04-today.html"><b class="n">4</b><span>
+							<strong>Today & Notifications</strong>
+							<small>
+									The first screen after signing in, built around the single most urgent thing — and the notification feed behind
+									the bell.</small>
+							</span></a></li>
+						<li><a href="05-sales.html"><b class="n">5</b><span>
+							<strong>Sales</strong>
+							<small>Leads, the quote a client actually sees, and what happens when a quote becomes a project.</small>
+							</span></a></li>
+						<li><a href="06-projects.html"><b class="n">6</b><span>
+							<strong>Projects</strong>
+							<small>The project record, its budget against what has been committed, and the change orders that move both.
+							</small>
+							</span></a></li>
+						<li><a href="07-buying.html"><b class="n">7</b><span>
+							<strong>Buying</strong>
+							<small>Vendors, rate contracts, purchase orders and the moment an order goes past the rate that was agreed.
+							</small>
+							</span></a></li>
+						<li><a href="08-site.html"><b class="n">8</b><span>
+							<strong>Site</strong>
+							<small>
+									What happens on site: daily progress, material received, snags, and the measurement sheet that protects a bill.
+							</small>
+							</span></a></li>
+						<li><a href="09-approvals-money.html"><b class="n">9</b><span>
+							<strong>Approvals, Tasks & Money</strong>
+							<small>
+									Who approves what and in what order, the task list that comes out of it, and the five Money screens — bills,
+									payments, tax deducted, client billing and retention — saying plainly what rests on a provisional rate.</small>
+							</span></a></li>
+						<li><a href="10-portals.html"><b class="n">10</b><span>
+							<strong>Portals</strong>
+							<small>The two outside views: what a client sees and what a vendor sees, and how little of the product that is.
+							</small>
+							</span></a></li>
+						<li><a href="11-settings.html"><b class="n">11</b><span>
+							<strong>Reports, Settings & operator</strong>
+							<small>
+									Tenant settings including the tax review — every rate provisional until a chartered accountant signs it — and
+									the operator console that runs the tenants.</small>
+							</span></a></li>
+						<li><a href="12-states-roles.html"><b class="n">12</b><span>
+							<strong>States & roles</strong>
+							<small>
+									Every state a screen can be in — empty, loading, error, forbidden, offline — and what each of the five roles is
+									allowed to see.</small>
+							</span></a></li>
+						<li><a href="13-decisions.html"><b class="n">13</b><span>
+							<strong>Decisions</strong>
+							<small>
+									The eighteen links of the shipped product mapped to where each one is rendered here, and the decisions taken
+									along the way.</small>
+							</span></a></li>
+						<li><a href="14-demo.html"><b class="n">14</b><span>
+							<strong>The five-minute demo</strong>
+							<small>The path through the product you would walk a prospect down, in order, with what to say at each stop.
+							</small>
+							</span></a></li>
+						</ol>
+					<div class="dsx-note">
+						<b class="h">How to read it</b>
+						<p>Start at <a href="00-foundations.html">0 · Foundations</a> if you want to know why the system looks the way it
+								does, at <a href="03-navigation.html">3 · Navigation</a> for how the shell works, or at
+								<a href="14-demo.html">14 · The five-minute demo</a> if you want to see the product work.
+								<a href="13-decisions.html">13 · Decisions</a> is the audit trail: every one of the shipped product's eighteen
+								links, and where each is rendered here.</p>
+						</div>
+					</section>
+				</main>
+			</div>
+		<script src="design.js"></script>
+		</body>
+	</html>

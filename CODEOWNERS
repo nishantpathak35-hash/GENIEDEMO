@@ -1,0 +1,19 @@
+# Ownership map. Adjust @construct-o-genie/* to the real GitHub org and teams
+# before enabling branch protection.
+
+*                       @construct-o-genie/platform
+
+# Frontend
+/apps/                  @construct-o-genie/frontend
+/packages/design-system/ @construct-o-genie/frontend
+
+# Backend
+/services/              @construct-o-genie/backend
+
+# Contracts are load-bearing — every other package compiles against them.
+/packages/contracts/    @construct-o-genie/platform
+
+# The three things a single bad merge makes unrecoverable. Two reviewers.
+/services/*/src/infrastructure/migrations/  @construct-o-genie/backend @construct-o-genie/devops
+/services/*/src/infrastructure/db/policies/ @construct-o-genie/backend @construct-o-genie/devops
+/.github/workflows/                         @construct-o-genie/devops

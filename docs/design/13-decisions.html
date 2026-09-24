@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>13 · Decisions — Construct-O-Genie design samples</title>
+		<meta name="description"
+				 content="Design samples for Construct-O-Genie — a multi-tenant ERP for Indian interior fit-out contractors.
+					Synthetic data throughout.">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+		<link rel="stylesheet" href="tokens.css">
+		<link rel="stylesheet" href="design.css">
+		</head>
+	<body> <a class="dsx-skip" href="#s13">Skip to content</a>
+			<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="i-home" viewBox="0 0 16 16">
+			<path d="M2.75 7.25 8 2.75l5.25 4.5v6H2.75z"/>
+			<path d="M6.5 13.25v-3.5h3v3.5"/>
+			</symbol>
+		<symbol id="i-sales" viewBox="0 0 16 16">
+			<path d="M2.75 11.25 6.25 7.75l2.5 2.5 4.5-4.5"/>
+			<path d="M10.25 5.75h3v3"/>
+			</symbol>
+		<symbol id="i-projects" viewBox="0 0 16 16">
+			<path d="M2.75 4.25a1 1 0 0 1 1-1h2.5l1.5 1.5h4.5a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1z"/>
+			</symbol>
+		<symbol id="i-cart" viewBox="0 0 16 16">
+			<path d="M1.75 2.75h1.5l1.5 7h7l1.25-5H4"/>
+			<path d="M6 12.75h.01M11 12.75h.01" stroke-width="2"/>
+			</symbol>
+		<symbol id="i-site" viewBox="0 0 16 16">
+			<path d="M2.25 13.25h11.5"/>
+			<path d="M4.25 13.25v-7l3.75-3 3.75 3v7"/>
+			<path d="M6.5 13.25v-3h3v3"/>
+			</symbol>
+		<symbol id="i-check-sq" viewBox="0 0 16 16">
+			<rect x="2.75" y="2.75" width="10.5" height="10.5" rx="1.5"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-rupee" viewBox="0 0 16 16">
+			<path d="M4.75 2.75h6.5M4.75 5.75h6.5"/>
+			<path d="M4.75 2.75c3.25 0 4.5 1.25 4.5 2.75s-1.25 2.75-4.5 2.75l4.5 5"/>
+			</symbol>
+		<symbol id="i-cog" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="i-menu" viewBox="0 0 16 16">
+			<path d="M2.75 4.25h10.5M2.75 8h10.5M2.75 11.75h10.5"/>
+			</symbol>
+		<symbol id="i-search" viewBox="0 0 16 16">
+			<circle cx="7" cy="7" r="4.25"/>
+			<path d="m10.25 10.25 3 3"/>
+			</symbol>
+		<symbol id="i-bell" viewBox="0 0 16 16">
+			<path d="M4.25 11V7.25a3.75 3.75 0 0 1 7.5 0V11l1 1.25H3.25z"/>
+			<path d="M6.75 14h2.5"/>
+			</symbol>
+		<symbol id="i-plus" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5M3.25 8h9.5"/>
+			</symbol>
+		<symbol id="i-download" viewBox="0 0 16 16">
+			<path d="M8 2.75v7"/>
+			<path d="M5 7l3 3 3-3"/>
+			<path d="M3.25 13.25h9.5"/>
+			</symbol>
+		<symbol id="i-link" viewBox="0 0 16 16">
+			<path d="M6.75 9.25a2.5 2.5 0 0 0 3.5 0l2-2a2.5 2.5 0 0 0-3.5-3.5l-.75.75"/>
+			<path d="M9.25 6.75a2.5 2.5 0 0 0-3.5 0l-2 2a2.5 2.5 0 0 0 3.5 3.5l.75-.75"/>
+			</symbol>
+		<symbol id="i-x" viewBox="0 0 16 16">
+			<path d="m4.25 4.25 7.5 7.5M11.75 4.25l-7.5 7.5"/>
+			</symbol>
+		<symbol id="i-check" viewBox="0 0 16 16">
+			<path d="M3.25 8.5l3 3 6.5-7"/>
+			</symbol>
+		<symbol id="i-alert" viewBox="0 0 16 16">
+			<path d="M8 2.5l6 10.75H2z"/>
+			<path d="M8 6.5v2.75M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-info" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 7.25v4M8 4.75h.01"/>
+			</symbol>
+		<symbol id="i-refresh" viewBox="0 0 16 16">
+			<path d="M12.75 8a4.75 4.75 0 0 1-8.4 3.05M3.25 8a4.75 4.75 0 0 1 8.4-3.05"/>
+			<path d="M11.75 2.25V5H9M4.25 13.75V11H7"/>
+			</symbol>
+		<symbol id="i-copy" viewBox="0 0 16 16">
+			<rect x="5.75" y="5.75" width="7.5" height="7.5" rx="1"/>
+			<path d="M3.25 10.25v-6.5a1 1 0 0 1 1-1h6.5"/>
+			</symbol>
+		<symbol id="i-pen" viewBox="0 0 16 16">
+			<path d="M3 13l.75-3L10.5 3.25l2.25 2.25L6 12.25z"/>
+			<path d="M9 4.75l2.25 2.25"/>
+			</symbol>
+		<symbol id="i-clock" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 4.75V8l2.25 1.5"/>
+			</symbol>
+		<symbol id="i-inbox" viewBox="0 0 16 16">
+			<path d="M2.75 8.75h3l1 1.5h2.5l1-1.5h3"/>
+			<path d="M2.75 8.75l1.5-5.5h7.5l1.5 5.5v4.5H2.75z"/>
+			</symbol>
+		<symbol id="i-bill" viewBox="0 0 16 16">
+			<path d="M3.75 2.25h8.5v11.5l-2-1.25-2.25 1.25-2.25-1.25-2 1.25z"/>
+			<path d="M6 5.75h4M6 8.25h4"/>
+			</symbol>
+		<symbol id="i-doc" viewBox="0 0 16 16">
+			<path d="M4.25 1.75H9l2.75 2.75v9.75h-7.5z"/>
+			<path d="M9 1.75V4.5h2.75M6.25 8.25h3.5M6.25 10.75h3.5"/>
+			</symbol>
+		<symbol id="i-users" viewBox="0 0 16 16">
+			<circle cx="6" cy="5.25" r="2.25"/>
+			<path d="M2.25 13.25a3.75 3.75 0 0 1 7.5 0"/>
+			<path d="M10.25 3a2.25 2.25 0 0 1 0 4.5M11.25 9.75a3.5 3.5 0 0 1 2.5 3.5"/>
+			</symbol>
+		<symbol id="i-monitor" viewBox="0 0 16 16">
+			<rect x="1.75" y="2.75" width="12.5" height="8.5" rx="1"/>
+			<path d="M5.5 13.75h5M8 11.25v2.5"/>
+			</symbol>
+		<symbol id="i-sun" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2.75"/>
+			<path d="M8 1.75v1M8 13.25v1M1.75 8h1M13.25 8h1M3.58 3.58l.7.7M11.72 11.72l.7.7M3.58 12.42l.7-.7M11.72 4.28l.7-.7"/>
+			</symbol>
+		<symbol id="i-moon" viewBox="0 0 16 16">
+			<path d="M13 9.5A5.5 5.5 0 0 1 6.5 3a5.5 5.5 0 1 0 6.5 6.5z"/>
+			</symbol>
+		<symbol id="i-caret" viewBox="0 0 16 16">
+			<path d="M4 6.5h8L8 11z" fill="currentColor" stroke="none"/>
+			</symbol>
+		<symbol id="i-paperclip" viewBox="0 0 16 16">
+			<path d="M10.5 5.5 6.2 9.8a1.5 1.5 0 0 0 2.1 2.1l4.6-4.6a3 3 0 0 0-4.2-4.2L4.1 7.7a4.5 4.5 0 0 0 6.4 6.4l3.5-3.5"/>
+			</symbol>
+		<symbol id="i-star" viewBox="0 0 16 16">
+			<path d="m8 2.2 1.8 3.7 4 .6-2.9 2.8.7 4L8 11.4l-3.6 1.9.7-4L2.2 6.5l4-.6z"/>
+			</symbol>
+		<symbol id="i-mark" viewBox="0 0 16 16">
+			<path d="M2.5 8.5 8 3l5.5 5.5M4 7.5V13h8V7.5"/>
+			<path d="M6.5 13v-3h3v3"/>
+			</symbol>
+		<symbol id="i-hammer" viewBox="0 0 16 16">
+			<path d="m9.5 6.5 4 4-1.5 1.5-4-4M3 13l4.5-4.5M6 3.5l3 3M4.5 5 6 3.5l2 2L6.5 7z"/>
+			</symbol>
+		<symbol id="i-flag" viewBox="0 0 16 16">
+			<path d="M4 14V2.5M4 3h8l-2 3 2 3H4"/>
+			</symbol>
+		<symbol id="i-chart" viewBox="0 0 16 16">
+			<path d="M3 13h10M4.5 11V7M8 11V4M11.5 11V8.5"/>
+			</symbol>
+		<symbol id="i-ruler" viewBox="0 0 16 16">
+			<path d="m2.5 10.5 8-8 3 3-8 8zM5 8l1.5 1.5M7 6l1.5 1.5M9 4l1.5 1.5"/>
+			</symbol>
+		<symbol id="i-shield" viewBox="0 0 16 16">
+			<path d="M8 2.5 3.5 4v4c0 2.8 2 4.6 4.5 5.5 2.5-.9 4.5-2.7 4.5-5.5V4z"/>
+			</symbol>
+		<symbol id="i-grid" viewBox="0 0 16 16">
+			<path d="M3 3h4v4H3zM9 3h4v4H9zM3 9h4v4H3zM9 9h4v4H9z"/>
+			</symbol>
+		<symbol id="i-timeline" viewBox="0 0 16 16">
+			<path d="M2.5 8h11M5 8V5M8 8v3M11 8V5"/>
+			<circle cx="5" cy="4" r="1"/>
+			<circle cx="8" cy="12" r="1"/>
+			<circle cx="11" cy="4" r="1"/>
+			</symbol>
+		<symbol id="i-upload" viewBox="0 0 16 16">
+			<path d="M8 11V3M4.5 6.5 8 3l3.5 3.5M3 13h10"/>
+			</symbol>
+		<symbol id="i-chevron" viewBox="0 0 16 16">
+			<path d="M4.75 6.5 8 9.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-sort" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5"/>
+			<path d="M5 9.75l3 3 3-3"/>
+			</symbol>
+		<symbol id="i-left" viewBox="0 0 16 16">
+			<path d="M10 3.75 5.75 8 10 12.25"/>
+			</symbol>
+		<symbol id="i-right" viewBox="0 0 16 16">
+			<path d="M6 3.75 10.25 8 6 12.25"/>
+			</symbol>
+		<symbol id="i-up" viewBox="0 0 16 16">
+			<path d="M8 12.75V3.5"/>
+			<path d="M4.75 6.5 8 3.25l3.25 3.25"/>
+			</symbol>
+		<symbol id="i-down" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.25"/>
+			<path d="M4.75 9.5 8 12.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-layers" viewBox="0 0 16 16">
+			<path d="M8 2.25l5.75 3L8 8.25l-5.75-3z"/>
+			<path d="M2.25 8.75 8 11.75l5.75-3"/>
+			</symbol>
+		<symbol id="i-more" viewBox="0 0 16 16">
+			<path d="M3.5 8h.01M8 8h.01M12.5 8h.01" stroke-width="2.25"/>
+			</symbol>
+		<symbol id="i-columns" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="9.5" rx="1"/>
+			<path d="M6.25 3.25v9.5M9.75 3.25v9.5"/>
+			</symbol>
+		<symbol id="i-lock" viewBox="0 0 16 16">
+			<rect x="3.25" y="7.25" width="9.5" height="6.5" rx="1"/>
+			<path d="M5.25 7.25v-2a2.75 2.75 0 0 1 5.5 0v2"/>
+			</symbol>
+		<symbol id="i-expand" viewBox="0 0 16 16">
+			<path d="M9.5 2.75h3.75V6.5M13.25 2.75 9 7M6.5 13.25H2.75V9.5M2.75 13.25 7 9"/>
+			</symbol>
+		<symbol id="i-calendar" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="10" rx="1"/>
+			<path d="M2.25 6.25h11.5M5.25 1.75v3M10.75 1.75v3"/>
+			</symbol>
+		<symbol id="i-check-circle" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-help" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M6.25 6.5a1.75 1.75 0 1 1 2.5 1.6c-.55.3-.75.6-.75 1.15M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-collapse" viewBox="0 0 16 16">
+			<path d="M13.25 3.25v9.5"/>
+			<path d="M9.5 4.75 6.25 8l3.25 3.25M6.25 8h-4"/>
+			</symbol>
+		<symbol id="i-settings" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="d-margin" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 12h14v4H5z"/>
+			<path class="l" d="M5 3h10l4 4v14H5z"/>
+			<path class="l" d="M15 3v4h4M8 8h4M8 19h7"/>
+			</symbol>
+		<symbol id="d-bill" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 2.5h14v19l-2.33-1.8-2.34 1.8-2.33-1.8-2.33 1.8-2.34-1.8L5 21.5z"/>
+			<path class="l" d="M8.5 6h7M8.5 9.5h7"/>
+			<path class="l" d="M10 6c2.75 0 4.5 1 4.5 3.5S12.75 13 10 13l5.5 5"/>
+			</symbol>
+		<symbol id="d-ceiling" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l6.5-3.5"/>
+			</symbol>
+		<symbol id="d-contract" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l-3-7"/>
+			</symbol>
+		<symbol id="d-site" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 19.5h8.5L10 9H6.5z"/>
+			<path class="l" d="M2.5 19.5h11.5M4 19.5L6.5 9h3.5l2.5 10.5"/>
+			<path class="l" d="M17.5 20.5c-2.8-3.2-4.2-5.6-4.2-8a4.2 4.2 0 0 1 8.4 0c0 2.4-1.4 4.8-4.2 8z"/>
+			<path class="l" d="M17.5 12.5h.01"/>
+			</symbol>
+		<symbol id="d-tray" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3 12h5l1.5 2.5h5L16 12h5v8H3z"/>
+			<path class="l" d="M3 12l2.5-7h13l2.5 7v8H3z"/>
+			<path class="l" d="M3 12h5l1.5 2.5h5L16 12h5"/>
+			</symbol>
+		<symbol id="d-voucher" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M14.5 6.5h6v11h-6z"/>
+			<path class="l" d="M3.5 6.5h17v11h-17z"/>
+			<path class="l" stroke-dasharray="2 2" d="M14.5 6.5v11"/>
+			<path class="l" d="M7 10.5h4M7 13.5h3"/>
+			</symbol>
+		<symbol id="d-invoice-in" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M21.5 12H14M17 9l-3 3 3 3"/>
+			</symbol>
+		<symbol id="d-invoice-out" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M14 12h7.5M18.5 9l3 3-3 3"/>
+			</symbol>
+		<symbol id="d-orders" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M5 5h14v16.5H5z"/>
+			<path class="l" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/>
+			</symbol>
+		<symbol id="d-due" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M12 12V4.5a7.5 7.5 0 0 1 7.5 7.5z"/>
+			<path class="l" d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 1 0 0-15z"/>
+			<path class="l" d="M12 7.5V12l3.5 2"/>
+			</symbol>
+		<symbol id="d-stock" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3.5 9.5h11v11h-11z"/>
+			<path class="l" d="M3.5 9.5h11v11h-11zM14.5 9.5l5-4v11l-5 4M3.5 9.5l5-4h11"/>
+			<path class="l" d="M9 9.5v11"/>
+			</symbol>
+		<symbol id="d-count" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h14v5H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M8 12h8M8 16h5"/>
+			</symbol>
+		<symbol id="d-people" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M16 5.5a3 3 0 1 1 0 6a3 3 0 1 1 0-6zM11 20v-1.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5V20z"/>
+			<path class="l" d="M9 5.5a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 1 0 0-6.5z"/>
+			<path class="l" d="M2.5 20v-1.5c0-3 3-4.5 6.5-4.5s6.5 1.5 6.5 4.5V20z"/>
+			</symbol>
+		<symbol id="d-held" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 11h14v10H5z"/>
+			<path class="l" d="M5 11h14v10H5z"/>
+			<path class="l" d="M8 11V8a4 4 0 0 1 8 0v3"/>
+			<path class="l" d="M12 15v2.5"/>
+			</symbol>
+		<symbol id="d-firm" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 21V6l7-3 7 3v15z"/>
+			<path class="l" d="M5 21V6l7-3 7 3v15H5z"/>
+			<path class="l" d="M9 10h2M13 10h2M9 14h2M13 14h2M10 21v-4h4v4"/>
+			</symbol>
+		<symbol id="d-flow" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M2.5 8h7v8h-7z"/>
+			<path class="l" d="M2.5 8h7v8h-7zM14.5 8h7v8h-7z"/>
+			<path class="l" d="M9.5 12h4M11.5 10l2 2-2 2"/>
+			</symbol>
+		<symbol id="d-record" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h4v18H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M9 3v18M12.5 8h3M12.5 11.5h3"/>
+			</symbol>
+		<symbol id="d-yours" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 9.5h5v5H6z"/>
+			<path class="l" d="M2.5 5.5h19v13h-19z"/>
+			<path class="l" d="M6 9.5h5v5H6zM13.5 10h5M13.5 14h3.5"/>
+			</symbol>
+		</svg>
+		<div class="dsx-layout">
+			<nav class="dsx-nav" aria-label="Sections">
+				<h1 class="brand">
+					<a href="index.html">Construct-O-Genie
+						<small>Design samples · synthetic data</small>
+						</a>
+					</h1>
+				<ol>
+					<li><a href="00-foundations.html"><b class="n">0</b><span class="t">Foundations</span></a></li>
+					<li><a href="01-components.html"><b class="n">1</b><span class="t">Components</span></a></li>
+					<li><a href="02-motion.html"><b class="n">2</b><span class="t">Motion</span></a></li>
+					<li><a href="03-navigation.html"><b class="n">3</b><span class="t">Navigation</span></a></li>
+					<li class="grp" role="presentation">The product</li>
+					<li><a href="04-today.html"><b class="n">4</b><span class="t">Today & Notifications</span></a></li>
+					<li><a href="05-sales.html"><b class="n">5</b><span class="t">Sales</span></a></li>
+					<li><a href="06-projects.html"><b class="n">6</b><span class="t">Projects</span></a></li>
+					<li><a href="07-buying.html"><b class="n">7</b><span class="t">Buying</span></a></li>
+					<li><a href="08-site.html"><b class="n">8</b><span class="t">Site</span></a></li>
+					<li><a href="09-approvals-money.html"><b class="n">9</b><span class="t">Approvals, Tasks & Money</span></a></li>
+					<li><a href="10-portals.html"><b class="n">10</b><span class="t">Portals</span></a></li>
+					<li><a href="11-settings.html"><b class="n">11</b><span class="t">Reports, Settings & operator</span></a></li>
+					<li class="grp" role="presentation">The record</li>
+					<li><a href="12-states-roles.html"><b class="n">12</b><span class="t">States & roles</span></a></li>
+					<li><a href="#s13" aria-current="page"><b class="n">13</b><span class="t">Decisions</span></a></li>
+					<li><a href="14-demo.html"><b class="n">14</b><span class="t">The five-minute demo</span></a></li>
+					</ol>
+				<div class="dsx-theme">
+					<fieldset>
+						<legend>Theme</legend>
+						<div class="seg" role="radiogroup" aria-label="Colour theme"> <label><input type="radio" name="theme"
+									 value="system" checked><span><svg class="i sm" aria-hidden="true"><use href="#i-monitor"/>
+								</svg>System</span></label> <label><input type="radio" name="theme" value="light"><span><svg class="i sm"
+									 aria-hidden="true"><use href="#i-sun"/></svg>Light</span></label> <label><input type="radio" name="theme"
+									 value="dark"><span><svg class="i sm" aria-hidden="true"><use href="#i-moon"/></svg>Dark</span>
+								</label> </div>
+						<p>Not remembered. Reload and it follows your system again.</p>
+						</fieldset>
+					</div>
+				</nav>
+			<main class="dsx-main" id="main">
+				<section class="dsx-section" id="s13" aria-labelledby="h13">
+					<h2 id="h13"><small>13</small>Decisions</h2>
+					<div class="dsx-decisions">
+						<p class="lede">
+								The decisions behind the design, the 18-link table with a rendered sample for every row, the state of every
+								hero, the money rule, and what could not be verified.</p>
+						<h3>Every one of the 18 links, and the sample behind it — none not placed</h3>
+						<p>
+								The third column is not typed; the build scans the rendered file for the sample that carries each link and fails
+								if any link has none. A sidebar label with no screen behind it does not count.</p>
+						<div class="tbl-wrap">
+							<table class="dsx-t dsx-map-tbl full">
+								<thead>
+									<tr>
+										<th>Group</th>
+										<th>Shipped link</th>
+										<th>Home</th>
+										<th>Rendered sample — section and element</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td>Overview</td>
+										<td><b>Dashboard</b></td>
+										<td>Today (nav); inside a project, Overview</td>
+										<td><a href="#s4">4 Today &amp; Notifications</a> · Today — the working screen: one hero, four tiles, the
+												money owed each way, and the panels a director acts on</td>
+										</tr>
+									<tr>
+										<td>Overview</td>
+										<td><b>Notifications</b></td>
+										<td>the bell in the top bar, with a count; opens the notifications panel</td>
+										<td><a href="#s4">4 Today &amp; Notifications</a> · Notifications — the bell with a count, and the panel it
+												opens</td>
+										</tr>
+									<tr>
+										<td>Sales</td>
+										<td><b>Leads and pipeline</b></td>
+										<td>Sales (nav) › Pipeline · Leads</td>
+										<td><a href="#s5">5 Sales</a> · Sales › Pipeline — the board, a stage total per column</td>
+										</tr>
+									<tr>
+										<td>Delivery</td>
+										<td><b>Projects</b></td>
+										<td>Projects (nav) › All projects; picking one changes the sidebar to its lifecycle</td>
+										<td><a href="#s6">6 Projects</a> · Projects — the list, ordered against contract in one column</td>
+										</tr>
+									<tr>
+										<td>Delivery</td>
+										<td><b>Rate analysis</b></td>
+										<td>Sales › Rate analysis — agreed rate against last paid and BOQ, per item and vendor</td>
+										<td><a href="#s7">7 Buying</a> · Buying › Rates — rate analysis: agreed, last ordered, BOQ</td>
+										</tr>
+									<tr>
+										<td>Delivery</td>
+										<td><b>Change orders</b></td>
+										<td>Inside a project, Commercial › Variations</td>
+										<td><a href="#s6">6 Projects</a> · Project › Commercial › Variations — change orders, in the customer’s words
+										</td>
+										</tr>
+									<tr>
+										<td>Procurement</td>
+										<td><b>Purchase orders</b></td>
+										<td>Buying (nav) › Orders; inside a project, Build › Orders</td>
+										<td><a href="#s7">7 Buying</a> · Buying › Orders — the list</td>
+										</tr>
+									<tr>
+										<td>Procurement</td>
+										<td><b>Vendors</b></td>
+										<td>Buying › Vendors</td>
+										<td><a href="#s7">7 Buying</a> · Buying › Vendors</td>
+										</tr>
+									<tr>
+										<td>Procurement</td>
+										<td><b>Inventory</b></td>
+										<td>Buying › Stock; inside a project, Build › Stock</td>
+										<td><a href="#s7">7 Buying</a> · Buying › Stock — inventory in the stores</td>
+										</tr>
+									<tr>
+										<td>Procurement</td>
+										<td><b>Retention</b></td>
+										<td>Money (nav) › Retention — held against orders, released as payment vouchers</td>
+										<td><a href="#s9">9 Approvals, Tasks &amp; Money</a> · Money › Retention — held against orders</td>
+										</tr>
+									<tr>
+										<td>Site</td>
+										<td><b>Daily reports</b></td>
+										<td>Site (nav) › Daily reports; inside a project, Build › Site</td>
+										<td><a href="#s8">8 Site</a> · Site › Daily log — yesterday’s report from
+												<span class="nowrap">ANU-01</span></td>
+										</tr>
+									<tr>
+										<td>Site</td>
+										<td><b>Imprest</b></td>
+										<td>Site › Measurements &amp; imprest — the site cash ledger</td>
+										<td><a href="#s8">8 Site</a> · Site › Imprest — the site cash ledger</td>
+										</tr>
+									<tr>
+										<td>Site</td>
+										<td><b>Measurement</b></td>
+										<td>Site › Measurements &amp; imprest — the sheet behind every RA bill</td>
+										<td><a href="#s8">8 Site</a> · Site › Measurement — the sheet behind RA bill 03</td>
+										</tr>
+									<tr>
+										<td>Site</td>
+										<td><b>Site recce</b></td>
+										<td>Inside a project, Build › Recce; also opened from a lead</td>
+										<td><a href="#s8">8 Site</a> · Site › Recce — the survey that starts a proposal</td>
+										</tr>
+									<tr>
+										<td>Work</td>
+										<td><b>Tasks</b></td>
+										<td>Approvals (nav) › Tasks (tab); today’s tasks also on Today</td>
+										<td><a href="#s9">9 Approvals, Tasks &amp; Money</a> · Approvals › Tasks — everyone’s work, in the one list
+										</td>
+										</tr>
+									<tr>
+										<td>Work</td>
+										<td><b>Approvals</b></td>
+										<td>Approvals (nav, with the count)</td>
+										<td><a href="#s9">9 Approvals, Tasks &amp; Money</a> · Approvals — the queue</td>
+										</tr>
+									<tr>
+										<td>Work</td>
+										<td><b>Document vault</b></td>
+										<td>
+												Projects › Documents, the firm’s vault; inside a project, Design › Drawings; the top-bar search reaches
+												every document</td>
+										<td><a href="#s6">6 Projects</a> · Project › Documents — the vault, which is Design › Drawings inside a
+												project</td>
+										</tr>
+									<tr>
+										<td>Administration</td>
+										<td><b>Settings</b></td>
+										<td>The gear in the top bar › the settings hub › Tax — the two-minute review</td>
+										<td><a href="#s11">11 Reports, Settings &amp; operator</a> · Settings — the hub the gear opens: every page as
+												a card, grouped</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<p style="margin-top:var(--space-100)">The nav is seven items plus Settings, not six: the seventh is
+								<strong>Sales</strong>, because leads are pre-project and a director will ask where they go. A nav that lost
+								Sales to hit a number would have optimised the wrong thing.</p>
+						<h3>The money rule, and the one deviation the brief invited</h3>
+						<p>
+								Every figure goes through one formatter — Indian grouping, two decimals, the sign outside the symbol, never an
+								abbreviation. The brief’s example delta <em class="was">↑ ₹12.4 L this week</em> was therefore rendered as
+								<em>↑ ₹12,40,000.00 this week</em>; where a full figure would crowd a compact stat, the delta is a percentage or
+								a count. Imprest shows figures because site cash is not a statutory computation; TDS, payments, billing and
+								retention stay in their setup state with no figure.</p>
+						<h3>One grid, one card, one form per fact — 19 September 2026, the grid</h3>
+						<p><strong>Today and Overview sit on twelve columns with a 24px gutter</strong>, in the rows a director acts in:
+								the hero at twelve; four tiles at 3·3·3·3 — margin at risk, payables this week, overdue receivables by how long
+								overdue, unsigned variations; the money owed each way at 6·6 with the bar in ageing buckets; money in and out at
+								8 beside cash by account at 4; ordered against contract beside milestones; site today beside your day; spend by
+								trade package beside the pipeline. Measured before: three tiles at 259, then 461·329, 395·395, 461·329, 395·395,
+								and one 395 with a hole beside it — five widths and a lone card. Now every card is on a track, cards in a row
+								share the row’s height, no card sits alone, the last row is full; under 1380px the tiles go two a row, under
+								1000px 8·4 becomes 12 and 12, under 760px one column. The gate reads every child of a grid against its tracks.
+						</p>
+						<p><strong>One card header, 48px, one line</strong>: the duotone disc, the title, its help icon, and one action or
+								a period picker at the right. The two-line strip of the same morning went. A title is at most 24 characters and
+								never wraps; on a six-column card under 1000px the action and the picker fold to their icons so the line still
+								holds; a tile’s action stands at its foot, because three columns cannot hold a title and an action on one line
+								at any width a laptop has. The disc — 28px, the icon at 20 — sits first in the header of a tile and a money card
+								and nowhere else in a card; measured before, it sat in four places on one page (right of a figure, far right of
+								a total row, inside a sub-card, left of a hub title). <strong>One figure scale</strong>: hero 48, total 28, tile
+								24 (the hero was 56 at the widest).</p>
+						<p><strong>One form per fact.</strong> The six rings under the meter list drew the same six numbers a second time
+								— gone. Approvals ageing was a column chart of 3 · 1 · 2 — gone; the hero says <em>2 older than a week</em>.
+								Past its contract ceiling repeated <span class="nowrap">KRA-01</span>’s 127% a third time — replaced by unsigned
+								variations, the action rather than the problem. On Overview the client’s pending variation is the tile, not a
+								list as well, and the agreement’s stages are the milestones panel.</p>
+						<p><strong>No internal text in a product frame.</strong> Cash by account printed <em>HUMAN(ARCH-CASH) … CA-gated
+								and unbuilt</em> inside the demo. An absent state speaks in the product’s words with its one action —
+								<em>Cash position arrives from Tally once the connector is linked · Connect Tally</em>; <em>No milestone dates
+								yet. Give each project’s agreement stages a date …</em> — and the marker lives in VALUE-MAP and the README. The
+								frame gate reads every product frame for <code>HUMAN(</code>, <code>CA-gated</code>, <code>unbuilt</code>,
+								<code>TODO</code> and the word <code>spec</code>. Where the seed cannot produce a panel’s data the panel is
+								drawn absent and the gap recorded, never a number invented: no report is dated today, no stage carries a date,
+								no variation carries a sent date, no lead an expected close date. The document draws both screens at a
+								director’s laptop width, 1400px, because the four-tile row needs it; the frame scrolls sideways in the column,
+								and the gate measures what is inside against the frame’s own edge.</p>
+						<h3>The alignment gate</h3>
+						<p><code>align.mjs</code> renders this file in headless Chromium and asserts with
+							<code>getBoundingClientRect</code>:
+								buttons in a group share a top and a height; tiles in a row share a height; a table column's cells share both
+								edges; numeric columns are right-aligned on one x and money columns share a decimal point; a label and its
+								control start on one left edge; pills sit on the text baseline; an icon beside text is centred on that text's
+								x-height; nothing is wider than its container outside a declared scroll wrapper; the same component renders with
+								identical padding and radius everywhere; every product screen carries exactly one hero; every empty state is the
+								published anatomy — an image, a heading, one description of one or two sentences, at most two buttons with the
+								primary last, at most one link; every drawing obeys the drawing system and is decorative; and the document's own
+								section list keeps one line per label, one left edge and one right edge for the numbers. It runs at 400, 768,
+								1280 and 1440px in both themes, twice — with the web fonts loaded and offline on the fallback stack — and
+								reports zero faults.</p>
+						<h3>Which hero is in which state, and why</h3>
+						<p>A hero is <code>watch</code> only when the thing it reports needs watching, and then the warning colour marks
+								the condition itself — not the card. One of the five carries it.</p>
+						<div class="tbl-wrap">
+							<table class="dsx-t full">
+								<thead>
+									<tr>
+										<th>Screen</th>
+										<th>What the hero reports</th>
+										<th>State</th>
+										<th>Why</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td>Today</td>
+										<td>₹1,94,45,914.55 held by 6 approvals</td>
+										<td><span class="pill warn">Watch</span></td>
+										<td>
+												Money standing still behind decisions, one of them six days old. The watch colour marks the delta that names
+												the problem — nowhere else; the figure and the eyebrow are the calm default. Inside a project, Today’s hero
+												is that project’s one condition — see 12</td>
+										</tr>
+									<tr>
+										<td>Buying › an order</td>
+										<td>Order total before GST</td>
+										<td><span class="pill">Default</span></td>
+										<td>
+												An order waiting for a decision is the normal state of that screen. The one line above the agreed rate is
+												marked in the table where it happens, not across the card</td>
+										</tr>
+									<tr>
+										<td>Site › Imprest</td>
+										<td>Cash in hand at <span class="nowrap">ANU-01</span></td>
+										<td><span class="pill">Default</span></td>
+										<td>
+												The balance is above the top-up threshold. If it fell below, this is the hero that would take the watch
+												state</td>
+										</tr>
+									<tr>
+										<td>Client portal</td>
+										<td>Milestones reached</td>
+										<td><span class="pill">Default</span></td>
+										<td>Progress against a contract, reported to a client. Nothing here is a condition</td>
+										</tr>
+									<tr>
+										<td>Vendor portal</td>
+										<td>Order total before GST</td>
+										<td><span class="pill">Default</span></td>
+										<td>An order for a vendor to accept — the action is the point, not a status</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<p style="margin-top:var(--space-100)">
+								The same test was applied to every other use of the warning colour. It marks a condition on the status pill, the
+								warning notice, a task due today, stock below its reorder level, a stat whose delta is the problem it names, and
+								the over-contract segment of the chart. It was decoration in three places, and those are gone: the document's
+								own tags, the count on Approvals in the sidebar (both now the secondary accent), and the category dots in
+								<em>Your day</em>, which borrowed the status greens and ambers for a taxonomy that carries no status at all.</p>
+						<h3>The CA step, reframed — and the architecture note behind it</h3>
+						<p>
+								The shipped product frames tax as a per-tenant verification: “confirm your rules with your CA”. That restates
+								the objection this design exists to remove. Statutory rates are the same for every Indian business, so they are
+								verified once, centrally, and shipped as a versioned set; what a tenant confirms is its own handful of facts —
+								GSTIN, state, whether it deducts TDS — which is a two-minute setup step, not an audit.</p>
+						<p><strong>For the build team, an architecture note, not a design one:</strong> this implies the verified rate set
+								(the M2.5 spec, <span class="nowrap">ADR-0014</span>) is <em>seeded per deployment and versioned</em>, not
+								entered per tenant. The tenant’s three answers are the only per-tenant tax data. The values in section 11 are
+								illustrative; the build seeds them from the verified spec, never from this file.</p>
+						<h3>Setup steps with no backing feature today</h3>
+						<div class="tbl-wrap">
+							<table class="dsx-t full">
+								<thead>
+									<tr>
+										<th>Step</th>
+										<th>Backed by</th>
+										<th>Gap</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td>Company details</td>
+										<td><code>settings/company</code></td>
+										<td>Complete</td>
+										</tr>
+									<tr>
+										<td>Add your projects</td>
+										<td>—</td>
+										<td>No importer exists. Projects are added one at a time through the form; nothing reads Excel.</td>
+										</tr>
+									<tr>
+										<td>Add your vendors</td>
+										<td>—</td>
+										<td>
+												The connector pushes vouchers to Tally and reads nothing back. There is no vendor import from Tally or
+												Excel.</td>
+										</tr>
+									<tr>
+										<td>Invite your team</td>
+										<td><code>identity invites</code></td>
+										<td>
+												Invites exist; the “no passwords” half needs magic-link sign-in, which is proposed, not shipped — every
+												sign-in form today is one credential field</td>
+										</tr>
+									<tr>
+										<td>Connect Tally</td>
+										<td>—</td>
+										<td>
+												The connector exists as its own repo and the key is minted at provisioning by the operator. There is no
+												tenant-side pairing screen in Settings.</td>
+										</tr>
+									<tr>
+										<td>Review your tax settings</td>
+										<td><code>settings/tax (screen exists; verified defaults are not seeded)</code></td>
+										<td>
+												The tax screen exists but seeds nothing. Pre-filled verified defaults require the M2.5 spec to be seeded per
+												tenant at provisioning.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<p style="margin-top:var(--space-100)">Empty states offer one action — <em>Add a project</em>,
+								<em>Raise an order</em> — and never an import, for the same reason: no importer exists.</p>
+						<h3>Every shipped route has a home — 67 of them</h3>
+						<div class="tbl-wrap">
+							<table class="dsx-t dsx-map full">
+								<thead>
+									<tr>
+										<th>Shipped route</th>
+										<th>Home</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Today</td>
+										</tr>
+									<tr>
+										<td>(shell)/page.tsx</td>
+										<td>Today › Overview</td>
+										</tr>
+									<tr>
+										<td>notifications</td>
+										<td>Today › Notifications (and the bell)</td>
+										</tr>
+									<tr>
+										<td>tasks</td>
+										<td>Approvals › Tasks</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Sales</td>
+										</tr>
+									<tr>
+										<td>crm</td>
+										<td>Sales › Leads (list)</td>
+										</tr>
+									<tr>
+										<td>crm/board</td>
+										<td>Sales › Pipeline (board)</td>
+										</tr>
+									<tr>
+										<td>crm/[leadId]</td>
+										<td>Sales › Lead page, with the handover to a project</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Projects
+										</td>
+										</tr>
+									<tr>
+										<td>projects</td>
+										<td>Projects › All projects</td>
+										</tr>
+									<tr>
+										<td>estimation</td>
+										<td>Projects › Rate analysis</td>
+										</tr>
+									<tr>
+										<td>documents</td>
+										<td>Projects › Documents (and top-bar search)</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]</td>
+										<td>Project › Overview</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/team</td>
+										<td>Project › Overview › Team</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/timesheets</td>
+										<td>Project › Overview › Timesheets</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/brief</td>
+										<td>Project › Design › Brief</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/design</td>
+										<td>Project › Design › Design</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/drawings</td>
+										<td>Project › Design › Drawings</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/selections</td>
+										<td>Project › Design › Selections</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/joinery</td>
+										<td>Project › Design › Joinery</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/boq</td>
+										<td>Project › Build › BOQ</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/boq/[itemId]</td>
+										<td>Project › Build › BOQ › line (drawer)</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/takeoff</td>
+										<td>Project › Build › Takeoff</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/procurement</td>
+										<td>Project › Build › Orders</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/site</td>
+										<td>Project › Build › Site</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/recce</td>
+										<td>Project › Build › Recce</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/milestones</td>
+										<td>Project › Build › Milestones</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/commercials</td>
+										<td>Project › Commercial › Commercials</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/change-orders</td>
+										<td>Project › Commercial › Variations</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/client-actions</td>
+										<td>Project › Commercial › Client actions</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/handover</td>
+										<td>Project › Handover › Handover</td>
+										</tr>
+									<tr>
+										<td>projects/[projectId]/warranty</td>
+										<td>Project › Handover › Warranty</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Buying
+										</td>
+										</tr>
+									<tr>
+										<td>purchase-orders</td>
+										<td>Buying › Orders</td>
+										</tr>
+									<tr>
+										<td>purchase-orders/[id]</td>
+										<td>Buying › Orders › order (drawer, or full page)</td>
+										</tr>
+									<tr>
+										<td>vendors</td>
+										<td>Buying › Vendors</td>
+										</tr>
+									<tr>
+										<td>vendors/[vendorId]</td>
+										<td>Buying › Vendors › vendor</td>
+										</tr>
+									<tr>
+										<td>vendors/rate-contracts</td>
+										<td>Buying › Agreed rates</td>
+										</tr>
+									<tr>
+										<td>inventory</td>
+										<td>Buying › Stock</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Site</td>
+										</tr>
+									<tr>
+										<td>site-reports</td>
+										<td>Site › Daily reports</td>
+										</tr>
+									<tr>
+										<td>site-controls</td>
+										<td>Site › Measurements &amp; imprest</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Approvals
+										</td>
+										</tr>
+									<tr>
+										<td>approvals</td>
+										<td>Approvals</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Money</td>
+										</tr>
+									<tr>
+										<td>money/bills</td>
+										<td>Money › Bills</td>
+										</tr>
+									<tr>
+										<td>money/payments</td>
+										<td>Money › Payments</td>
+										</tr>
+									<tr>
+										<td>money/tds</td>
+										<td>Money › Tax deducted</td>
+										</tr>
+									<tr>
+										<td>money/client-billing</td>
+										<td>Money › Client billing</td>
+										</tr>
+									<tr>
+										<td>retention</td>
+										<td>Money › Retention</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Settings
+										</td>
+										</tr>
+									<tr>
+										<td>settings</td>
+										<td>Settings › Overview</td>
+										</tr>
+									<tr>
+										<td>settings/company</td>
+										<td>Settings › Company</td>
+										</tr>
+									<tr>
+										<td>settings/tax</td>
+										<td>Settings › Tax — the review, every rate provisional</td>
+										</tr>
+									<tr>
+										<td>settings/people</td>
+										<td>Settings › People</td>
+										</tr>
+									<tr>
+										<td>settings/roles</td>
+										<td>Settings › Roles</td>
+										</tr>
+									<tr>
+										<td>settings/modules</td>
+										<td>Settings › Modules</td>
+										</tr>
+									<tr>
+										<td>settings/number-series</td>
+										<td>Settings › Numbering</td>
+										</tr>
+									<tr>
+										<td>settings/trade-packages</td>
+										<td>Settings › Trade packages</td>
+										</tr>
+									<tr>
+										<td>settings/approvals</td>
+										<td>Settings › Approval steps</td>
+										</tr>
+									<tr>
+										<td>settings/inventory</td>
+										<td>Settings › Stock locations</td>
+										</tr>
+									<tr>
+										<td>settings/vendor-access</td>
+										<td>Settings › Vendor access</td>
+										</tr>
+									<tr>
+										<td>settings/client-access</td>
+										<td>Settings › Client access</td>
+										</tr>
+									<tr>
+										<td>settings/audit</td>
+										<td>Settings › Activity log</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">Sign in
+										</td>
+										</tr>
+									<tr>
+										<td>sign-in (web)</td>
+										<td>Sign in — staff</td>
+										</tr>
+									<tr>
+										<td>admin/sign-in</td>
+										<td>Sign in — operator</td>
+										</tr>
+									<tr>
+										<td>vendor-portal/sign-in</td>
+										<td>Sign in — vendor (magic link, proposed)</td>
+										</tr>
+									<tr>
+										<td>client-portal/sign-in</td>
+										<td>Sign in — client (magic link, proposed)</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">
+												Vendor portal</td>
+										</tr>
+									<tr>
+										<td>vendor-portal/(signed-in)/page</td>
+										<td>Orders</td>
+										</tr>
+									<tr>
+										<td>vendor-portal/(signed-in)/bills</td>
+										<td>Bills</td>
+										</tr>
+									<tr>
+										<td>vendor-portal/(signed-in)/payments</td>
+										<td>Payments</td>
+										</tr>
+									<tr>
+										<td>vendor-portal/(signed-in)/documents</td>
+										<td>Documents</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">
+												Client portal</td>
+										</tr>
+									<tr>
+										<td>client-portal/(signed-in)/page</td>
+										<td>Your projects</td>
+										</tr>
+									<tr>
+										<td>client-portal/(signed-in)/projects/[projectId]</td>
+										<td>Project › Progress · Variations · Documents · Billing</td>
+										</tr>
+									<tr>
+										<td colspan="2" style="background:var(--sunk);font-weight:600;font-family:inherit;color:var(--ink)">
+												Operator (admin app)</td>
+										</tr>
+									<tr>
+										<td>admin/(signed-in)/page</td>
+										<td>Organisations · Provisioning</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<h3>Words — the label map</h3>
+						<div class="tbl-wrap">
+							<table class="dsx-t">
+								<thead>
+									<tr>
+										<th>Shipped today</th>
+										<th>Now</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td>Committed spend</td>
+										<td>Ordered so far</td>
+										</tr>
+									<tr>
+										<td>Contract value</td>
+										<td>Contract</td>
+										</tr>
+									<tr>
+										<td>Taxable</td>
+										<td>Before GST</td>
+										</tr>
+									<tr>
+										<td>Gross</td>
+										<td>Total</td>
+										</tr>
+									<tr>
+										<td>pending_approval</td>
+										<td>Waiting for approval</td>
+										</tr>
+									<tr>
+										<td>at-risk</td>
+										<td>Watch closely</td>
+										</tr>
+									<tr>
+										<td>over-budget</td>
+										<td>Over contract</td>
+										</tr>
+									<tr>
+										<td>no-budget</td>
+										<td>Add contract value</td>
+										</tr>
+									<tr>
+										<td>rejected (vendor)</td>
+										<td>Declined</td>
+										</tr>
+									<tr>
+										<td>submitted / acknowledged / returned</td>
+										<td>Sent / Received / Sent back</td>
+										</tr>
+									<tr>
+										<td>pending_client</td>
+										<td>Waiting for client</td>
+										</tr>
+									<tr>
+										<td>client_approved</td>
+										<td>Signed off</td>
+										</tr>
+									<tr>
+										<td>client_rejected</td>
+										<td>Declined by client</td>
+										</tr>
+									<tr>
+										<td>Rate contract</td>
+										<td>Agreed rates</td>
+										</tr>
+									<tr>
+										<td>Rate deviation</td>
+										<td>Above agreed rate</td>
+										</tr>
+									<tr>
+										<td>RA bill</td>
+										<td>RA bill (kept — the industry term)</td>
+										</tr>
+									<tr>
+										<td>Approval chain / stage</td>
+										<td>Approval steps</td>
+										</tr>
+									<tr>
+										<td>Principal 1c77d0e4 · staff</td>
+										<td>Shalini · Admin</td>
+										</tr>
+									<tr>
+										<td>FORBIDDEN · request req_…</td>
+										<td>a sentence + “Copy details for support”</td>
+										</tr>
+									<tr>
+										<td>Refusal</td>
+										<td>a sentence saying what to do next</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<p style="margin-top:var(--space-100)">Refusal reasons become sentences:</p>
+						<div class="tbl-wrap">
+							<table class="dsx-t">
+								<thead>
+									<tr>
+										<th>Reason</th>
+										<th>What the screen says</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td><code>self-approval</code></td>
+										<td>You raised this order, so someone else needs to approve it.</td>
+										</tr>
+									<tr>
+										<td><code>not-entitled</code></td>
+										<td>Your role can’t approve at this stage. Ask an administrator if that should change.</td>
+										</tr>
+									<tr>
+										<td><code>already-approved-this-stage</code></td>
+										<td>You’ve already approved this stage. It’s waiting on someone else now.</td>
+										</tr>
+									<tr>
+										<td><code>chain-complete</code></td>
+										<td>This order is fully approved. Nothing more to decide.</td>
+										</tr>
+									<tr>
+										<td><code>unknown-stage</code></td>
+										<td>This order’s approval steps have changed. Reload to see where it is now.</td>
+										</tr>
+									<tr>
+										<td><code>above-ceiling</code></td>
+										<td>
+												This amount is above what this step can approve, and there’s no higher step set up. Ask an administrator to
+												add one.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<h3>What the file holds to</h3>
+						<ul>
+							<li>Money: the wire string through one formatter, Indian grouping, two decimals, the sign outside the symbol,
+									<code>null</code> as a dash with a reason, never an abbreviation. Every figure in this file passes a static
+									check for that shape.</li>
+							<li>
+									The two-hue chart (mark, over-contract) validated by the dataviz script for the palette in both modes; the 85%
+									hairline; the by-project meter list.</li>
+							<li>44px+ portal controls, 16px portal inputs, <code>aria-sort</code>, chart text summaries, required markers,
+									confirm-before-destroy ellipses, the heading outline (one h1; product titles are h4–h6 so the document's own
+									outline stays whole).</li>
+							<li>
+									No browser storage, nothing fetched at runtime except the one fonts stylesheet, which the page does not need to
+									render as designed.</li>
+							<li>Synthetic data only. </li>
+							</ul>
+						<h3>The retheme — 16 September 2026</h3>
+						<p>
+								The owner withdrew the rule that this product takes enterprise conventions but keeps its own look. It is now
+								drawn in a published enterprise design system’s colour, elevation, spacing, radius, type scale and dark mode.
+								The structural patterns taken earlier — the object switcher, the record header, the list with a record beside it
+								— stay, and every screen’s information design and value line survive unchanged. Where each value came from, when
+								it was read, and the 40 values our gates moved are in <a href="00-foundations.html#s0">0 · Foundations</a>.
+								These are the decisions it forced.</p>
+						<h4 class="lbl">One system owns colour</h4>
+						<p>
+								Colour, and the token structure it comes in, is taken whole from one system; the patterns borrowed from the
+								other are shapes, and bring no colour with them. No hue from a second palette appears anywhere, and the build
+								fails on any colour written outside the token file. The other system was weighed for colour and not taken: it
+								publishes no categorical chart sequence with dark-mode and colour-deficiency guidance, and adopting its colour
+								would have meant adopting its component vocabulary with it. The system taken publishes every semantic token in
+								light and dark, a chart palette with dark steps, and elevation as surfaces paired with shadows — the parts a
+								repaint actually needs.</p>
+						<h4 class="lbl">Blue is the brand and every affordance; it is never a status</h4>
+						<p><strong>Blue carries the primary action, a link, the focus ring, a selected row, the current page — and one
+								status, <em>in progress</em>, as the published lozenge draws it.</strong>
+							<em>Information</em> as a sentence is a section message: a tinted surface with an icon and a heading, never a
+								lozenge, never inline text, never a button. Measured, the brand and the four status inks paint at least 43.5°
+								apart in both themes.</p>
+						<div class="tbl-wrap">
+							<table class="dsx-t full">
+								<thead>
+									<tr>
+										<th>Our state</th>
+										<th>Semantic colour</th>
+										<th>Lozenge</th>
+										<th>What it may say</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td><b>Done</b></td>
+										<td><code>success</code></td>
+										<td><span class="pill ok">Approved</span></td>
+										<td>Settled and correct.</td>
+										</tr>
+									<tr>
+										<td><b>Active</b></td>
+										<td><code>neutral</code>, with a dot</td>
+										<td><span class="pill active">In progress</span></td>
+										<td>Under way; nothing owed.</td>
+										</tr>
+									<tr>
+										<td><b>Waiting</b></td>
+										<td><code>discovery</code></td>
+										<td><span class="pill waiting">With finance</span></td>
+										<td>On a named person’s desk.</td>
+										</tr>
+									<tr>
+										<td><b>Caution</b></td>
+										<td><code>warning</code> — yellow in light, orange in dark</td>
+										<td><span class="pill warn">Above agreed rate</span></td>
+										<td>Watch it; only ever a fill carrying its ink.</td>
+										</tr>
+									<tr>
+										<td><b>Bad</b></td>
+										<td><code>danger</code></td>
+										<td><span class="pill bad">Refused</span></td>
+										<td>Money going the wrong way, refused, failed.</td>
+										</tr>
+									<tr>
+										<td><b>Idle</b></td>
+										<td><code>neutral</code></td>
+										<td><span class="pill ">Draft</span></td>
+										<td>Nothing happening, nothing owed.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<h4 class="lbl">Red, amber and green now come from the system — and red still reads as loss</h4>
+						<p><strong>Red on a money screen means money going the wrong way, and nothing softer.</strong> That is the
+								convention an Indian finance reader already brings: bank statements, accounting software and the market apps
+								used every day put a loss or a debit in red. Red’s ceremonial meanings — a wedding, a festival — live outside a
+								ledger, and this product never uses red as decoration, as the brand, or for emphasis, so it has no other reading
+								to borrow. Red is also never alone: a figure going the wrong way keeps its minus sign or its words —
+								<em>over</em>, <em>short</em>, <em>refused</em> — and the India gate lists every red element with its text so
+								none can carry the meaning by colour. This was reasoned, not tested with users, and is marked so.
+								<strong>Caution</strong> moved inside the system’s own ramps to stay distinct from loss and from done: in light,
+								every step of its orange sat within 25° of the red, so caution takes the yellow ramp; in dark, the published
+								caution sat under 40° from done and moved one step down its own ramp.</p>
+						<p><strong>The flag, re-measured.</strong> Saffron beside green on white is the flag. In light, caution sits ΔE
+								28.1 from saffron and done ΔE 9.7 from India green, on tinted fills with no white between them. In dark, caution
+								ink is an orange ΔE 4.1 from saffron — close — but it is text on a near-black fill, with no white and no green
+								band beside it, so the three-colour reading the flag needs is never present. The illustration accent, which used
+								to be the nearest thing to saffron in the system, is now magenta: ΔE 25.7 in light and 23.1 in dark.</p>
+						<h4 class="lbl">The look the buyers already know — 18 September</h4>
+						<p><strong>The theme is the one our buyers run their books in.</strong> They already keep their online books and
+								Tally open all day, so the app is drawn to feel like the books — the reference is named in the brief, not here,
+								as the system the colour comes from is not: a dark top bar holding the product, the search, the project switcher
+								and one blue <em>+ New</em>; a light sidebar with an icon on every item, chevrons on its sections and the
+								current page a solid blue pill; white cards under a light-grey header strip with a title, a help icon and one
+								action; stat tiles with an icon on a tinted disc; money cards with a proportion bar and the split beneath; and
+								lists whose title is the view’s name with a chevron, whose filters follow <em>View by</em>, whose heads are
+								small capitals and whose names are links. Nothing of the reference is reused — no logo, icon, asset or wording;
+								its shapes are drawn from the published components and its colour from the accent tokens this system already had
+								and the plain retheme left unused.</p>
+						<p><strong>Measured on 19 September, and drawn closer.</strong> The shell was redrawn to the reference’s
+								measurements: the top bar spans the whole window, navy — Blue1000, the brand’s subtlest dark surface, which the
+								bar resolves in both themes as a dark island — with the product’s mark at the far left over the sidebar column,
+								then the switcher, then the search, and at the right the tenant’s name, the one primary <em>+ New</em>, the
+								bell, settings and the person; the sidebar on the sunken cool grey, 38px rows with a 14px label and an icon, a
+								small triangle on every section, the open section tinted and its pages indented, the current page the Blue700
+								pill (the reference’s lighter blue fails AA with white text), a collapse control at the foot. Every list leads
+								with its full width in the reference’s columns — date, number as a link, vendor, project, a status lozenge, the
+								amount right-aligned, an attachment clip — under a head row on the sunken surface; the record beside the list is
+								the second state, opened by clicking a row, and it keeps number, status and amount as columns. Today’s three
+								tiles are the money card.  No highlighter, the owner’s rule of the same day: the caution fill is for a lozenge
+								or a section message only; a figure, a label or a sentence never sits on a coloured fill; amber as text is
+								allowed, held to 4.5:1, and is never a stroke or a border — the alignment gate fails a highlighter and an amber
+								border alike. Each of the reference’s values and the step it took is recorded in <code>TOKEN-DIFF.md</code>.</p>
+						<p><strong>What the reference does that this document does not — amended 19 September, later in the day.</strong>
+								Its <em>+ New</em> is a lighter blue: the square is now that blue — Blue500, the dark set’s
+								<code>color.chart.brand</code> — under a white plus that is the <em>light</em> set’s inverse ink, because the
+								dark set has no white; a plus holds 3.50:1, which a graphic passes and a word would not, and the word is gone.
+								Its rows needing action are tinted green; here green is money coming in, so the row keeps the waiting lozenge’s
+								purple — the lightest step the palette publishes; the owner asked for lighter still, and there is no lighter
+								step to take. Its dividers are a lighter grey than a dense table can carry at the 1.4:1 floor the non-text gate
+								raises, so the hairline stays the published border, 1.96:1. Its money-out is orange-red: the orange text accent,
+								Orange800, is taken — 6.02:1 on the card, 5.67:1 on the sunken surface — as the owner’s decision, and the one
+								adjacency the India layer found, two swatches 18px apart in the component-token table on part 0, is removed by
+								declaring money-out apart from money-in in that table; no product screen ever put the two directions within
+								24px.  Its lists carry a project and a person filter: a Project column and filter now belong on every firm-level
+								list and on no project-level list, since inside a project every row is the project’s — the frame gate measures
+								both; a person filter is a decision this document does not take.  Its <em>+ New</em> sits after the search; here
+								the mark leads, the switcher is second and the square is on the right, because the frame gate measures it there.
+								Its status text is coloured plain text; here a status in a table is a lozenge, and coloured plain text is for
+								money direction only. The portals keep the quiet drawing — no discs, no direction colour — under the same navy
+								bar as the staff app, and the India gate’s chroma per audience, measured after the bar reached the portals —
+								OKLCH chroma weighted by painted area over every frame: staff 0.0406, operator 0.0423, client 0.0307, vendor
+								0.0340 — keeps both portals below the staff app, which is what the rule promises, so it ships as written. The
+								operator console, one frame of thirty painted areas, edges above the staff app on three plan lozenges; it is
+								ours and not a portal, so the rule’s subject is unchanged and the figure is recorded.</p>
+						<p><strong>The navigation, 19 September, later.</strong> Two navigations, one shell. Picking a project in the
+								switcher changes the sidebar — the firm’s functions become that project’s lifecycle — and every list, search and
+								quick-create inside is the project’s; <code>?project=</code> survives only as a saved-view filter on the firm’s
+								lists. The shell is measured: a 48px bar, a 200px brand column ending in a divider darker than the bar, a 17px
+								medium name beside a line-drawn mark, 34px controls on a lifted alpha neutral, a 300px search whose placeholder
+								is the page’s, a 32px square that creates, a 28px avatar; the sidebar’s open section tinted blue, the current
+								page a pill with a <b>+</b> on it. Settings has left the sidebar for the gear; Rate analysis has moved to Sales;
+								the <em>firm</em> chips are gone, since the tree says it; Sign-in lands at All projects on the firm’s Today, the
+								remembered project first under Recent. Drawn in full on <a href="03-navigation.html#s3">3 · Navigation</a>, with
+								the mapping table — every route, its level, the module key and the action key that gate it, and what a link to a
+								hidden entry draws: <em>not found</em> when the module is off, <em>refused</em> when the role lacks the action.
+						</p>
+						<h4 class="lbl">Type, surfaces, focus</h4>
+						<ul>
+							<li><strong>Inter, in every family</strong>, under the SIL Open Font License. The system’s own typeface is
+									licensed to its owner and is not used; nor its logo, its product names or its icons — every icon here is this
+									product’s own, and no screen names the system.</li>
+							<li><strong>Cards are flat, with a border.</strong> Raised — a surface and a shadow — is spent once per screen,
+									on the hero or the record open beside a list.</li>
+							<li><strong>Focus on a button or a link is a 2px ring set 2px outside the control</strong>, 3.50 : 1 on the card
+									in light and 8.11 : 1 in dark. The glow drawn around the ring before is withdrawn. </li>
+							<li><strong>Navigation’s selected state</strong> is a solid pill — the bold selected fill under the inverse ink,
+									5.20:1 in light and 6.00:1 in dark — as the reference the buyers know draws it. </li>
+							</ul>
+						<h4 class="lbl">Three sidebar sections</h4>
+						<p>
+								Projects (3 pages), Buying (4) and Money (5) become sections that open to show their pages; Today and Approvals
+								are pinned above them and never fold; Sales, Site and Settings stay flat. Every state is drawn in
+								<a href="03-navigation.html#s3">3 · Navigation</a>, with the keyboard and screen-reader behaviour.</p>
+						<h4 class="lbl">Two answers from the owner</h4>
+						<ul>
+							<li><strong>Single-key shortcuts stay, and each person can turn them off</strong> (WCAG 2.1.4). Drawn in
+									<a href="11-settings.html#s11">11 · Your preferences › Keyboard</a>.</li>
+							<li><strong>Approvals inside a project stay the firm’s.</strong> Confirmed: a scope narrows what you browse,
+									never what you owe.</li>
+							</ul>
+						<h4 class="lbl">Two shipped screens contradict this file</h4>
+						<p>Recorded as product changes in <code>CHANGES.md</code>, not made here: Today still says <em>Money is not
+								showing figures yet</em>, which <span class="nowrap">ADR-0014</span>’s addendums of 15 September withdrew; and
+								the vendor portal shows <em>Provisional</em> in the caution colour, where the vendor audience is shown no
+								caution and a provisional rate is neutral.</p>
+						<h3>Sixteen nav destinations, ruled on</h3>
+						<p>
+								The shipped product gives sixteen things permanent sidebar space. Permanent space is a claim, and most of them
+								cannot support it — not because the screens are bad but because nobody navigates to them cold. They are opened
+								<em>from</em> something: you reach a rate from an order you are about to approve, a daily report from the
+								project it belongs to. Four keep a slot; twelve become tabs under the four verbs a fit-out contractor actually
+								works in.</p>
+						<div class="tbl-wrap">
+							<table class="dsx-t dsx-map-tbl full">
+								<thead>
+									<tr>
+										<th>Shipped destination</th>
+										<th>Verdict</th>
+										<th>Where it goes, and why</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr>
+										<td><b>Dashboard</b></td>
+										<td><span class="dsx-tag">Keep</span></td>
+										<td><b>Today</b> — the only screen somebody opens without being sent there</td>
+										</tr>
+									<tr>
+										<td><b>Projects</b></td>
+										<td><span class="dsx-tag">Keep</span></td>
+										<td><b>Projects</b> — the noun the whole business is organised around</td>
+										</tr>
+									<tr>
+										<td><b>Approvals</b></td>
+										<td><span class="dsx-tag">Keep</span></td>
+										<td><b>Approvals</b> — it holds other people’s work up, so it carries a count and needs to be reachable in one
+												move</td>
+										</tr>
+									<tr>
+										<td><b>Settings</b></td>
+										<td><span class="dsx-tag">Keep</span></td>
+										<td>Bottom of the nav, away from the work</td>
+										</tr>
+									<tr>
+										<td><b>Purchase orders</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Buying › Orders</b> — the default tab of a new nav destination, <em>Buying</em>, that the shipped
+												product does not have</td>
+										</tr>
+									<tr>
+										<td><b>Vendors</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Buying › Vendors</b> — you open a vendor while buying, never instead of it</td>
+										</tr>
+									<tr>
+										<td><b>Rate analysis</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Buying › Rates</b> — reached from the order you are checking</td>
+										</tr>
+									<tr>
+										<td><b>Inventory</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Buying › Stock</b> — the question “do we already own it” is part of buying</td>
+										</tr>
+									<tr>
+										<td><b>Daily reports</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Site › Daily log</b> — under a new <em>Site</em> destination; four site screens shared nothing but a
+												sidebar before</td>
+										</tr>
+									<tr>
+										<td><b>Imprest</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Site › Imprest</b></td>
+										</tr>
+									<tr>
+										<td><b>Site recce</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Site › Recce</b> — also opened straight from a lead, which is where it actually starts</td>
+										</tr>
+									<tr>
+										<td><b>Leads and pipeline</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Sales › Pipeline · Leads</b> — two views of one thing, so one destination with two tabs</td>
+										</tr>
+									<tr>
+										<td><b>Change orders</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Project › Commercial › Variations</b> — a variation belongs to one project and is meaningless outside
+												it</td>
+										</tr>
+									<tr>
+										<td><b>Document vault</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Project › Documents</b>, plus the top-bar search, which is how people actually look for a file</td>
+										</tr>
+									<tr>
+										<td><b>Tasks</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td><b>Approvals › Tasks</b> — today’s also appear on Today, which is where they get done</td>
+										</tr>
+									<tr>
+										<td><b>Measurement</b></td>
+										<td><span class="dsx-tag">Keep</span></td>
+										<td><b>Site › Measurement</b>. Filed under compliance in an earlier draft and that was wrong: no statute asks
+												for a measurement sheet. It is the evidence that the money on a running bill was <em>earned</em>, line by
+												line, and it is the one document that survives a client’s QS. It is a money-protection screen and it belongs
+												in the demo</td>
+										</tr>
+									<tr>
+										<td><b>Retention</b></td>
+										<td><span class="dsx-tag mute">Demote · compliance</span></td>
+										<td><b>Money › Retention</b>. Statutory, and not a feature — it should never be demoed as one. </td>
+										</tr>
+									<tr>
+										<td><b>Notifications</b></td>
+										<td><span class="dsx-tag mute">Demote</span></td>
+										<td>The bell in the top bar with a count — it is an interruption, not a place</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<p style="margin-top:var(--space-100)">Four nav destinations are <em>new</em> and have no shipped equivalent:
+								<b>Buying</b>, <b>Site</b>, <b>Sales</b> and <b>Money</b>. Each is a verb that groups screens the shipped
+								product left loose in an alphabetical list. That is the whole information-architecture change, and it is what
+								takes sixteen sidebar items down to seven plus Settings.</p>
+						<h3>What happens when there are four thousand of them</h3>
+						<p>
+								Every table in this file is hand-set at about a dozen rows, which is how a design file flatters itself. A buyer
+								with three years of history has 4,000 purchase orders. The pattern is specified once here and applied to every
+								list screen in the document.</p>
+						<ul>
+							<li><strong>The row count is always stated</strong>, in the pager, in the form <em>Showing 1–12 of 83 files</em>.
+									When a filter is on it also says what it was filtered from — <em>1–3 of 3 items filtered from 53</em> — because
+									“3 items” and “3 of 53” lead to different next moves. When nothing matches it reads <em>No items</em>, never
+									<em>0–0 of 0</em>.</li>
+							<li><strong>Pages, not infinite scroll.</strong> Fifty rows a page. A paginated list has a position you can
+									return to, a URL you can send someone, and an end; an infinite list has none of those, and on a purchase-order
+									history somebody is always looking for the thing they saw last Tuesday. Infinite scroll is also the pattern
+									that quietly breaks <kbd>Ctrl</kbd>+<kbd>F</kbd>, which is how half of site staff actually search.</li>
+							<li><strong>Sorting and filtering are server-side</strong>, and the URL carries them. Sorting the visible page
+									client-side is the defect that looks like a feature: it silently sorts 50 of 4,000 rows and presents the answer
+									as if it were the whole set. One exception, stated: a list the server has already declared complete — under
+									about 200 rows, which covers vendors, projects and rate contracts for most tenants — may sort in the browser,
+									and then the pager says <em>all 61</em> rather than a range.</li>
+							<li><strong>While a page loads</strong> the table keeps its height and its header, and the rows become the
+									skeleton shown in <a href="12-states-roles.html#s12">States</a>. It does not collapse to a spinner: a table
+									that changes height on every page turn moves the pager out from under the pointer.</li>
+							</ul>
+						<h3>Responsive, as a rule rather than three screenshots</h3>
+						<p>Six media queries render three widths, which proves nothing about the fourth. The rule for a wide table is a
+								<strong>column priority order</strong>, declared per table, and the browser drops from the bottom of it as the
+								width runs out.</p>
+						<ol>
+							<li><strong>Identity never drops.</strong> The column that says <em>which record this is</em> — the order number,
+									the item, the vendor, the project code — is the first column and it is never dropped, never truncated to an
+									ellipsis, and never moved.</li>
+							<li><strong>The decision column never drops.</strong> Each table names one: <em>Check</em> on rates,
+									<em>Level</em> on stock, <em>Issues</em> on daily reports, <em>Ordered against contract</em> on projects. It is
+									why the screen is open.</li>
+							<li><strong>Money and status drop after those</strong>, and when they drop they move into the row’s detail line
+									rather than disappearing — a second line under the identity, which is where the phone layout puts them already.
+							</li>
+							<li><strong>Reference columns drop first</strong>, and if a column can drop at 400px without anybody noticing,
+									that is evidence it did not deserve the width at 1440 either. Four columns failed exactly that test and were
+									cut from the document rather than made responsive.</li>
+							</ol>
+						<p>So the order for <em>Buying › Rates</em> is: Item · Check · Agreed rate · Last paid · BOQ rate — and at 400px
+								the last two become the detail line. The order is a property of the table, written next to it, not a stack of
+								breakpoints.</p>
+						<h3>Keyboard</h3>
+						<p>The web app is for staff who live in it all day, so the keyboard is a specification and not an afterthought.
+						</p>
+						<ul>
+							<li><strong><kbd>/</kbd></strong> focuses the search box from anywhere that is not already a text field.
+									<strong><kbd>?</kbd></strong> opens this list. <strong><kbd>Esc</kbd></strong> closes the top-most thing — the
+									drawer, then the popover, then the filter — and never navigates.</li>
+							<li><strong>Focus order follows the page</strong>: skip link, search, the page’s primary action, the toolbar,
+									then the table. The sidebar comes after the content, not before it, because a person who lives on one screen
+									tabs into the work far more often than into the navigation.</li>
+							<li><strong>A table is one tab stop</strong>, then <kbd>↑</kbd><kbd>↓</kbd> move the row and
+									<kbd>Enter</kbd> opens it. Tabbing through 50 rows × 6 cells is the reason people stop using the keyboard.
+									<kbd>Space</kbd> selects a row, <kbd>Shift</kbd>+<kbd>↑</kbd><kbd>↓</kbd> extends the selection, and
+									<kbd>Ctrl</kbd>+<kbd>A</kbd> selects the page — the pager then offers <em>select all 4,000</em> explicitly,
+									because those are different intentions.</li>
+							<li><strong>The bulk bar is reached by tabbing forward</strong> from the table — it appears above it visually but
+									after it in the DOM, so it is not something you tab through to get to the rows. <kbd>Esc</kbd> clears the
+									selection and returns focus to the row it started on.</li>
+							<li><strong>Single-key shortcuts can be turned off</strong>, per person, in
+									<a href="11-settings.html#s11">Your preferences › Keyboard</a>. With them off, <kbd>/</kbd> and
+									<kbd>?</kbd> type themselves and the list of shortcuts is in the account menu.</li>
+							<li><strong>The sidebar is a disclosure, not a menu</strong>: <kbd>Tab</kbd> through what is visible,
+									<kbd>Enter</kbd> or <kbd>Space</kbd> opens a section, <kbd>↑</kbd> <kbd>↓</kbd> move between visible entries,
+									<kbd>←</kbd> <kbd>→</kbd> do nothing. The whole specification is in
+									<a href="03-navigation.html#s3">3</a>.</li>
+							<li><strong>A decision is never a single keystroke.</strong> Approve and Decline have no shortcut. Everything
+									reversible is fast; everything that signs something is deliberate.</li>
+							<li><strong>The focus ring is the same everywhere</strong> — 2px solid, offset 2px, measured at 3.50:1 in light
+									and 8.11:1 in dark against the card — and it is never removed on mouse users, because
+										<code>:focus-visible</code>
+									already tells the two apart.</li>
+							</ul>
+						<h3>Could not verify</h3>
+						<ul>
+							<li>
+									Every measurement is Chromium on Windows: with Inter, and on Segoe UI without it. Other platforms fall to their
+									own sans; the sizes hold, the metrics may differ by a pixel.</li>
+							<li>
+									The published token values are marked by their owner as subject to change, and three things used here were
+									behind feature flags on the day they were read. The read date is on every value in 0 · Foundations; a later
+									read may differ.</li>
+							<li>
+									That red reads as loss to this product’s Indian users was reasoned from the conventions they already use, not
+									tested with them.</li>
+							<li>The gate measures at the four widths and spot-checks 600, 1024 and 1680; widths between them are not proven.
+							</li>
+							<li>Equality is ±0.5px; a fault under half a pixel is invisible to the gate and to the eye.</li>
+							<li>The hero check reads the largest font size and the largest card; it cannot judge whether the hero is the
+									<em>right</em> thing — that was decided screen by screen and is listed in the report.</li>
+							<li>
+									The Google Fonts stylesheet is the one network request in the file. Offline the page renders on the fallback
+									stack; a viewer who has never been online sees Segoe UI, by design.</li>
+							</ul>
+						</div>
+					<section class="dsx-history" id="history" aria-labelledby="history-h">
+						<h3 id="history-h">History — 17 decisions superseded, oldest first</h3>
+						<p>
+								Each block below was once inline under the heading it names, and was moved here on 19 September 2026 so the
+								decisions above read as the current record. Nothing was deleted or reworded; a block that was itself amended
+								keeps its amendment.</p>
+						<div class="hist">
+							<h4 class="lbl">1. Under <em>The money rule, and the one deviation the brief invited</em> · 15 September 2026
+							</h4>
+							<p>Superseded on 15 September 2026 by <span class="nowrap">ADR-0014</span>’s two addendums. The
+									chartered-accountant gate moved from the build to the statutory output: every Money screen now computes; a rate
+									on screen says <em>Provisional</em>; a generated statutory document says <em>Draft: provisional rates</em>; an
+									individual figure carries no banner; and an output resting on a provisional row is refused unless the
+									deployment was told to produce drafts, and never reaches Tally. The five Money screens are drawn that way in 9
+									· Money. The formatting rule above is unchanged.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">2. Under <em>What the file holds to</em> · 15 September 2026</h4>
+							<p>
+									Until 15 September this line added: no figure on any surface the tax review gates. Superseded on 15 September
+									2026 — see the money rule above.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">3. Under <em>Sixteen nav destinations, ruled on</em> · 15 September 2026</h4>
+							<p>Until 15 September this row also said no figure appears on it until the tax review is done.
+									<span class="nowrap">ADR-0014</span>’s addendums of that day replaced that rule: Retention computes, and what
+									rests on a provisional rate says so — see 9 · Money.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">4. Under <em>Two shipped screens contradict this file</em> · 16 September 2026</h4>
+							<div class="was-block">
+								<p class="was-h">Superseded on 16 September 2026, and kept as the record. <strong>Reason:</strong> the owner
+										rethemed the product on a published design system, so the palette below — its hues, its construction rules and
+										every measurement of it — describes colours that no longer exist. What survives from it is restated above and
+										still enforced by the same gates: red only for loss, refusal and failure; caution only as a fill carrying its
+										ink; the illustration accent contained in its drawings; no chart ever painting a status colour; no caution in
+										the vendor’s view and no status red in the client’s.</p>
+								<h3>Colour — the semantic palette, rebuilt</h3>
+								<p>The hue did not change. Verdigris is still the brand, now at OKLCH 196°. What changed is what the
+										<em>other</em> colours were allowed to mean, and the audit that forced it is short enough to print:
+										<strong>green carried seventeen different labels</strong>, from “Signed off” to “In progress” to “In stock”;
+										<code>--warn</code> was a violet doing caution’s job; the brand itself was a status through
+										<code>.pill.info</code>; “Won” was two different colours depending on which table you were in; and after all
+										that there was <strong>no caution colour left at all</strong>.</p>
+								<div class="tbl-wrap">
+									<table class="dsx-t full">
+										<thead>
+											<tr>
+												<th>Meaning</th>
+												<th>Hue</th>
+												<th>What it is allowed to say</th>
+												</tr>
+											</thead>
+										<tbody>
+											<tr>
+												<td><b>Brand</b></td>
+												<td><code>196°</code> verdigris</td>
+												<td>The product speaking — action, navigation, links, focus, selection, the chart’s own mark.
+														<b>Never a status.</b></td>
+												</tr>
+											<tr>
+												<td><b>Done</b></td>
+												<td><code>150°</code> green</td>
+												<td>
+														Settled and correct: approved, accepted, signed off, in force, in stock, at the agreed rate. One meaning,
+														not seventeen.</td>
+												</tr>
+											<tr>
+												<td><b>Caution</b></td>
+												<td><code>52°</code> amber<br>
+													<small>a fill <em>and</em> an ink</small>
+													</td>
+												<td>
+														Watch this before it becomes a problem: over the agreed rate, below reorder, no receipt yet, watch
+														closely. <b>Only ever an area.</b></td>
+												</tr>
+											<tr>
+												<td><b>Waiting</b></td>
+												<td><code>305°</code> violet</td>
+												<td>Waiting on a named person. Not a problem, not yours — a fact about whose desk it is on.</td>
+												</tr>
+											<tr>
+												<td><b>Bad</b></td>
+												<td><code>10°</code> red</td>
+												<td>Money going the wrong way, refused, failed, over contract. Nothing else, ever.</td>
+												</tr>
+											<tr>
+												<td><b>In progress</b></td>
+												<td><em>no hue</em></td>
+												<td>The neutral pill and a small dot. This is the change that gives green its meaning back.</td>
+												</tr>
+											<tr>
+												<td><b>Idle</b></td>
+												<td><em>no hue</em></td>
+												<td>Draft, cancelled, closed, withdrawn, not a fit. Nothing is happening and nothing is owed.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								<p><strong>The in-progress state is the highest-impact row in that table.</strong> It is the most common state
+										in the product and the least informative one — knowing a project is under way tells a director nothing they
+										can act on. It was green, which is why green stopped meaning anything. Now it is a grey pill with a dot:
+										present, moving, nothing owed. Eleven pills stopped being green, and the remaining fifty-five all mean the
+										same thing.</p>
+								<h4 class="lbl">Marigold leaves the interface</h4>
+								<p>
+										Verdigris and marigold are both brand colours, and a brand colour may never be a status. Verdigris was a
+										status through <code>.pill.info</code>; that class is deleted. Marigold was worse — it was the unread dot, the
+										nav count, the bell badge, the hero eyebrow, the tag and the value-line rule, none of which are brand
+										statements. All of them are now verdigris. Marigold survives in exactly one place, the accent inside the
+										drawing sprite, as a single token called <code>--illo-accent</code>. <strong>The alignment gate proves the
+										containment rather than trusting it</strong>: it walks <code>color</code>, <code>background-color</code>,
+										<code>fill</code>, <code>stroke</code> and every border on every element, in both themes at four widths, and
+										fails the build if anything outside <code>symbol.illo-art</code> computes to that value. A grep could not do
+										that — it would miss an inherited colour and a token aliased through another token.</p>
+								<h4 class="lbl">Constant contrast, not constant chroma — a rule that was wrong, and its evidence</h4>
+								<p>An earlier version of this document held every semantic colour to one chroma, <code>0.082</code>, on the
+										reasoning that a set at one chroma cannot have a member that shouts. The evidence that it was wrong is the
+										colour it produced: <code>--warn</code> at hue 52 rendered <strong><code>#935f3f</code>, a brown</strong>,
+										sitting 39° from <code>--bad</code> at identical lightness and chroma — so caution read as a faded version of
+										loss. Freed to the chroma sRGB actually offers <em>at the same lightness</em>, hue 52 renders
+										<code>#9d4b00</code>, a burnt orange, at the same contrast. The pinned chroma was the defect, not the
+										lightness.</p>
+								<p>The mechanism is that <strong>the sRGB gamut is not uniform</strong>. At L 0.535 an amber reaches chroma
+										0.139 and a violet 0.278, while the brand teal reaches 0.088. Holding one chroma across the set means holding
+										every hue to the narrowest one — which is the brand's — and a teal's ceiling is no basis for what an amber
+										should look like.</p>
+								<div class="tbl-wrap">
+									<table class="dsx-t full">
+										<thead>
+											<tr>
+												<th>The rule</th>
+												<th>Was</th>
+												<th>Is</th>
+												</tr>
+											</thead>
+										<tbody>
+											<tr>
+												<td>The invariant</td>
+												<td>chroma, held at one number</td>
+												<td><b>contrast</b>, held at one ratio — because contrast is what accessibility actually requires</td>
+												</tr>
+											<tr>
+												<td>Chroma</td>
+												<td>pinned across hues</td>
+												<td>as much as the gamut gives at the lightness that contrast implies</td>
+												</tr>
+											<tr>
+												<td>Lightness</td>
+												<td>spread capped under 0.06</td>
+												<td>whatever the contrast target needs, per hue</td>
+												</tr>
+											<tr>
+												<td>The bound on chroma</td>
+												<td>the brand's own ceiling</td>
+												<td><b>matched perceived weight</b>, judged on rendered swatches side by side</td>
+												</tr>
+											<tr>
+												<td>Hue separation</td>
+												<td>40° minimum, measured on the <em>declared</em> hue</td>
+												<td>40° minimum, measured on the hue the pixel actually <b>paints</b></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								<p>The measured result: every semantic colour sits at <strong>5.18–5.21:1</strong> in light and
+										<strong>5.93–5.97:1</strong> in dark against the worst surface it appears on, while their chromas differ —
+										0.130 for amber and green, which are at their sRGB ceiling, against 0.149 and 0.150 for red and violet, which
+										are held back to match. That bound of 0.15 was not calculated; six candidate policies were rendered as real
+										pills on the real panel and looked at, and 0.15 is where the four read as one family instead of four
+										strangers.</p>
+								<p><strong>The last rule of the old set has been withdrawn too: the brand is no longer required to be the most
+										chromatic thing on screen.</strong> That rule was a consequence of constant chroma — the brand set the ceiling
+										precisely because one number had to serve every hue. With per-hue chroma the comparison stops being meaningful
+										(0.15 at hue 52 and 0.15 at hue 305 are not equally colourful), and enforcing it would mean amber cannot be
+										amber, which is the defect being corrected. What replaces it is narrower and says what the rule was actually
+										protecting: <strong>the brand out-saturates every piece of <em>chrome</em></strong> — the hairlines, the inks,
+										the skeletons, the neutral fills, the track — and it remains the only hue in navigation, action, focus and
+										selection.
+									<span class="superseded">
+											Since 18 September the accent tokens carry meaning beside the chrome — a tinted disc behind a stat’s icon,
+											green and red on money coming in and going out, the yellow ramp on what is overdue, the purple tint on a row
+											waiting on you — and none of it is blue, so the sentence before this one still holds.</span>
+									 A caution that cannot out-shout the chrome cannot do its job, so it is not asked to lose to it.</p>
+								<h4 class="lbl">Caution is a fill carrying an ink, and it is never a stroke
+									<span class="superseded">
+											— amended 19 September: the fill is for a lozenge and a section message only; amber may be text</span>
+									</h4>
+								<p class="superseded"><strong>Amended 19 September 2026 — no highlighter.</strong> The owner’s rule: a figure, a
+										label or a sentence never sits on a coloured fill. The caution <em>fill</em> is for a lozenge and for the
+										published section message, and nothing else; caution as <em>text</em> is allowed — an overdue figure carries
+										an amber small-capitals label above an ink figure, a warning is amber text with its icon — and the contrast
+										gate holds it to 4.5:1 (<code>--warn</code> measures 5.93:1 on the card in light and 8.36:1 in dark). The
+										alignment gate’s rule was rewritten to that, not lowered: it now fails a highlighter, and still fails amber on
+										a stroke or a border. The paragraphs below are the reasoning that stood until then, and the stroke-and-border
+										half of it still does.</p>
+								<p><strong>Amended again, 19 September 2026 — the charts.</strong> A chart mark is the third place the caution
+										fill may go, on one condition. The overrun band past a meter’s track, the overdue part of an owed bar, the
+										at-risk segment of a stacked bar: each is a mark whose value is printed beside it — “₹13,17,120.00 over”, the
+										overdue figure beneath the bar, the legend’s count — so it is <em>labelled-redundant</em>, and it takes the
+										fixed status amber, <code>color.background.warning.bold</code>, the same in both themes. No text sits on it,
+										so it is not a highlighter; and the non-text gate grants the class by finding the value in the mark’s card,
+										not by reading a comment — a mark it finds no value for is held to 3:1. The amber that was
+										<code>#946F00</code> in light and <code>#DDB30E</code> in dark — a yellow darkened to 3:1 on white is olive —
+										is gone from every mark.</p>
+								<p>
+										This is the resolution the gamut forces. Every lightness at which amber looks like amber is a lightness at
+										which it cannot hold text contrast: measured on this document's own panel, hue 52 at its gamut maximum gives
+										5.23:1 at L 0.54 (a burnt orange), 3.24:1 at L 0.66 (a real orange, non-text only) and 2.04:1 at L 0.78 (true
+										amber, and invisible). So caution comes from the <strong>area</strong>, not from a thin mark:</p>
+								<ul>
+									<li><code>--warn-soft</code> is a large light amber fill — this is the thing that reads as amber.</li>
+									<li><code>--warn</code> is the dark amber that sits on top of it and carries the contrast, measured at
+											<strong>5.23:1</strong> in light and <strong>6.65:1</strong> in dark <em>against its own fill</em>.</li>
+									<li>Amber appears as <strong>no stroke, no border, and no text floating on a panel</strong>. Five places broke
+											that rule and were converted: a stat's delta went to ink, its note became a chip, a stat border was deleted,
+											a due-today marker became a chip, a low-stock figure went to ink, and a caution notice's icon went to ink
+											because the notice is already an amber area.</li>
+									</ul>
+								<p>
+										The alignment gate proves it rather than trusting the stylesheet: it walks every element in both themes at
+										four widths and fails the build if caution is painted on a border or a stroke, or if caution ink is found
+										anywhere that is not sitting on a caution fill.</p>
+								<p><strong>The light and dark caution are different colours, and that is correct.</strong> Light is
+										<code>#9d4b00</code>, a burnt orange, because on a near-white panel that is the lightest amber that still
+										holds contrast. Dark is <code>#ff9c5c</code>, a genuinely bright amber, because against a dark panel the
+										constraint inverts and amber finally has room at high lightness. Every other token in this palette is the same
+										parameters at two luminance levels; this one pair is not, and nobody should later "fix" it into agreement.</p>
+								<h4 class="lbl">Amber at 52° beside marigold at 72°</h4>
+								<p>
+										Twenty degrees apart, and the answer is containment, not distance. They never co-occur: amber is a status area
+										inside a table or a stat, marigold appears only inside an illustration, and an illustration only appears on an
+										empty state — a screen with no rows and therefore no pills. The gate that proves marigold never escapes the
+										sprite is the same gate that proves they cannot meet. Moving amber further from marigold would have cost it
+										the separation it needs from red, which is the one that matters, since bad and caution <em>do</em> sit in the
+										same column. <strong>That separation was also wrong until now</strong>: bad at hue 12 and caution at 52 read
+										as exactly 40° in the generator and painted 39.0°, because 8-bit rounding lands hue 12 at 12.7. Bad moved to
+										10 and the check now measures the hue the pixel has, not the hue it was asked for. The pair paints 42.4°
+										apart.</p>
+								<h3>Charts have their own architecture</h3>
+								<p>
+										The deeper error was that charts were borrowing the status palette. They should not, and the reason is one
+										sentence: <strong>a status pill has text beside it, and a chart line does not.</strong> "Above agreed rate"
+										says what it is, so its colour is redundant reinforcement and a low-chroma, weight-matched set is exactly
+										right. A line has no such help — colour is its only channel — so it needs <em>more</em> discrimination than a
+										status colour, not the same. Applying the pill rules to charts is what put two chart states 39° apart at
+										identical weight and made them one state.</p>
+								<p>
+										So the chart set is its own, and no chart references a status token — a rule the gate enforces by walking
+										every element inside every chart in both themes and failing on any status colour it finds:</p>
+								<div class="tbl-wrap">
+									<table class="dsx-t full">
+										<thead>
+											<tr>
+												<th>Token</th>
+												<th>What it is</th>
+												</tr>
+											</thead>
+										<tbody>
+											<tr>
+												<td><code>--series-1..3</code></td>
+												<td>
+														Categorical identity, at hues 196 · 254 · 94. One hue set for both themes, because colour follows the
+														entity and a series may not change identity when the theme does. The warm band 30–90° is excluded: amber
+														is the caution status and marigold the illustration accent, and a chart series is neither.</td>
+												</tr>
+											<tr>
+												<td><code>--chart-point-bad</code></td>
+												<td>A saturated red <b>point</b> for a genuine failure. One point, never a line — so red never means "series
+														4" either.</td>
+												</tr>
+											<tr>
+												<td><code>--chart-threshold</code></td>
+												<td>The neutral dashed rule saying where the limit is. A limit is not a status.</td>
+												</tr>
+											<tr>
+												<td><code>--chart-band</code></td>
+												<td>
+														A low-opacity caution fill over the out-of-tolerance region. An area, which is the one shape amber can
+														hold.</td>
+												</tr>
+											<tr>
+												<td><code>--track</code></td>
+												<td>Deliberately <em>not</em> a chart token. It is the unfilled part of any bar — meter, progress, setup —
+														and renaming it into the chart set would have made a setup progress bar reference a chart colour.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								<p><strong>No line is coloured by condition any more.</strong> A line that turns red says "everything is bad",
+										which is almost never what the data means, and it throws away the ability to say <em>where</em> the problem
+										is. The line carries series identity and the exception is drawn instead — a shaded band over the
+										out-of-tolerance region, a dashed rule at the limit, a diamond at the point it was crossed, and the row's own
+										words. Six sparklines were dyed amber by a <code>warn</code> tone. Three had a real limit and now draw it:
+										cash against payables crosses zero, a contract crosses its 85% watch line, and a stock item crosses its
+										reorder level. Three had no limit anyone had agreed, and the honest outcome is that they lost the colour and
+										gained nothing — a mute threshold line on a series with no threshold would be decoration pretending to be
+										information.</p>
+								<p>The same move fixed <em>Ordered against contract</em>. A project past its contract used to turn the whole bar
+										red. Now the bar keeps its identity, the run past the contract is a band, the crossing carries a diamond, and
+										the row’s title reads what it is past the contract by — which is the thing a director actually wanted and the
+										recoloured bar never said.</p>
+								<h4 class="lbl">Simulated for deuteranopia and protanopia, because red against amber is the common confusion
+								</h4>
+								<p>Every chart in the document was re-rendered through both dichromat simulations and measured pair by pair.
+										<strong>Zero charts carry meaning that survives only in full colour vision.</strong> The chart set itself
+										holds up without any help: its tightest pair measures OKLab ΔE <strong>13.8</strong> to a dichromat in light
+										and <strong>10.5</strong> in dark, against a floor of 8, and that is the number that matters because a chart
+										line has no text beside it. Three sparklines do fall under 8, and all three are the same pair: the teal line
+										against the neutral threshold rule, at ΔE 3.3 under protanopia. That is legitimate and deliberate —
+										<strong>one is solid and the other is dashed</strong>, so the channel separating them was never hue. Every
+										exception in the document carries at least two non-colour channels: a shape (the diamond), a pattern (the
+										dash), an area (the band), and words.</p>
+								<h3>The India layer</h3>
+								<p><strong>Red is confined.</strong> It appears on money going the wrong way, on a refusal, and on a failure —
+										and nowhere else. Two uses were found outside that rule and removed: a stat rendered “↓ 96 sqm” in red when
+										nothing had fallen (96 sqm is what Monday’s issue <em>needs</em> against 22 on hand — a caution, wearing the
+										wrong colour and also misreading the fact), and the required-field asterisk, which is a rule stated before
+										anything has gone wrong. Thirty-eight distinct red elements remain and every one is a refusal, a failure, or
+										money in the wrong direction.</p>
+								<p><strong>Saffron beside green on white is the flag</strong>, so it was measured rather than eyeballed. The
+										flag is saffron <code>#ff9933</code> (L 0.774 C 0.163 H 60), white, and India green <code>#138808</code> (L
+										0.545 C 0.180 H 142). Four places in the document put an amber element within 24px of a green one on a
+										near-white surface; all four are a caution pill beside a done pill. Against the flag’s own values, this
+										palette’s amber is <strong>OKLab ΔE 25.3</strong> away and its green <strong>ΔE 10.3</strong> — both at
+										roughly half the flag’s chroma and much darker. For scale, this palette calls 5.6 “distinguishable”. The
+										pairing reads as a severity ramp, which is what it is: green, amber, red, left to right, in that order. The
+										single closest thing to saffron anywhere in the system is <code>--illo-accent</code> at ΔE 12.1 — and it lives
+										inside illustrations, where the planes around it are verdigris at 196°, not green.</p>
+								<p><strong>No statutory blue.</strong> The question was whether the two compliance screens — the tax review and
+										retention — should get a reserved blue. They do not, and the reasoning is worth keeping because the answer is
+										not “it would not fit”. It would fit: the widest unclaimed arc on the hue circle is at
+										<strong>250°, with 54° of clearance</strong>, and a blue built there to this palette’s own constraints lands
+										at <code>#446e98</code>, ΔE 7.6 from waiting-violet and 7.8 from the brand — above the tightest pair already
+										shipping. The reasons not to are these. A hue in this system encodes <em>a state of the work</em>; “statutory”
+										is a property of the page, so putting it in the same channel means one glance carries two unrelated meanings —
+										which is the exact defect just removed from green and from the brand. Nothing on a compliance screen becomes
+										more actionable for being blue; what makes those screens legible is already built and already gate-checked —
+										the figure is <em>absent with a stated reason</em> rather than zero, the CA gate names who must sign the rule
+										off, and the nav ruling marks them compliance so they are never demoed as features. And the association is the
+										wrong one to borrow: statutory blue in India is the GST portal and the income-tax portal, and a product
+										selling against those should not dress like them. <strong>Verdigris carries it, because on a statutory screen
+										the product is speaking, and verdigris is the product speaking.</strong></p>
+								<h3>Four audiences, one palette</h3>
+								<p>
+										The same tokens, spent differently depending on who is looking. Each frame in this document declares its
+										audience, so these are measurements, not intentions.</p>
+								<div class="tbl-wrap">
+									<table class="dsx-t full">
+										<thead>
+											<tr>
+												<th>Audience</th>
+												<th>What they are shown</th>
+												<th>Measured</th>
+												</tr>
+											</thead>
+										<tbody>
+											<tr>
+												<td><b>Staff — apps/web</b></td>
+												<td>
+														The full set. All four semantic hues, the neutral in-progress pill, charts, notices, danger actions. They
+														are in it all day and need the density.</td>
+												<td>mean background chroma <code>0.0250</code>, the highest of the four</td>
+												</tr>
+											<tr>
+												<td><b>Vendor portal</b></td>
+												<td>Done, bad and waiting — <b>and no caution</b>. A supplier has nothing to “watch closely”; their states
+														are accepted, refused, or waiting on us. A bill sent back keeps its red, because that is a genuine failure
+														they must act on.</td>
+												<td><code>0.0161</code> — the quietest, and zero caution tones</td>
+												</tr>
+											<tr>
+												<td><b>Client portal</b></td>
+												<td>No status red. A variation the client declined is <b>their own decision, carried out</b> — so it reads
+														“You declined” in neutral, not “Declined by client” in the colour of failure. The refusal
+														<em>action</em> keeps its red; the record of it does not.</td>
+												<td><code>0.0179</code>, and one status red removed</td>
+												</tr>
+											<tr>
+												<td><b>Operator console</b></td>
+												<td>
+														Ours, never pitched. Confirmation and idle only — no caution, no waiting, no charts. Red is reserved here
+														for suspend and destroy.</td>
+												<td><code>0.0230</code>, two tones in total</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								<p>That table is also the rule <em>colour temperature tracks stakes inversely</em>, measured: the two audiences
+										the business can least afford to alarm — the paying client and the supplier — get the two quietest screens, at
+										roughly two-thirds the chroma of the staff app.
+									<span class="superseded">
+											Re-measured on 17 September, after the elements pass: mean background chroma is vendor 0.0245, operator
+											0.0267, staff 0.0307, client 0.0315. The supplier’s screen is still the quietest; the client’s now sits
+											within 0.001 of the staff app’s — because the staff app’s chrome lost most of its colour in the retheme and
+											the elements pass, not because the client’s gained any. The rule is kept as a direction, not a ratio.</span>
+									<span class="superseded">
+											Re-measured on 18 September, after the familiar look: vendor 0.0245, client 0.0277, operator 0.0283, staff
+											0.0357. The order the rule asks for is back — the staff app, which gained the discs, the pill, the dark top
+											bar and money direction, is the most colourful screen, and both portals sit below it, the supplier’s still
+											the quietest.</span>
+									 The vocabulary change behind the client row is the general principle, and it is worth naming:
+										<strong>the same state reads differently depending on which side of the table you are on.</strong> “Declined
+										by client” is a sentence written from the contractor’s chair.</p>
+								<p><strong>Light is the primary theme.</strong> It is designed and verified first and dark is derived from the
+										same parameters at a second luminance level — there is no second set of numbers to drift. Every check in this
+										document runs in both, and where the two disagree the light value governs: the semantic chroma is 0.082
+										because that is what light allows, even though dark could carry 0.100 comfortably.</p>
+								</div>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">5. Under <em>Sixteen nav destinations, ruled on</em> · 16 September 2026</h4>
+							<div class="was-block">
+								<p class="was-h">Superseded on 16 September 2026. <strong>Reason:</strong> the shipped stylesheet was brought
+										level with this file on 13 September, and the retheme now moves both again. The size of that repaint — how
+										many shipped tokens change value, which are renamed, which are new — is in <code>TOKEN-DIFF.md</code>.</p>
+								<h3>A design system ships, and since 13 September it is this one</h3>
+								<p><code>packages/design-system/src/</code> is real code — <code>styles.css</code>, <code>ui.tsx</code>,
+										<code>form.tsx</code>, <code>picker.tsx</code>, <code>tabs.tsx</code>, <code>vocabulary.ts</code> — and until
+										now nothing in this file mentioned that it exists. It should have, because the difference is not small:</p>
+								<ul>
+									<li><strong>Sixteen token names are shared and every single value differs.</strong>
+										<code>--accent</code> is <code>#1f4b8f</code> navy in code and <code>#006f70</code> verdigris here.
+											<code>--panel</code> is <code>#ffffff</code> in code and <code>#fcfdfd</code> here. <code>--warn</code> is
+											<code>#8a5a00</code> there — a dark amber — and an amber here too, which is the one row this rebuild brought
+											<em>closer</em> to the shipped system.</li>
+									<li><strong>Eighteen tokens here do not exist in code at all</strong>, and four of them are structural rather
+											than cosmetic — an elevation surface, a focus token, chart marks, and the skeleton pair. Those extend the
+											architecture; a palette swap does not.</li>
+									<li><strong>One shipped token is dropped.</strong> <code class="was">--radius</code> becomes four: a card, a
+											control, a pill and an inline code span do not share a corner.</li>
+									<li><strong>Sixteen shipped components, and this file maps to none of them by name.</strong> Several of the
+											things drawn here are the shipped component with new props; several replace one; and the hero, the stat, the
+											toolbar, the pager, the filter chips, the bulk bar and the illustrations have no shipped equivalent at all.
+									</li>
+									</ul>
+								<p class="superseded">
+										The list above is the state this document found on 12 September, and it is kept as the record of it. On 13
+										September <code>TOKEN-DIFF.md</code> and <code>COMPONENT-MAP.md</code> were applied to
+											<code>packages/design-system</code>
+										and the four apps, stage by stage. Today <code>tokens.css</code> and the shipped stylesheet hold the same
+										values — the shipped sheet keeps the old radius name as an alias for one release — and the two documents
+										beside this file now record what is still different rather than propose a change. What this pass adds is in
+										<code>CHANGES.md</code>.</p>
+								</div>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">6. Under <em>Sixteen nav destinations, ruled on</em> · 16 September 2026</h4>
+							<p>
+									Superseded in part on 16 September 2026. The grouping stands; how a group shows its pages changed. Buying,
+									Money and Projects are now sidebar sections that open to show their pages instead of tabs under the page title,
+									and Approvals is pinned beside Today — see <a href="03-navigation.html#s3">3 · Navigation</a>, where the two
+									trees are drawn since 19 September.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">7. Under <em>Blue is the brand and every affordance; it is never a status</em> · 17 September
+									2026</h4>
+							<p>Until 17 September: <em>In progress</em> is the neutral lozenge with a dot — the system’s own blue
+									<em>in progress</em> lozenge is the one published mapping not taken, because beside blue links and buttons a
+									blue lozenge reads as something to press. That was a taste, not a gate; the owner dropped it in the elements
+									pass, and the published information lozenge is used.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">8. Under <em>Red, amber and green now come from the system — and red still reads as loss</em> ·
+									17 September 2026</h4>
+							<p>
+									Re-measured on 17 September, after the elements pass put the published caution lozenge — a pale orange fill
+									under an orange ink — beside the done lozenge in every status row: eight flag pairs on part 0 and two on part
+									6. The light caution fill and ink moved to the yellow ramp, which the dark caution already took; zero pairs.
+							</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">9. Under <em>Type, surfaces, focus</em> · 17 September 2026</h4>
+							<p>
+									Until 17 September the ring was on every control. A text field, a select and a text area now take the published
+									field’s focused state — the border in the focus colour, 2px in all, with no outer ring — and the polish gate
+									reads that state on a real focused field.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">10. Under <em>Red, amber and green now come from the system — and red still reads as loss</em> ·
+									18 September 2026</h4>
+							<p>Since 18 September red also marks money going <em>out</em> — a payment, a bill’s figure in a ledger’s out
+									column, the outgoing total on the cash-flow card — always with its minus sign, as the books the buyers keep
+									colour it. It is a direction, not a judgement; the India gate lists every such figure with its text, and a
+									plain total or a not-yet-due figure stays in ink. On 19 September the orange text accent — the nearest orange
+									step that passes AA, 6.02:1 on the card in light — was tried in its place, and the India layer measured it: no
+									pair within 24px of green money-in on any product screen — the cash-flow card, the ledger, Client billing — but
+									two pairs 18px apart in the component-token table on part 0, where the money-in and money-out swatches are
+									neighbours; the gate is the authority, so the red text accent stays.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">11. Under <em>Type, surfaces, focus</em> · 18 September 2026</h4>
+							<p>
+									Until 18 September it was the published default, the selected fill, selected ink and a 2px selected bar. The
+									neutral selected state was behind a feature flag on the day it was read, and a grey fill alone does not reach
+									3:1; that finding stands.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">12. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Settings is thirteen pages in one place — until later on 19 September, when the gear took it and the layout
+									went to the Reports Center.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">13. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Until 19 September the switcher led the top bar and the mark sat beside it; the sidebar was the default surface
+									with 32px rows; a list with a record open led its section; overdue was the caution ink on the caution fill.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">14. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Until 19 September: no background token in either set resolves to it and white on it holds 3.50:1 — a plus
+									passes, the word does not — so the button was the published primary, Blue700, 5.20:1 with its word, drawn as
+									the light set’s primary inside the dark bar.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">15. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Until 19 September the red text accent stayed, because the gate is the authority and taking the orange meant
+									accepting that adjacency on the foundations page.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">16. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Until 19 September the project switcher was the one project filter this product had, and the frame gate failed
+									any other.</p>
+							</div>
+						<div class="hist">
+							<h4 class="lbl">17. Under <em>The look the buyers already know — 18 September</em> · 19 September 2026</h4>
+							<p>
+									Superseded 19 September: one project at a time as a parameter on the address — the switcher filled with the
+									project and an × beside it that left; the firm’s pages inside a project marked <em>firm</em>; Settings at the
+									foot of the sidebar; Rate analysis under Projects; the open section on the grey accent’s subtlest fill; the
+									search on Blue900; the switcher’s state pill for a finished project, which the sidebar’s block carries now.</p>
+							</div>
+						</section>
+					</section>
+				<nav class="dsx-pager" aria-label="Across the set">
+						<a class="pg-prev" href="12-states-roles.html" rel="prev"><small>Previous</small>
+					<b>12 · States & roles</b></a><a class="pg-up" href="index.html">All 15 parts</a>
+					<a class="pg-next" href="14-demo.html" rel="next"><small>Next</small><b>14 · The five-minute demo
+						</b></a></nav>
+				</main>
+			</div>
+		<script src="design.js"></script>
+		</body>
+	</html>

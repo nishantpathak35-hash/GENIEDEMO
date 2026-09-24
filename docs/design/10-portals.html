@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>10 · Portals — Construct-O-Genie design samples</title>
+		<meta name="description"
+				 content="Design samples for Construct-O-Genie — a multi-tenant ERP for Indian interior fit-out contractors.
+					Synthetic data throughout.">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+		<link rel="stylesheet" href="tokens.css">
+		<link rel="stylesheet" href="design.css">
+		</head>
+	<body> <a class="dsx-skip" href="#s10">Skip to content</a>
+			<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="i-home" viewBox="0 0 16 16">
+			<path d="M2.75 7.25 8 2.75l5.25 4.5v6H2.75z"/>
+			<path d="M6.5 13.25v-3.5h3v3.5"/>
+			</symbol>
+		<symbol id="i-sales" viewBox="0 0 16 16">
+			<path d="M2.75 11.25 6.25 7.75l2.5 2.5 4.5-4.5"/>
+			<path d="M10.25 5.75h3v3"/>
+			</symbol>
+		<symbol id="i-projects" viewBox="0 0 16 16">
+			<path d="M2.75 4.25a1 1 0 0 1 1-1h2.5l1.5 1.5h4.5a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1z"/>
+			</symbol>
+		<symbol id="i-cart" viewBox="0 0 16 16">
+			<path d="M1.75 2.75h1.5l1.5 7h7l1.25-5H4"/>
+			<path d="M6 12.75h.01M11 12.75h.01" stroke-width="2"/>
+			</symbol>
+		<symbol id="i-site" viewBox="0 0 16 16">
+			<path d="M2.25 13.25h11.5"/>
+			<path d="M4.25 13.25v-7l3.75-3 3.75 3v7"/>
+			<path d="M6.5 13.25v-3h3v3"/>
+			</symbol>
+		<symbol id="i-check-sq" viewBox="0 0 16 16">
+			<rect x="2.75" y="2.75" width="10.5" height="10.5" rx="1.5"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-rupee" viewBox="0 0 16 16">
+			<path d="M4.75 2.75h6.5M4.75 5.75h6.5"/>
+			<path d="M4.75 2.75c3.25 0 4.5 1.25 4.5 2.75s-1.25 2.75-4.5 2.75l4.5 5"/>
+			</symbol>
+		<symbol id="i-cog" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="i-menu" viewBox="0 0 16 16">
+			<path d="M2.75 4.25h10.5M2.75 8h10.5M2.75 11.75h10.5"/>
+			</symbol>
+		<symbol id="i-search" viewBox="0 0 16 16">
+			<circle cx="7" cy="7" r="4.25"/>
+			<path d="m10.25 10.25 3 3"/>
+			</symbol>
+		<symbol id="i-bell" viewBox="0 0 16 16">
+			<path d="M4.25 11V7.25a3.75 3.75 0 0 1 7.5 0V11l1 1.25H3.25z"/>
+			<path d="M6.75 14h2.5"/>
+			</symbol>
+		<symbol id="i-plus" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5M3.25 8h9.5"/>
+			</symbol>
+		<symbol id="i-download" viewBox="0 0 16 16">
+			<path d="M8 2.75v7"/>
+			<path d="M5 7l3 3 3-3"/>
+			<path d="M3.25 13.25h9.5"/>
+			</symbol>
+		<symbol id="i-link" viewBox="0 0 16 16">
+			<path d="M6.75 9.25a2.5 2.5 0 0 0 3.5 0l2-2a2.5 2.5 0 0 0-3.5-3.5l-.75.75"/>
+			<path d="M9.25 6.75a2.5 2.5 0 0 0-3.5 0l-2 2a2.5 2.5 0 0 0 3.5 3.5l.75-.75"/>
+			</symbol>
+		<symbol id="i-x" viewBox="0 0 16 16">
+			<path d="m4.25 4.25 7.5 7.5M11.75 4.25l-7.5 7.5"/>
+			</symbol>
+		<symbol id="i-check" viewBox="0 0 16 16">
+			<path d="M3.25 8.5l3 3 6.5-7"/>
+			</symbol>
+		<symbol id="i-alert" viewBox="0 0 16 16">
+			<path d="M8 2.5l6 10.75H2z"/>
+			<path d="M8 6.5v2.75M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-info" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 7.25v4M8 4.75h.01"/>
+			</symbol>
+		<symbol id="i-refresh" viewBox="0 0 16 16">
+			<path d="M12.75 8a4.75 4.75 0 0 1-8.4 3.05M3.25 8a4.75 4.75 0 0 1 8.4-3.05"/>
+			<path d="M11.75 2.25V5H9M4.25 13.75V11H7"/>
+			</symbol>
+		<symbol id="i-copy" viewBox="0 0 16 16">
+			<rect x="5.75" y="5.75" width="7.5" height="7.5" rx="1"/>
+			<path d="M3.25 10.25v-6.5a1 1 0 0 1 1-1h6.5"/>
+			</symbol>
+		<symbol id="i-pen" viewBox="0 0 16 16">
+			<path d="M3 13l.75-3L10.5 3.25l2.25 2.25L6 12.25z"/>
+			<path d="M9 4.75l2.25 2.25"/>
+			</symbol>
+		<symbol id="i-clock" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 4.75V8l2.25 1.5"/>
+			</symbol>
+		<symbol id="i-inbox" viewBox="0 0 16 16">
+			<path d="M2.75 8.75h3l1 1.5h2.5l1-1.5h3"/>
+			<path d="M2.75 8.75l1.5-5.5h7.5l1.5 5.5v4.5H2.75z"/>
+			</symbol>
+		<symbol id="i-bill" viewBox="0 0 16 16">
+			<path d="M3.75 2.25h8.5v11.5l-2-1.25-2.25 1.25-2.25-1.25-2 1.25z"/>
+			<path d="M6 5.75h4M6 8.25h4"/>
+			</symbol>
+		<symbol id="i-doc" viewBox="0 0 16 16">
+			<path d="M4.25 1.75H9l2.75 2.75v9.75h-7.5z"/>
+			<path d="M9 1.75V4.5h2.75M6.25 8.25h3.5M6.25 10.75h3.5"/>
+			</symbol>
+		<symbol id="i-users" viewBox="0 0 16 16">
+			<circle cx="6" cy="5.25" r="2.25"/>
+			<path d="M2.25 13.25a3.75 3.75 0 0 1 7.5 0"/>
+			<path d="M10.25 3a2.25 2.25 0 0 1 0 4.5M11.25 9.75a3.5 3.5 0 0 1 2.5 3.5"/>
+			</symbol>
+		<symbol id="i-monitor" viewBox="0 0 16 16">
+			<rect x="1.75" y="2.75" width="12.5" height="8.5" rx="1"/>
+			<path d="M5.5 13.75h5M8 11.25v2.5"/>
+			</symbol>
+		<symbol id="i-sun" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2.75"/>
+			<path d="M8 1.75v1M8 13.25v1M1.75 8h1M13.25 8h1M3.58 3.58l.7.7M11.72 11.72l.7.7M3.58 12.42l.7-.7M11.72 4.28l.7-.7"/>
+			</symbol>
+		<symbol id="i-moon" viewBox="0 0 16 16">
+			<path d="M13 9.5A5.5 5.5 0 0 1 6.5 3a5.5 5.5 0 1 0 6.5 6.5z"/>
+			</symbol>
+		<symbol id="i-caret" viewBox="0 0 16 16">
+			<path d="M4 6.5h8L8 11z" fill="currentColor" stroke="none"/>
+			</symbol>
+		<symbol id="i-paperclip" viewBox="0 0 16 16">
+			<path d="M10.5 5.5 6.2 9.8a1.5 1.5 0 0 0 2.1 2.1l4.6-4.6a3 3 0 0 0-4.2-4.2L4.1 7.7a4.5 4.5 0 0 0 6.4 6.4l3.5-3.5"/>
+			</symbol>
+		<symbol id="i-star" viewBox="0 0 16 16">
+			<path d="m8 2.2 1.8 3.7 4 .6-2.9 2.8.7 4L8 11.4l-3.6 1.9.7-4L2.2 6.5l4-.6z"/>
+			</symbol>
+		<symbol id="i-mark" viewBox="0 0 16 16">
+			<path d="M2.5 8.5 8 3l5.5 5.5M4 7.5V13h8V7.5"/>
+			<path d="M6.5 13v-3h3v3"/>
+			</symbol>
+		<symbol id="i-hammer" viewBox="0 0 16 16">
+			<path d="m9.5 6.5 4 4-1.5 1.5-4-4M3 13l4.5-4.5M6 3.5l3 3M4.5 5 6 3.5l2 2L6.5 7z"/>
+			</symbol>
+		<symbol id="i-flag" viewBox="0 0 16 16">
+			<path d="M4 14V2.5M4 3h8l-2 3 2 3H4"/>
+			</symbol>
+		<symbol id="i-chart" viewBox="0 0 16 16">
+			<path d="M3 13h10M4.5 11V7M8 11V4M11.5 11V8.5"/>
+			</symbol>
+		<symbol id="i-ruler" viewBox="0 0 16 16">
+			<path d="m2.5 10.5 8-8 3 3-8 8zM5 8l1.5 1.5M7 6l1.5 1.5M9 4l1.5 1.5"/>
+			</symbol>
+		<symbol id="i-shield" viewBox="0 0 16 16">
+			<path d="M8 2.5 3.5 4v4c0 2.8 2 4.6 4.5 5.5 2.5-.9 4.5-2.7 4.5-5.5V4z"/>
+			</symbol>
+		<symbol id="i-grid" viewBox="0 0 16 16">
+			<path d="M3 3h4v4H3zM9 3h4v4H9zM3 9h4v4H3zM9 9h4v4H9z"/>
+			</symbol>
+		<symbol id="i-timeline" viewBox="0 0 16 16">
+			<path d="M2.5 8h11M5 8V5M8 8v3M11 8V5"/>
+			<circle cx="5" cy="4" r="1"/>
+			<circle cx="8" cy="12" r="1"/>
+			<circle cx="11" cy="4" r="1"/>
+			</symbol>
+		<symbol id="i-upload" viewBox="0 0 16 16">
+			<path d="M8 11V3M4.5 6.5 8 3l3.5 3.5M3 13h10"/>
+			</symbol>
+		<symbol id="i-chevron" viewBox="0 0 16 16">
+			<path d="M4.75 6.5 8 9.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-sort" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5"/>
+			<path d="M5 9.75l3 3 3-3"/>
+			</symbol>
+		<symbol id="i-left" viewBox="0 0 16 16">
+			<path d="M10 3.75 5.75 8 10 12.25"/>
+			</symbol>
+		<symbol id="i-right" viewBox="0 0 16 16">
+			<path d="M6 3.75 10.25 8 6 12.25"/>
+			</symbol>
+		<symbol id="i-up" viewBox="0 0 16 16">
+			<path d="M8 12.75V3.5"/>
+			<path d="M4.75 6.5 8 3.25l3.25 3.25"/>
+			</symbol>
+		<symbol id="i-down" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.25"/>
+			<path d="M4.75 9.5 8 12.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-layers" viewBox="0 0 16 16">
+			<path d="M8 2.25l5.75 3L8 8.25l-5.75-3z"/>
+			<path d="M2.25 8.75 8 11.75l5.75-3"/>
+			</symbol>
+		<symbol id="i-more" viewBox="0 0 16 16">
+			<path d="M3.5 8h.01M8 8h.01M12.5 8h.01" stroke-width="2.25"/>
+			</symbol>
+		<symbol id="i-columns" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="9.5" rx="1"/>
+			<path d="M6.25 3.25v9.5M9.75 3.25v9.5"/>
+			</symbol>
+		<symbol id="i-lock" viewBox="0 0 16 16">
+			<rect x="3.25" y="7.25" width="9.5" height="6.5" rx="1"/>
+			<path d="M5.25 7.25v-2a2.75 2.75 0 0 1 5.5 0v2"/>
+			</symbol>
+		<symbol id="i-expand" viewBox="0 0 16 16">
+			<path d="M9.5 2.75h3.75V6.5M13.25 2.75 9 7M6.5 13.25H2.75V9.5M2.75 13.25 7 9"/>
+			</symbol>
+		<symbol id="i-calendar" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="10" rx="1"/>
+			<path d="M2.25 6.25h11.5M5.25 1.75v3M10.75 1.75v3"/>
+			</symbol>
+		<symbol id="i-check-circle" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-help" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M6.25 6.5a1.75 1.75 0 1 1 2.5 1.6c-.55.3-.75.6-.75 1.15M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-collapse" viewBox="0 0 16 16">
+			<path d="M13.25 3.25v9.5"/>
+			<path d="M9.5 4.75 6.25 8l3.25 3.25M6.25 8h-4"/>
+			</symbol>
+		<symbol id="i-settings" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="d-margin" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 12h14v4H5z"/>
+			<path class="l" d="M5 3h10l4 4v14H5z"/>
+			<path class="l" d="M15 3v4h4M8 8h4M8 19h7"/>
+			</symbol>
+		<symbol id="d-bill" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 2.5h14v19l-2.33-1.8-2.34 1.8-2.33-1.8-2.33 1.8-2.34-1.8L5 21.5z"/>
+			<path class="l" d="M8.5 6h7M8.5 9.5h7"/>
+			<path class="l" d="M10 6c2.75 0 4.5 1 4.5 3.5S12.75 13 10 13l5.5 5"/>
+			</symbol>
+		<symbol id="d-ceiling" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l6.5-3.5"/>
+			</symbol>
+		<symbol id="d-contract" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l-3-7"/>
+			</symbol>
+		<symbol id="d-site" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 19.5h8.5L10 9H6.5z"/>
+			<path class="l" d="M2.5 19.5h11.5M4 19.5L6.5 9h3.5l2.5 10.5"/>
+			<path class="l" d="M17.5 20.5c-2.8-3.2-4.2-5.6-4.2-8a4.2 4.2 0 0 1 8.4 0c0 2.4-1.4 4.8-4.2 8z"/>
+			<path class="l" d="M17.5 12.5h.01"/>
+			</symbol>
+		<symbol id="d-tray" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3 12h5l1.5 2.5h5L16 12h5v8H3z"/>
+			<path class="l" d="M3 12l2.5-7h13l2.5 7v8H3z"/>
+			<path class="l" d="M3 12h5l1.5 2.5h5L16 12h5"/>
+			</symbol>
+		<symbol id="d-voucher" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M14.5 6.5h6v11h-6z"/>
+			<path class="l" d="M3.5 6.5h17v11h-17z"/>
+			<path class="l" stroke-dasharray="2 2" d="M14.5 6.5v11"/>
+			<path class="l" d="M7 10.5h4M7 13.5h3"/>
+			</symbol>
+		<symbol id="d-invoice-in" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M21.5 12H14M17 9l-3 3 3 3"/>
+			</symbol>
+		<symbol id="d-invoice-out" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M14 12h7.5M18.5 9l3 3-3 3"/>
+			</symbol>
+		<symbol id="d-orders" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M5 5h14v16.5H5z"/>
+			<path class="l" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/>
+			</symbol>
+		<symbol id="d-due" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M12 12V4.5a7.5 7.5 0 0 1 7.5 7.5z"/>
+			<path class="l" d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 1 0 0-15z"/>
+			<path class="l" d="M12 7.5V12l3.5 2"/>
+			</symbol>
+		<symbol id="d-stock" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3.5 9.5h11v11h-11z"/>
+			<path class="l" d="M3.5 9.5h11v11h-11zM14.5 9.5l5-4v11l-5 4M3.5 9.5l5-4h11"/>
+			<path class="l" d="M9 9.5v11"/>
+			</symbol>
+		<symbol id="d-count" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h14v5H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M8 12h8M8 16h5"/>
+			</symbol>
+		<symbol id="d-people" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M16 5.5a3 3 0 1 1 0 6a3 3 0 1 1 0-6zM11 20v-1.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5V20z"/>
+			<path class="l" d="M9 5.5a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 1 0 0-6.5z"/>
+			<path class="l" d="M2.5 20v-1.5c0-3 3-4.5 6.5-4.5s6.5 1.5 6.5 4.5V20z"/>
+			</symbol>
+		<symbol id="d-held" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 11h14v10H5z"/>
+			<path class="l" d="M5 11h14v10H5z"/>
+			<path class="l" d="M8 11V8a4 4 0 0 1 8 0v3"/>
+			<path class="l" d="M12 15v2.5"/>
+			</symbol>
+		<symbol id="d-firm" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 21V6l7-3 7 3v15z"/>
+			<path class="l" d="M5 21V6l7-3 7 3v15H5z"/>
+			<path class="l" d="M9 10h2M13 10h2M9 14h2M13 14h2M10 21v-4h4v4"/>
+			</symbol>
+		<symbol id="d-flow" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M2.5 8h7v8h-7z"/>
+			<path class="l" d="M2.5 8h7v8h-7zM14.5 8h7v8h-7z"/>
+			<path class="l" d="M9.5 12h4M11.5 10l2 2-2 2"/>
+			</symbol>
+		<symbol id="d-record" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h4v18H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M9 3v18M12.5 8h3M12.5 11.5h3"/>
+			</symbol>
+		<symbol id="d-yours" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 9.5h5v5H6z"/>
+			<path class="l" d="M2.5 5.5h19v13h-19z"/>
+			<path class="l" d="M6 9.5h5v5H6zM13.5 10h5M13.5 14h3.5"/>
+			</symbol>
+		</svg>
+		<div class="dsx-layout">
+			<nav class="dsx-nav" aria-label="Sections">
+				<h1 class="brand">
+					<a href="index.html">Construct-O-Genie
+						<small>Design samples · synthetic data</small>
+						</a>
+					</h1>
+				<ol>
+					<li><a href="00-foundations.html"><b class="n">0</b><span class="t">Foundations</span></a></li>
+					<li><a href="01-components.html"><b class="n">1</b><span class="t">Components</span></a></li>
+					<li><a href="02-motion.html"><b class="n">2</b><span class="t">Motion</span></a></li>
+					<li><a href="03-navigation.html"><b class="n">3</b><span class="t">Navigation</span></a></li>
+					<li class="grp" role="presentation">The product</li>
+					<li><a href="04-today.html"><b class="n">4</b><span class="t">Today & Notifications</span></a></li>
+					<li><a href="05-sales.html"><b class="n">5</b><span class="t">Sales</span></a></li>
+					<li><a href="06-projects.html"><b class="n">6</b><span class="t">Projects</span></a></li>
+					<li><a href="07-buying.html"><b class="n">7</b><span class="t">Buying</span></a></li>
+					<li><a href="08-site.html"><b class="n">8</b><span class="t">Site</span></a></li>
+					<li><a href="09-approvals-money.html"><b class="n">9</b><span class="t">Approvals, Tasks & Money</span></a></li>
+					<li><a href="#s10" aria-current="page"><b class="n">10</b><span class="t">Portals</span></a></li>
+					<li><a href="11-settings.html"><b class="n">11</b><span class="t">Reports, Settings & operator</span></a></li>
+					<li class="grp" role="presentation">The record</li>
+					<li><a href="12-states-roles.html"><b class="n">12</b><span class="t">States & roles</span></a></li>
+					<li><a href="13-decisions.html"><b class="n">13</b><span class="t">Decisions</span></a></li>
+					<li><a href="14-demo.html"><b class="n">14</b><span class="t">The five-minute demo</span></a></li>
+					</ol>
+				<div class="dsx-theme">
+					<fieldset>
+						<legend>Theme</legend>
+						<div class="seg" role="radiogroup" aria-label="Colour theme"> <label><input type="radio" name="theme"
+									 value="system" checked><span><svg class="i sm" aria-hidden="true"><use href="#i-monitor"/>
+								</svg>System</span></label> <label><input type="radio" name="theme" value="light"><span><svg class="i sm"
+									 aria-hidden="true"><use href="#i-sun"/></svg>Light</span></label> <label><input type="radio" name="theme"
+									 value="dark"><span><svg class="i sm" aria-hidden="true"><use href="#i-moon"/></svg>Dark</span>
+								</label> </div>
+						<p>Not remembered. Reload and it follows your system again.</p>
+						</fieldset>
+					</div>
+				</nav>
+			<main class="dsx-main" id="main">
+				<section class="dsx-section" id="s10" aria-labelledby="h10">
+					<h2 id="h10"><small>10</small>Portals</h2>
+					<p class="lede">
+							A subcontractor on a phone at a site; a building owner on a tablet between meetings. Neither sees an internal
+							code. A deduction figure appears in one place only — the tax taken from a vendor’s own payment, which the vendor
+							reconciles against Form 26AS. The two logins are the seed’s: Bidisha Sen at Prakashvahini Electrical Contracts,
+							and Elizabeth Kuriakose at Anuvanshik Life Sciences, linked to <span class="nowrap">ANU-01</span>.</p>
+					<div class="dsx-sample">
+						<h3>Vendor portal — Orders · Bills · Send a bill · Payments</h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Your vendor accepts the order and sends the bill here, so you stop chasing PDFs around WhatsApp.</p>
+						<div class="dsx-grid phones">
+							<div class="dsx-frame phone" data-app="vendor">
+								<div class="bar"><i></i><i></i><i></i><span class="lbl">Orders</span><span class="meta">vendor portal
+										</span></div>
+								<header class="topbar" data-theme="dark" data-app="vendor">
+										<a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search your orders and bills"
+												 placeholder="Search your orders and bills ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="Whose portal this is">Bhitarang Interiors
+										</span><button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Bidisha Sen, Admin"><span class="avatar">B</span>
+									</button></header>
+								<header class="p-head">
+									<div>
+										<b>Prakashvahini Electrical Contracts</b>
+										<small>Orders from Bhitarang Interiors</small>
+										</div>
+									</header>
+								<div class="p-body">
+									<h4 class="pt ">Your orders</h4>
+									<p class="ps">1 needs your answer</p>
+									<div data-hero>
+										<ul class="card-list" style="list-style:none;margin:0;padding:0">
+											<li class="card">
+												<div class="top">
+													<div>
+														<b><span class="nowrap">PO-0019</span></b>
+														<small>raised <span class="nowrap">2026-09-14</span> · Bhitarang Interiors</small>
+														</div>
+													<span class="pill ok">Approved</span></div>
+												<div class="amt"><span class="num">₹41,07,065.76</span>
+													<small>before GST · GST ₹7,39,271.84 · total ₹48,46,337.60</small>
+													</div>
+												<div class="row"><button class="btn primary lg" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>
+													Accept</button><button class="btn lg" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-x"/></svg></span>Decline</button>
+													</div>
+												</li>
+											<li class="card">
+												<div class="top">
+													<div>
+														<b>PO-<span class="nowrap">ANU-MEP-01</span></b>
+														<small>raised <span class="nowrap">2026-09-14</span> · Bhitarang Interiors</small>
+														</div>
+													<span class="pill ok">Approved</span></div>
+												<div class="amt"><span class="num">₹18,74,350.00</span>
+													<small>before GST · GST ₹3,37,383.00 · total ₹22,11,733.00</small>
+													</div>
+												<div class="row"><span class="pill ok">Accepted</span><a href="#" class="btn ghost">See lines
+														</a></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								<nav class="p-nav" aria-label="Portal"><a href="#" aria-current="page"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>Orders</a>
+									<a href="#" ><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bill"/></svg>
+									</span>Bills</a><a href="#" ><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-rupee"/></svg></span>Payments</a><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-doc"/></svg></span>Documents</a>
+									</nav>
+								</div>
+							<div class="dsx-frame phone" data-app="vendor">
+								<div class="bar"><i></i><i></i><i></i><span class="lbl">Bills</span><span class="meta">vendor portal
+										</span></div>
+								<header class="topbar" data-theme="dark" data-app="vendor">
+										<a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search your orders and bills"
+												 placeholder="Search your orders and bills ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="Whose portal this is">Bhitarang Interiors
+										</span><button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Bidisha Sen, Admin"><span class="avatar">B</span>
+									</button></header>
+								<header class="p-head">
+									<div>
+										<b>Prakashvahini Electrical Contracts</b>
+										<small>Bhitarang Interiors</small>
+										</div>
+									</header>
+								<div class="p-body">
+									<h4 class="pt ">Your bills</h4>
+									<p class="ps">2 sent this quarter</p>
+									<div data-hero>
+										<ul class="card-list" style="list-style:none;margin:0;padding:0">
+											<li class="card">
+												<div class="top">
+													<div>
+														<b><span class="nowrap">PEC-RA-01</span></b>
+														<small>sent <span class="nowrap">2026-07-31</span> · PO-<span class="nowrap">ANU-MEP-01</span></small>
+														</div>
+													<span class="pill ok">Paid</span></div>
+												<div class="amt"><span class="num">₹7,64,964.50</span>
+													<small>what you billed · paid <span class="nowrap">2026-08-12</span></small>
+													</div>
+												<p>Running bill 1 — LT panel and cable tray, level 1</p>
+												<div class="u-hold"></div>
+												</li>
+											<li class="card">
+												<div class="top">
+													<div>
+														<b><span class="nowrap">PEC-RA-02</span></b>
+														<small>sent <span class="nowrap">2026-09-08</span> · PO-<span class="nowrap">ANU-MEP-01</span></small>
+														</div>
+													<span class="pill ok">Received</span></div>
+												<div class="amt"><span class="num">₹6,04,667.40</span>
+													<small>what you billed · due <span class="nowrap">2026-09-18</span></small>
+													</div>
+												<p>Running bill 2 — DB wiring, level 2</p>
+												<div class="u-hold"></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								<nav class="p-nav" aria-label="Portal"><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>Orders</a>
+									<a href="#" aria-current="page"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-bill"/></svg></span>Bills</a><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-rupee"/></svg></span>Payments</a>
+									<a href="#" ><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+									</span>Documents</a></nav>
+								</div>
+							<div class="dsx-frame phone" data-app="vendor">
+								<div class="bar"><i></i><i></i><i></i><span class="lbl">Send a bill</span>
+									<span class="meta">vendor portal</span></div>
+								<header class="topbar" data-theme="dark" data-app="vendor">
+										<a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search your orders and bills"
+												 placeholder="Search your orders and bills ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="Whose portal this is">Bhitarang Interiors
+										</span><button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Bidisha Sen, Admin"><span class="avatar">B</span>
+									</button></header>
+								<header class="p-head">
+									<div>
+										<b>Prakashvahini Electrical Contracts</b>
+										<small>Bhitarang Interiors</small>
+										</div>
+									</header>
+								<div class="p-body">
+									<h4 class="pt ">Send a bill</h4>
+									<p class="ps">against an accepted order</p>
+									<div data-hero>
+										<section class="card ">
+											<div class="card-b">
+												<form onsubmit="return false">
+													<div class="field"><label for="vp-order">For order</label>
+															<select id="vp-order" name="vp-order">
+														<option value="">Choose…</option>
+														<option value="PO-ANU-MEP-01" selected>PO-ANU-MEP-01</option>
+														</select></div>
+													<div class="field"><label for="vp-bill">Your bill number<span class="req"
+																 aria-hidden="true">*</span></label>
+															<input id="vp-bill" name="vp-bill" type="text" value="PEC-RA-03"  required  ></div>
+													<div class="field"><label for="vp-amt">Amount<span class="req" aria-hidden="true">*</span>
+															</label>
+														<div class="money-in">
+																<input id="vp-amt" name="vp-amt" type="text"  placeholder="0.00" required  inputmode="decimal"></div>
+														<span class="hint">Rupees, up to two decimals.</span></div>
+													<div class="stats n2" style="margin:0">
+														<div class="field"><label for="vp-from">From</label>
+																<input id="vp-from" type="date" value="2026-09-01"></div>
+														<div class="field"><label for="vp-to">To</label>
+																<input id="vp-to" type="date" value="2026-09-30"></div>
+														</div>
+													<div class="field"><label for="vp-narr">What this bill covers</label>
+														<textarea id="vp-narr" name="vp-narr" rows="2"></textarea>
+														</div>
+													<div class="actions"><button class="btn primary lg" type="submit" style="width:100%">Send bill
+															</button></div>
+													</form>
+												</div>
+											</section>
+										</div>
+									</div>
+								<nav class="p-nav" aria-label="Portal"><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>Orders</a>
+									<a href="#" aria-current="page"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-bill"/></svg></span>Bills</a><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-rupee"/></svg></span>Payments</a>
+									<a href="#" ><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+									</span>Documents</a></nav>
+								</div>
+							<div class="dsx-frame phone" data-app="vendor">
+								<div class="bar"><i></i><i></i><i></i><span class="lbl">Payments</span><span class="meta">vendor portal
+										</span></div>
+								<header class="topbar" data-theme="dark" data-app="vendor">
+										<a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search your orders and bills"
+												 placeholder="Search your orders and bills ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="Whose portal this is">Bhitarang Interiors
+										</span><button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Bidisha Sen, Admin"><span class="avatar">B</span>
+									</button></header>
+								<header class="p-head">
+									<div>
+										<b>Prakashvahini Electrical Contracts</b>
+										<small>Bhitarang Interiors</small>
+										</div>
+									</header>
+								<div class="p-body">
+									<h4 class="pt ">Payments</h4>
+									<p class="ps">what reached you, and what was held back</p>
+									<div data-hero>
+										<ul class="card-list" style="list-style:none;margin:0;padding:0">
+											<li class="card">
+												<div class="top">
+													<div>
+														<b><span class="nowrap">PEC-RA-01</span></b>
+														<small><span class="nowrap">2026-08-12</span> · NEFT <span class="nowrap">PEC-RA-01</span></small>
+														</div>
+													<span class="pill ok">Paid</span></div>
+												<div class="amt"><span class="num">₹7,13,750.77</span>
+													<small>reached you</small>
+													</div>
+												<div class="card-b tight">
+													<dl class="kv">
+														<dt>Billed</dt>
+														<dd>₹7,64,964.50</dd>
+														<dt>Tax deducted</dt>
+														<dd>₹12,965.50 · 194C at 2% <span class="pill">Provisional</span></dd>
+														<dt>Retention withheld</dt>
+														<dd>₹38,248.23</dd>
+														</dl>
+													</div>
+												</li>
+											</ul>
+										</div>
+									<div class="pager">
+										<p class="count">Total <b>1</b> payments · 50 per page · <b>1–1</b></p>
+										<nav class="pages" aria-label="Pages">
+												<button class="pg" type="button" disabled aria-label="Previous page"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+											</button><span class="sr-only">Page 1 of 1</span>
+												<button class="pg" type="button" disabled aria-label="Next page"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-right"/></svg></span>
+											</button></nav>
+										</div>
+									</div>
+								<nav class="p-nav" aria-label="Portal"><a href="#" ><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>Orders</a>
+									<a href="#" ><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bill"/></svg>
+									</span>Bills</a><a href="#" aria-current="page"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-rupee"/></svg></span>Payments</a>
+									<a href="#" ><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+									</span>Documents</a></nav>
+								</div>
+							</div>
+						</div>
+					<aside class="dsx-note">
+						<strong class="h">Design note</strong>
+						<p>
+								A bill that was sent back says why, in the words the finance person typed, with one button to fix it — no bill
+								on the seed has been sent back, so the state is drawn on part 12. Every control is at least 46px tall and every
+								input 16px, so a phone keyboard does not zoom. The vendor signs in with a link — no app, no password.</p>
+						</aside>
+					<div class="dsx-sample">
+						<h3>Client portal — progress, variations, documents and billing</h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Your client signs off the variation in writing before you build it, so the extra work is agreed and not argued
+								about at the end.</p>
+						<div class="dsx-frame tablet" data-app="client">
+							<div class="bar"><i></i><i></i><i></i><span class="lbl">Progress</span><span class="meta">client portal
+									</span></div>
+							<header class="topbar" data-theme="dark" data-app="client">
+									<a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+									<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+									<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+								</a>
+								<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-search"/></svg></span></span>
+										<input type="search" aria-label="Search in your project" placeholder="Search in your project ( / )">
+										<button class="search-scope" type="button" aria-label="Choose where to search">
+										<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+									</span></button></div>
+								<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+									<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+								<span class="spacer"></span><span class="tenant" title="Whose portal this is">Bhitarang Interiors
+									</span><button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+									<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+								</span><span class="badge important" aria-hidden="true">3</span></button>
+								<button class="me" type="button" aria-haspopup="menu"
+										 aria-label="Account menu for Elizabeth Kuriakose, Admin"><span class="avatar">E</span>
+								</button></header>
+							<header class="p-head">
+								<div>
+									<b>Anuvanshik Life Sciences</b>
+									<small>R&amp;amp;D laboratory interiors, Genome Valley, Hyderabad · by Bhitarang Interiors</small>
+									</div>
+								<nav class="ptabs" aria-label="Project"><a href="#" aria-current="page">Progress</a>
+									<a href="#" >Variations</a><a href="#" >Documents</a><a href="#" >Billing</a>
+									</nav>
+								</header>
+							<div class="p-body">
+								<header class="pgh">
+									<div class="pgh-t">
+										<h4 class="pt">Progress</h4>
+										</div>
+									<p class="ps">Week 38 · 5 site reports this fortnight</p>
+									</header>
+								<div data-hero>
+									<section class="hero " aria-label="Milestones reached"><span class="eyebrow">Milestones reached
+											</span>
+										<div class="v">0<small>%</small></div>
+										<p class="p">of the contract — none of the four stages is marked reached yet; <b>On signing</b> is next, and
+												releases 20%.</p>
+										<div class="hs"></div>
+										</section>
+									</div>
+								<section class="card ">
+									<div class="card-h">
+										<h5 class="ct">Milestones
+											<span class="sub">0% reached</span>
+											</h5>
+										</div>
+									<ul class="mstones">
+										<li class="now"><span class="tick" aria-hidden="true"></span>
+											<div><b>On signing</b><small>Agreement signed by both parties · next</small></div>
+											<div class="num">20%
+												<small>of contract</small>
+												</div>
+											</li>
+										<li class=""><span class="tick" aria-hidden="true"></span>
+											<div><b>GFC drawings issued</b><small>Drawings released for construction</small></div>
+											<div class="num">30%
+												<small>of contract</small>
+												</div>
+											</li>
+										<li class=""><span class="tick" aria-hidden="true"></span>
+											<div><b>Substantial completion</b><small>Site handed back to the client</small></div>
+											<div class="num">35%
+												<small>of contract</small>
+												</div>
+											</li>
+										<li class=""><span class="tick" aria-hidden="true"></span>
+											<div><b>Snag closure</b><small>Snag list signed off</small></div>
+											<div class="num">15%
+												<small>of contract</small>
+												</div>
+											</li>
+										</ul>
+									</section>
+								<section class="card ">
+									<div class="card-h">
+										<h5 class="ct">Needs your sign-off
+											<span class="sub">1 variation</span>
+											</h5>
+										</div>
+									<div class="variation">
+										<div class="vh"><b><span class="nowrap">CO-03</span> — Additional scope, mep</b>
+											<span class="pill waiting">Waiting for you</span></div>
+										<div class="num">₹47,200.00
+											<small>added to your contract value</small>
+											</div>
+										<form style="margin-top:var(--space-150)" onsubmit="return false">
+											<div class="field"><label for="sign-CO-03">Your name, as on the agreement</label>
+												<input id="sign-CO-03" name="sign-CO-03" type="text"  placeholder="Elizabeth Kuriakose"   ></div>
+											<div class="actions"><button class="btn primary lg" type="submit"><span class="ico">
+													<svg class="i" aria-hidden="true"><use href="#i-pen"/></svg></span>Approve
+													<span class="nowrap">CO-03</span></button><button class="btn lg" type="button">Decline
+													</button></div>
+											<p class="muted" style="margin-top:var(--space-100);font-size:var(--font-size-body-small)">
+													A decision is final — it goes straight into the contract value.</p>
+											</form>
+										</div>
+									</section>
+								<section class="card ">
+									<div class="card-h">
+										<h5 class="ct">Decided</h5>
+										</div>
+									<div class="tbl-wrap">
+										<table class="tbl">
+											<thead>
+												<tr>
+													<th>Variation</th>
+													<th class="num">Amount</th>
+													<th>Decision</th>
+													<th class="num">When</th>
+													</tr>
+												</thead>
+											<tbody>
+												<tr>
+													<td><span class="nowrap">CO-01</span>
+														<span class="sub">Omission — client removed the terrace pergola</span>
+														</td>
+													<td class="num"><span class="num">-₹18,500.00</span></td>
+													<td><span class="pill ok">You signed off</span></td>
+													<td class="num"><span class="nowrap">2026-09-14</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									<div class="pager">
+										<p class="count">Total <b>1</b> decided · 50 per page · <b>1–1</b></p>
+										<nav class="pages" aria-label="Pages">
+												<button class="pg" type="button" disabled aria-label="Previous page"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+											</button><span class="sr-only">Page 1 of 1</span>
+												<button class="pg" type="button" disabled aria-label="Next page"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-right"/></svg></span>
+											</button></nav>
+										</div>
+									</section>
+								<section class="card ">
+									<div class="card-h">
+										<h5 class="ct">Documents</h5>
+										</div>
+									<ul class="docs">
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>Agreement, signed by both parties</b><small>PDF · 102 KB ·
+												<span class="nowrap">2026-09-14</span></small>
+											</div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>Commercial proposal, rev C</b><small>PDF · 95 KB · <span class="nowrap">2026-09-14</span></small>
+											</div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>GFC drawing set A-101 to A-118</b><small>PDF · 99 KB · <span class="nowrap">2026-09-14</span></small>
+											</div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>Reflected ceiling plan, level 2</b><small>DWG · 100 KB ·
+												<span class="nowrap">2026-09-14</span></small>
+											</div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>Material selections, joinery laminates</b><small>PDF · 106 KB ·
+												<span class="nowrap">2026-09-14</span></small>
+											</div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										<li><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg>
+											</span>
+											<div><b>Daily report, week 36</b><small>PDF · 90 KB · <span class="nowrap">2026-09-14</span></small></div>
+											<a href="#" class="btn"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-download"/></svg></span>Download</a></li>
+										</ul>
+									</section>
+								<section class="card ">
+									<div class="card-h">
+										<h5 class="ct">Billing
+											<span class="sub">invoices from Bhitarang Interiors, with what you have paid</span>
+											</h5>
+										</div>
+									<div class="card-b">
+										<dl class="kv">
+											<dt>Invoiced</dt>
+											<dd>₹1,31,41,518.00 <span class="muted">with GST</span></dd>
+											<dt>Paid</dt>
+											<dd>₹82,24,065.00 <span class="muted">received by your contractor</span></dd>
+											<dt>Due</dt>
+											<dd>₹49,17,453.00 <span class="muted">still to pay</span></dd>
+											</dl>
+										</div>
+									<div class="tbl-wrap">
+										<table class="tbl">
+											<thead>
+												<tr>
+													<th>Invoice</th>
+													<th class="num">Invoiced</th>
+													<th class="num">Paid</th>
+													<th class="num">Due</th>
+													</tr>
+												</thead>
+											<tbody>
+												<tr>
+													<td><span class="nowrap">INV/2026-27/0002</span>
+														<span class="sub"><span class="nowrap">2026-07-30</span> · IGST ₹8,75,250.00
+																<span class="pill warn">Provisional</span></span>
+														</td>
+													<td class="num">₹57,37,750.00</td>
+													<td class="num">₹57,37,750.00</td>
+													<td class="num">₹0.00</td>
+													</tr>
+												<tr>
+													<td><span class="nowrap">INV/2026-27/0004</span>
+														<span class="sub"><span class="nowrap">2026-09-05</span> · IGST ₹11,29,388.40
+																<span class="pill warn">Provisional</span></span>
+														</td>
+													<td class="num">₹74,03,768.00</td>
+													<td class="num">₹24,86,315.00</td>
+													<td class="num">₹49,17,453.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									<p class="skel-note muted">Draft: provisional rates — the GST rate is still to be confirmed.</p>
+									</section>
+								</div>
+							</div>
+						</div>
+					<aside class="dsx-note">
+						<strong class="h">Design note</strong>
+						<p><span class="nowrap">CO-01</span> is the credit: <code>-₹18,500.00</code>, sign outside the symbol, same ink,
+								and the sentence underneath says what it means. Drafts are never shown to a client —
+								<span class="nowrap">CO-02</span>, at nil effect and not sent, is not here.</p>
+						</aside>
+					</section>
+				<nav class="dsx-pager" aria-label="Across the set">
+						<a class="pg-prev" href="09-approvals-money.html" rel="prev"><small>Previous</small>
+					<b>9 · Approvals, Tasks & Money</b></a><a class="pg-up" href="index.html">All 15 parts</a>
+					<a class="pg-next" href="11-settings.html" rel="next"><small>Next</small><b>11 · Reports, Settings & operator
+						</b></a></nav>
+				</main>
+			</div>
+		<script src="design.js"></script>
+		</body>
+	</html>

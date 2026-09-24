@@ -1,0 +1,10 @@
+.git
+.github
+docs/
+docker/
+docker-compose.yml
+e2e/
+tests/
+*.log
+*.zip
+*.md

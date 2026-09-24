@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>8 · Site — Construct-O-Genie design samples</title>
+		<meta name="description"
+				 content="Design samples for Construct-O-Genie — a multi-tenant ERP for Indian interior fit-out contractors.
+					Synthetic data throughout.">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+		<link rel="stylesheet" href="tokens.css">
+		<link rel="stylesheet" href="design.css">
+		</head>
+	<body> <a class="dsx-skip" href="#s8">Skip to content</a>
+			<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="i-home" viewBox="0 0 16 16">
+			<path d="M2.75 7.25 8 2.75l5.25 4.5v6H2.75z"/>
+			<path d="M6.5 13.25v-3.5h3v3.5"/>
+			</symbol>
+		<symbol id="i-sales" viewBox="0 0 16 16">
+			<path d="M2.75 11.25 6.25 7.75l2.5 2.5 4.5-4.5"/>
+			<path d="M10.25 5.75h3v3"/>
+			</symbol>
+		<symbol id="i-projects" viewBox="0 0 16 16">
+			<path d="M2.75 4.25a1 1 0 0 1 1-1h2.5l1.5 1.5h4.5a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1z"/>
+			</symbol>
+		<symbol id="i-cart" viewBox="0 0 16 16">
+			<path d="M1.75 2.75h1.5l1.5 7h7l1.25-5H4"/>
+			<path d="M6 12.75h.01M11 12.75h.01" stroke-width="2"/>
+			</symbol>
+		<symbol id="i-site" viewBox="0 0 16 16">
+			<path d="M2.25 13.25h11.5"/>
+			<path d="M4.25 13.25v-7l3.75-3 3.75 3v7"/>
+			<path d="M6.5 13.25v-3h3v3"/>
+			</symbol>
+		<symbol id="i-check-sq" viewBox="0 0 16 16">
+			<rect x="2.75" y="2.75" width="10.5" height="10.5" rx="1.5"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-rupee" viewBox="0 0 16 16">
+			<path d="M4.75 2.75h6.5M4.75 5.75h6.5"/>
+			<path d="M4.75 2.75c3.25 0 4.5 1.25 4.5 2.75s-1.25 2.75-4.5 2.75l4.5 5"/>
+			</symbol>
+		<symbol id="i-cog" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="i-menu" viewBox="0 0 16 16">
+			<path d="M2.75 4.25h10.5M2.75 8h10.5M2.75 11.75h10.5"/>
+			</symbol>
+		<symbol id="i-search" viewBox="0 0 16 16">
+			<circle cx="7" cy="7" r="4.25"/>
+			<path d="m10.25 10.25 3 3"/>
+			</symbol>
+		<symbol id="i-bell" viewBox="0 0 16 16">
+			<path d="M4.25 11V7.25a3.75 3.75 0 0 1 7.5 0V11l1 1.25H3.25z"/>
+			<path d="M6.75 14h2.5"/>
+			</symbol>
+		<symbol id="i-plus" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5M3.25 8h9.5"/>
+			</symbol>
+		<symbol id="i-download" viewBox="0 0 16 16">
+			<path d="M8 2.75v7"/>
+			<path d="M5 7l3 3 3-3"/>
+			<path d="M3.25 13.25h9.5"/>
+			</symbol>
+		<symbol id="i-link" viewBox="0 0 16 16">
+			<path d="M6.75 9.25a2.5 2.5 0 0 0 3.5 0l2-2a2.5 2.5 0 0 0-3.5-3.5l-.75.75"/>
+			<path d="M9.25 6.75a2.5 2.5 0 0 0-3.5 0l-2 2a2.5 2.5 0 0 0 3.5 3.5l.75-.75"/>
+			</symbol>
+		<symbol id="i-x" viewBox="0 0 16 16">
+			<path d="m4.25 4.25 7.5 7.5M11.75 4.25l-7.5 7.5"/>
+			</symbol>
+		<symbol id="i-check" viewBox="0 0 16 16">
+			<path d="M3.25 8.5l3 3 6.5-7"/>
+			</symbol>
+		<symbol id="i-alert" viewBox="0 0 16 16">
+			<path d="M8 2.5l6 10.75H2z"/>
+			<path d="M8 6.5v2.75M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-info" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 7.25v4M8 4.75h.01"/>
+			</symbol>
+		<symbol id="i-refresh" viewBox="0 0 16 16">
+			<path d="M12.75 8a4.75 4.75 0 0 1-8.4 3.05M3.25 8a4.75 4.75 0 0 1 8.4-3.05"/>
+			<path d="M11.75 2.25V5H9M4.25 13.75V11H7"/>
+			</symbol>
+		<symbol id="i-copy" viewBox="0 0 16 16">
+			<rect x="5.75" y="5.75" width="7.5" height="7.5" rx="1"/>
+			<path d="M3.25 10.25v-6.5a1 1 0 0 1 1-1h6.5"/>
+			</symbol>
+		<symbol id="i-pen" viewBox="0 0 16 16">
+			<path d="M3 13l.75-3L10.5 3.25l2.25 2.25L6 12.25z"/>
+			<path d="M9 4.75l2.25 2.25"/>
+			</symbol>
+		<symbol id="i-clock" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M8 4.75V8l2.25 1.5"/>
+			</symbol>
+		<symbol id="i-inbox" viewBox="0 0 16 16">
+			<path d="M2.75 8.75h3l1 1.5h2.5l1-1.5h3"/>
+			<path d="M2.75 8.75l1.5-5.5h7.5l1.5 5.5v4.5H2.75z"/>
+			</symbol>
+		<symbol id="i-bill" viewBox="0 0 16 16">
+			<path d="M3.75 2.25h8.5v11.5l-2-1.25-2.25 1.25-2.25-1.25-2 1.25z"/>
+			<path d="M6 5.75h4M6 8.25h4"/>
+			</symbol>
+		<symbol id="i-doc" viewBox="0 0 16 16">
+			<path d="M4.25 1.75H9l2.75 2.75v9.75h-7.5z"/>
+			<path d="M9 1.75V4.5h2.75M6.25 8.25h3.5M6.25 10.75h3.5"/>
+			</symbol>
+		<symbol id="i-users" viewBox="0 0 16 16">
+			<circle cx="6" cy="5.25" r="2.25"/>
+			<path d="M2.25 13.25a3.75 3.75 0 0 1 7.5 0"/>
+			<path d="M10.25 3a2.25 2.25 0 0 1 0 4.5M11.25 9.75a3.5 3.5 0 0 1 2.5 3.5"/>
+			</symbol>
+		<symbol id="i-monitor" viewBox="0 0 16 16">
+			<rect x="1.75" y="2.75" width="12.5" height="8.5" rx="1"/>
+			<path d="M5.5 13.75h5M8 11.25v2.5"/>
+			</symbol>
+		<symbol id="i-sun" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2.75"/>
+			<path d="M8 1.75v1M8 13.25v1M1.75 8h1M13.25 8h1M3.58 3.58l.7.7M11.72 11.72l.7.7M3.58 12.42l.7-.7M11.72 4.28l.7-.7"/>
+			</symbol>
+		<symbol id="i-moon" viewBox="0 0 16 16">
+			<path d="M13 9.5A5.5 5.5 0 0 1 6.5 3a5.5 5.5 0 1 0 6.5 6.5z"/>
+			</symbol>
+		<symbol id="i-caret" viewBox="0 0 16 16">
+			<path d="M4 6.5h8L8 11z" fill="currentColor" stroke="none"/>
+			</symbol>
+		<symbol id="i-paperclip" viewBox="0 0 16 16">
+			<path d="M10.5 5.5 6.2 9.8a1.5 1.5 0 0 0 2.1 2.1l4.6-4.6a3 3 0 0 0-4.2-4.2L4.1 7.7a4.5 4.5 0 0 0 6.4 6.4l3.5-3.5"/>
+			</symbol>
+		<symbol id="i-star" viewBox="0 0 16 16">
+			<path d="m8 2.2 1.8 3.7 4 .6-2.9 2.8.7 4L8 11.4l-3.6 1.9.7-4L2.2 6.5l4-.6z"/>
+			</symbol>
+		<symbol id="i-mark" viewBox="0 0 16 16">
+			<path d="M2.5 8.5 8 3l5.5 5.5M4 7.5V13h8V7.5"/>
+			<path d="M6.5 13v-3h3v3"/>
+			</symbol>
+		<symbol id="i-hammer" viewBox="0 0 16 16">
+			<path d="m9.5 6.5 4 4-1.5 1.5-4-4M3 13l4.5-4.5M6 3.5l3 3M4.5 5 6 3.5l2 2L6.5 7z"/>
+			</symbol>
+		<symbol id="i-flag" viewBox="0 0 16 16">
+			<path d="M4 14V2.5M4 3h8l-2 3 2 3H4"/>
+			</symbol>
+		<symbol id="i-chart" viewBox="0 0 16 16">
+			<path d="M3 13h10M4.5 11V7M8 11V4M11.5 11V8.5"/>
+			</symbol>
+		<symbol id="i-ruler" viewBox="0 0 16 16">
+			<path d="m2.5 10.5 8-8 3 3-8 8zM5 8l1.5 1.5M7 6l1.5 1.5M9 4l1.5 1.5"/>
+			</symbol>
+		<symbol id="i-shield" viewBox="0 0 16 16">
+			<path d="M8 2.5 3.5 4v4c0 2.8 2 4.6 4.5 5.5 2.5-.9 4.5-2.7 4.5-5.5V4z"/>
+			</symbol>
+		<symbol id="i-grid" viewBox="0 0 16 16">
+			<path d="M3 3h4v4H3zM9 3h4v4H9zM3 9h4v4H3zM9 9h4v4H9z"/>
+			</symbol>
+		<symbol id="i-timeline" viewBox="0 0 16 16">
+			<path d="M2.5 8h11M5 8V5M8 8v3M11 8V5"/>
+			<circle cx="5" cy="4" r="1"/>
+			<circle cx="8" cy="12" r="1"/>
+			<circle cx="11" cy="4" r="1"/>
+			</symbol>
+		<symbol id="i-upload" viewBox="0 0 16 16">
+			<path d="M8 11V3M4.5 6.5 8 3l3.5 3.5M3 13h10"/>
+			</symbol>
+		<symbol id="i-chevron" viewBox="0 0 16 16">
+			<path d="M4.75 6.5 8 9.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-sort" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.5"/>
+			<path d="M5 9.75l3 3 3-3"/>
+			</symbol>
+		<symbol id="i-left" viewBox="0 0 16 16">
+			<path d="M10 3.75 5.75 8 10 12.25"/>
+			</symbol>
+		<symbol id="i-right" viewBox="0 0 16 16">
+			<path d="M6 3.75 10.25 8 6 12.25"/>
+			</symbol>
+		<symbol id="i-up" viewBox="0 0 16 16">
+			<path d="M8 12.75V3.5"/>
+			<path d="M4.75 6.5 8 3.25l3.25 3.25"/>
+			</symbol>
+		<symbol id="i-down" viewBox="0 0 16 16">
+			<path d="M8 3.25v9.25"/>
+			<path d="M4.75 9.5 8 12.75l3.25-3.25"/>
+			</symbol>
+		<symbol id="i-layers" viewBox="0 0 16 16">
+			<path d="M8 2.25l5.75 3L8 8.25l-5.75-3z"/>
+			<path d="M2.25 8.75 8 11.75l5.75-3"/>
+			</symbol>
+		<symbol id="i-more" viewBox="0 0 16 16">
+			<path d="M3.5 8h.01M8 8h.01M12.5 8h.01" stroke-width="2.25"/>
+			</symbol>
+		<symbol id="i-columns" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="9.5" rx="1"/>
+			<path d="M6.25 3.25v9.5M9.75 3.25v9.5"/>
+			</symbol>
+		<symbol id="i-lock" viewBox="0 0 16 16">
+			<rect x="3.25" y="7.25" width="9.5" height="6.5" rx="1"/>
+			<path d="M5.25 7.25v-2a2.75 2.75 0 0 1 5.5 0v2"/>
+			</symbol>
+		<symbol id="i-expand" viewBox="0 0 16 16">
+			<path d="M9.5 2.75h3.75V6.5M13.25 2.75 9 7M6.5 13.25H2.75V9.5M2.75 13.25 7 9"/>
+			</symbol>
+		<symbol id="i-calendar" viewBox="0 0 16 16">
+			<rect x="2.25" y="3.25" width="11.5" height="10" rx="1"/>
+			<path d="M2.25 6.25h11.5M5.25 1.75v3M10.75 1.75v3"/>
+			</symbol>
+		<symbol id="i-check-circle" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M5.5 8.25 7.25 10l3.25-3.5"/>
+			</symbol>
+		<symbol id="i-help" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="5.75"/>
+			<path d="M6.25 6.5a1.75 1.75 0 1 1 2.5 1.6c-.55.3-.75.6-.75 1.15M8 11.5h.01"/>
+			</symbol>
+		<symbol id="i-collapse" viewBox="0 0 16 16">
+			<path d="M13.25 3.25v9.5"/>
+			<path d="M9.5 4.75 6.25 8l3.25 3.25M6.25 8h-4"/>
+			</symbol>
+		<symbol id="i-settings" viewBox="0 0 16 16">
+			<circle cx="8" cy="8" r="2"/>
+			<path
+					 d="M8 1.75v1.75M8 12.5v1.75M1.75 8H3.5M12.5 8h1.75M3.58 3.58 4.82 4.82M11.18 11.18l1.24 1.24M3.58
+						12.42l1.24-1.24M11.18 4.82l1.24-1.24"/>
+			<circle cx="8" cy="8" r="4.5"/>
+			</symbol>
+		<symbol id="d-margin" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 12h14v4H5z"/>
+			<path class="l" d="M5 3h10l4 4v14H5z"/>
+			<path class="l" d="M15 3v4h4M8 8h4M8 19h7"/>
+			</symbol>
+		<symbol id="d-bill" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 2.5h14v19l-2.33-1.8-2.34 1.8-2.33-1.8-2.33 1.8-2.34-1.8L5 21.5z"/>
+			<path class="l" d="M8.5 6h7M8.5 9.5h7"/>
+			<path class="l" d="M10 6c2.75 0 4.5 1 4.5 3.5S12.75 13 10 13l5.5 5"/>
+			</symbol>
+		<symbol id="d-ceiling" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l6.5-3.5"/>
+			</symbol>
+		<symbol id="d-contract" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 17a6 6 0 0 1 12 0z"/>
+			<path class="l" d="M3.5 17a8.5 8.5 0 0 1 17 0M3.5 17h17"/>
+			<path class="l" d="M18 11l1.6-1.6"/>
+			<path class="l" d="M12 17l-3-7"/>
+			</symbol>
+		<symbol id="d-site" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 19.5h8.5L10 9H6.5z"/>
+			<path class="l" d="M2.5 19.5h11.5M4 19.5L6.5 9h3.5l2.5 10.5"/>
+			<path class="l" d="M17.5 20.5c-2.8-3.2-4.2-5.6-4.2-8a4.2 4.2 0 0 1 8.4 0c0 2.4-1.4 4.8-4.2 8z"/>
+			<path class="l" d="M17.5 12.5h.01"/>
+			</symbol>
+		<symbol id="d-tray" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3 12h5l1.5 2.5h5L16 12h5v8H3z"/>
+			<path class="l" d="M3 12l2.5-7h13l2.5 7v8H3z"/>
+			<path class="l" d="M3 12h5l1.5 2.5h5L16 12h5"/>
+			</symbol>
+		<symbol id="d-voucher" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M14.5 6.5h6v11h-6z"/>
+			<path class="l" d="M3.5 6.5h17v11h-17z"/>
+			<path class="l" stroke-dasharray="2 2" d="M14.5 6.5v11"/>
+			<path class="l" d="M7 10.5h4M7 13.5h3"/>
+			</symbol>
+		<symbol id="d-invoice-in" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M21.5 12H14M17 9l-3 3 3 3"/>
+			</symbol>
+		<symbol id="d-invoice-out" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M4 3h10v18H4z"/>
+			<path class="l" d="M4 3h10v18H4z"/>
+			<path class="l" d="M7 8h4M7 12h4M7 16h4"/>
+			<path class="l" d="M14 12h7.5M18.5 9l3 3-3 3"/>
+			</symbol>
+		<symbol id="d-orders" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M5 5h14v16.5H5z"/>
+			<path class="l" d="M9 2.5h6v3.5H9z"/>
+			<path class="l" d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/>
+			</symbol>
+		<symbol id="d-due" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M12 12V4.5a7.5 7.5 0 0 1 7.5 7.5z"/>
+			<path class="l" d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 1 0 0-15z"/>
+			<path class="l" d="M12 7.5V12l3.5 2"/>
+			</symbol>
+		<symbol id="d-stock" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M3.5 9.5h11v11h-11z"/>
+			<path class="l" d="M3.5 9.5h11v11h-11zM14.5 9.5l5-4v11l-5 4M3.5 9.5l5-4h11"/>
+			<path class="l" d="M9 9.5v11"/>
+			</symbol>
+		<symbol id="d-count" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h14v5H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M8 12h8M8 16h5"/>
+			</symbol>
+		<symbol id="d-people" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M16 5.5a3 3 0 1 1 0 6a3 3 0 1 1 0-6zM11 20v-1.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5V20z"/>
+			<path class="l" d="M9 5.5a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 1 0 0-6.5z"/>
+			<path class="l" d="M2.5 20v-1.5c0-3 3-4.5 6.5-4.5s6.5 1.5 6.5 4.5V20z"/>
+			</symbol>
+		<symbol id="d-held" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 11h14v10H5z"/>
+			<path class="l" d="M5 11h14v10H5z"/>
+			<path class="l" d="M8 11V8a4 4 0 0 1 8 0v3"/>
+			<path class="l" d="M12 15v2.5"/>
+			</symbol>
+		<symbol id="d-firm" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 21V6l7-3 7 3v15z"/>
+			<path class="l" d="M5 21V6l7-3 7 3v15H5z"/>
+			<path class="l" d="M9 10h2M13 10h2M9 14h2M13 14h2M10 21v-4h4v4"/>
+			</symbol>
+		<symbol id="d-flow" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M2.5 8h7v8h-7z"/>
+			<path class="l" d="M2.5 8h7v8h-7zM14.5 8h7v8h-7z"/>
+			<path class="l" d="M9.5 12h4M11.5 10l2 2-2 2"/>
+			</symbol>
+		<symbol id="d-record" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M5 3h4v18H5z"/>
+			<path class="l" d="M5 3h14v18H5z"/>
+			<path class="l" d="M9 3v18M12.5 8h3M12.5 11.5h3"/>
+			</symbol>
+		<symbol id="d-yours" viewBox="0 0 24 24" class="duo-art">
+			<path class="k" d="M6 9.5h5v5H6z"/>
+			<path class="l" d="M2.5 5.5h19v13h-19z"/>
+			<path class="l" d="M6 9.5h5v5H6zM13.5 10h5M13.5 14h3.5"/>
+			</symbol>
+		</svg>
+		<div class="dsx-layout">
+			<nav class="dsx-nav" aria-label="Sections">
+				<h1 class="brand">
+					<a href="index.html">Construct-O-Genie
+						<small>Design samples · synthetic data</small>
+						</a>
+					</h1>
+				<ol>
+					<li><a href="00-foundations.html"><b class="n">0</b><span class="t">Foundations</span></a></li>
+					<li><a href="01-components.html"><b class="n">1</b><span class="t">Components</span></a></li>
+					<li><a href="02-motion.html"><b class="n">2</b><span class="t">Motion</span></a></li>
+					<li><a href="03-navigation.html"><b class="n">3</b><span class="t">Navigation</span></a></li>
+					<li class="grp" role="presentation">The product</li>
+					<li><a href="04-today.html"><b class="n">4</b><span class="t">Today & Notifications</span></a></li>
+					<li><a href="05-sales.html"><b class="n">5</b><span class="t">Sales</span></a></li>
+					<li><a href="06-projects.html"><b class="n">6</b><span class="t">Projects</span></a></li>
+					<li><a href="07-buying.html"><b class="n">7</b><span class="t">Buying</span></a></li>
+					<li><a href="#s8" aria-current="page"><b class="n">8</b><span class="t">Site</span></a></li>
+					<li><a href="09-approvals-money.html"><b class="n">9</b><span class="t">Approvals, Tasks & Money</span></a></li>
+					<li><a href="10-portals.html"><b class="n">10</b><span class="t">Portals</span></a></li>
+					<li><a href="11-settings.html"><b class="n">11</b><span class="t">Reports, Settings & operator</span></a></li>
+					<li class="grp" role="presentation">The record</li>
+					<li><a href="12-states-roles.html"><b class="n">12</b><span class="t">States & roles</span></a></li>
+					<li><a href="13-decisions.html"><b class="n">13</b><span class="t">Decisions</span></a></li>
+					<li><a href="14-demo.html"><b class="n">14</b><span class="t">The five-minute demo</span></a></li>
+					</ol>
+				<div class="dsx-theme">
+					<fieldset>
+						<legend>Theme</legend>
+						<div class="seg" role="radiogroup" aria-label="Colour theme"> <label><input type="radio" name="theme"
+									 value="system" checked><span><svg class="i sm" aria-hidden="true"><use href="#i-monitor"/>
+								</svg>System</span></label> <label><input type="radio" name="theme" value="light"><span><svg class="i sm"
+									 aria-hidden="true"><use href="#i-sun"/></svg>Light</span></label> <label><input type="radio" name="theme"
+									 value="dark"><span><svg class="i sm" aria-hidden="true"><use href="#i-moon"/></svg>Dark</span>
+								</label> </div>
+						<p>Not remembered. Reload and it follows your system again.</p>
+						</fieldset>
+					</div>
+				</nav>
+			<main class="dsx-main" id="main">
+				<section class="dsx-section" id="s8" aria-labelledby="h8">
+					<h2 id="h8"><small>8</small>Site</h2>
+					<p class="lede">
+							Site is four tabs on one nav item: the daily log filed from a phone, the imprest ledger, the measurement sheet
+							that every RA bill is raised from, and the recce that starts a proposal. The seed files a report a day for five
+							days on four sites, by the finance login — it has no site engineer, and no imprest, measurement or recce at all;
+							those three screens are drawn on the seed’s names with the design’s own figures, and say so.</p>
+					<div class="dsx-sample" data-renders="daily">
+						<h3>Site › Daily log — yesterday’s report from <span class="nowrap">ANU-01</span>
+							</h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Know what happened on site without ringing five people, and have it written down when the client asks in four
+								months.</p>
+						<div class="dsx-frame web" data-app="web">
+							<div class="bar"><i></i><i></i><i></i><span class="lbl">Site · Daily log</span>
+								<span class="meta url">
+								<code>/site-reports?project=3f6c2a1e-8b4d-4c2a-9e71-2d5b8a0c4f13</code>
+								</span></div>
+							<div class="app">
+								<header class="topbar" data-theme="dark" data-app="web">
+										<button class="btn icon ghost nav-open" type="button" aria-label="Open menu">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+									</span></button><a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="scope on">
+											<button class="scope-btn" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Working in ANU-01, R&amp;D laboratory interiors, Genome Valley, Hyderabad. Change
+													project"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-projects"/>
+											</svg></span><span class="sc"><span class="nowrap">ANU-01</span></span>
+										<span class="sn">· R&amp;D laboratory interiors</span><span class="ico">
+											<svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+										</button></div>
+									<div class="history-wrap">
+											<button class="btn icon ghost history" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Recent history"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-clock"/></svg></span></button></div>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search in Daily log · ANU-01"
+												 placeholder="Search in Daily log · ANU-01 ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="The organisation signed in">Bhitarang Interiors
+										</span><span class="bar-div" role="presentation"></span>
+									<div class="new-wrap">
+											<button class="new-sq" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="New · C"
+												 title="New · C"><span class="ico" data-theme="light"><svg class="i" aria-hidden="true">
+											<use href="#i-plus"/></svg></span></button></div>
+									<button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<a class="btn icon ghost settings-link" href="#"  aria-label="Settings"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-settings"/></svg></span>
+									</a>
+										<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Farhan, Finance"><span class="avatar">F</span>
+									</button></header>
+								<div class="body">
+									<aside class="side">
+										<nav class="side-nav" aria-label="Main"><a class="nav-back" href="#"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+											<span class="nav-t">All projects</span></a>
+											<div class="nav-proj"><b class="code"><span class="nowrap">ANU-01</span></b>
+												<span class="name">R&amp;D laboratory interiors, Genome Valley, Hyderabad</span>
+												<span class="pill active">In progress</span><small>Anuvanshik Life Sciences ·
+													<span class="num">₹6,40,00,000.00</span></small></div>
+											<a href="#"  title="Overview"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-home"/></svg></span><span class="nav-t">Overview</span>
+											</a>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-design-236"
+														 title="Design"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-pen"/>
+													</svg></span><span class="nav-t">Design</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-design-236" hidden>
+													<li><a href="#"  title="Brief"><span class="nav-t">Brief</span></a></li>
+													<li><a href="#"  title="Design"><span class="nav-t">Design</span></a></li>
+													<li><a href="#"  title="Drawings"><span class="nav-t">Drawings</span>
+														</a></li>
+													<li><a href="#"  title="Selections"><span class="nav-t">Selections</span>
+														</a></li>
+													<li><a href="#"  title="Joinery"><span class="nav-t">Joinery</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec open">
+													<button class="nav-h has-current" type="button" aria-expanded="true" aria-controls="nav-build-237"
+														 title="Build"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-hammer"/>
+													</svg></span><span class="nav-t">Build</span>
+													<span class="badge nav-sum" title="2 need attention inside">2<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-build-237">
+													<li><a href="#"  title="BOQ"><span class="nav-t">BOQ</span></a></li>
+													<li><a href="#"  title="Takeoff"><span class="nav-t">Takeoff</span></a></li>
+													<li><a href="#"  title="Orders"><span class="nav-t">Orders</span>
+															<span class="badge" title="2 waiting for approval">2<span class="sr-only"> waiting for approval
+															</span></span></a></li>
+													<li>
+														<div class="nav-cur"><a href="#" aria-current="page" title="Site"><span class="nav-t">Site
+																</span></a><button class="nav-plus" type="button" aria-label="File today’s report">
+																<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-plus"/></svg>
+															</span></button></div>
+														</li>
+													<li><a href="#"  title="Recce"><span class="nav-t">Recce</span></a></li>
+													<li><a href="#"  title="Milestones"><span class="nav-t">Milestones</span>
+														</a></li>
+													<li><a href="#"  title="Stock"><span class="nav-t">Stock</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-commercial-238"
+														 title="Commercial"><span class="ico"><svg class="i" aria-hidden="true">
+													<use href="#i-rupee"/></svg></span><span class="nav-t">Commercial</span>
+												<span class="nav-chev"><span class="ico"><svg class="i sm" aria-hidden="true">
+													<use href="#i-caret"/></svg></span></span></button>
+												<ul class="nav-pages" id="nav-commercial-238" hidden>
+													<li><a href="#"  title="Commercials"><span class="nav-t">Commercials</span>
+														</a></li>
+													<li><a href="#"  title="Variations"><span class="nav-t">Variations</span>
+														</a></li>
+													<li><a href="#"  title="Client actions"><span class="nav-t">Client actions</span>
+														</a></li>
+													<li><a href="#"  title="Bills"><span class="nav-t">Bills</span></a></li>
+													<li><a href="#"  title="Client billing"><span class="nav-t">Client billing</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-people-239"
+														 title="People"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-users"/>
+													</svg></span><span class="nav-t">People</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-people-239" hidden>
+													<li><a href="#"  title="Team"><span class="nav-t">Team</span></a></li>
+													<li><a href="#"  title="Timesheets"><span class="nav-t">Timesheets</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-close-240"
+														 title="Close"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-flag"/>
+													</svg></span><span class="nav-t">Close</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-close-240" hidden>
+													<li><a href="#"  title="Handover"><span class="nav-t">Handover</span>
+														</a></li>
+													<li><a href="#"  title="Warranty"><span class="nav-t">Warranty</span>
+														</a></li>
+													</ul>
+												</div>
+											</nav>
+										<div class="foot">
+											<nav class="side-nav" aria-label="Firm-wide"><a href="#" title="Approvals"><span class="ico">
+													<svg class="i" aria-hidden="true"><use href="#i-check-sq"/></svg></span>
+												<span class="nav-t">Approvals</span><span class="badge" title="6 waiting on you, firm-wide">6
+													<span class="sr-only"> waiting on you, firm-wide</span></span></a></nav>
+											<a class="nav-foot" href="#" title="Configure features"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-cog"/></svg></span><span class="nav-t">Configure features
+												</span></a>
+												<button class="nav-collapse" type="button" aria-label="Collapse the sidebar to its icons">
+												<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-collapse"/></svg>
+											</span><span class="nav-t">Collapse</span></button></div>
+										</aside>
+									<div class="main">
+										<main class="page">
+											<header class="pgh">
+												<div class="pgh-t">
+													<h4 class="pt">Site</h4>
+													</div>
+												<div class="pgh-a"><button class="btn" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-download"/></svg></span>
+													Export</button><button class="btn primary" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+													New daily report</button></div>
+												<p class="ps">daily reports from 4 sites · none filed today yet · 4 yesterday</p>
+												</header>
+											<nav class="subtabs" aria-label="Views"><a href="#" aria-current="page">Daily log</a>
+												<a href="#" >Imprest</a><a href="#" >Measurement</a><a href="#" >Recce</a>
+												</nav>
+											<div class="stats">
+												<div class="stat "><span class="disc gray" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-site"/></svg>
+													</span>
+													<div class="l">On site yesterday, all projects</div>
+													<div class="vbox">
+														<div class="v">83</div>
+														</div>
+													<div class="d up"><b>↑&nbsp;0</b> on the day before</div>
+													<div class="chart spark">
+															<svg class="spark " viewBox="0 0 96 36" width="96" height="36" aria-hidden="true"
+																 focusable="false">
+														<path class="area" d="M2.0,35.0 L2.0,8.4 L25.0,14.8 L48.0,10.1 L71.0,5.0 L94.0,5.0 L94.0,35.0 Z"/>
+														<polyline class="line" points="2.0,8.4 25.0,14.8 48.0,10.1 71.0,5.0 94.0,5.0"/>
+														<circle class="end" cx="94.0" cy="5.0" r="4"/>
+														</svg></div>
+													</div>
+												<div class="stat "><span class="disc gray" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-site"/></svg>
+													</span>
+													<div class="l">Reports filed today</div>
+													<div class="vbox">
+														<div class="v">0<small
+																	 style="font-size:var(--font-size-heading-small); color:var(--ink-soft);
+																		margin-left:var(--space-050)">of 5</small></div>
+														</div>
+													<div class="d watch"><b><span class="nowrap">NCB-02</span>, <span class="nowrap">SAN-01</span>
+															</b> have never filed one</div>
+													</div>
+												<div class="stat "><span class="disc yellow" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-site"/></svg>
+													</span>
+													<div class="l">Open site issues</div>
+													<div class="vbox">
+														<div class="v">2</div>
+														</div>
+													<div class="d watch"><b>1 blocking</b> · both on <span class="nowrap">ANU-01</span>
+														</div>
+													</div>
+												</div>
+											<div data-hero>
+												<section class="card ">
+													<div class="card-h">
+														<h5 class="ct">Sunday 13 September — <span class="nowrap">ANU-01</span>
+															<span class="sub"><span class="nowrap">ANU-01</span> · R&amp;amp;D laboratory interiors, Genome Valley,
+																	Hyderabad</span>
+															</h5>
+														<div class="actions"><a href="#" class="btn"><span class="ico">
+																<svg class="i" aria-hidden="true"><use href="#i-download"/></svg>
+															</span>PDF</a></div>
+														</div>
+													<div class="daysum">
+														<div>
+															<b>24</b>
+															on site
+															<small>14 carpentry, level 3 · 10 electrical, level 4</small>
+															</div>
+														<div>
+															<b>2</b>
+															floors
+															<small>filed by Farhan Qadri · finance</small>
+															</div>
+														<div>
+															<b>2</b>
+															issues open
+															<small>one blocking</small>
+															</div>
+														<div>
+															<b>0</b>
+															photos
+															<small>none attached</small>
+															</div>
+														</div>
+													<div class="card-b">
+														<h6 class="ct" style="margin:0;font-size:inherit">Notes</h6>
+														<p style="margin:var(--space-100) 0 0">Client walkthrough — two snags raised on joinery finish.</p>
+														</div>
+													<div class="card-b continued">
+														<h6 class="ct" style="margin:0;font-size:inherit">Issues on this site</h6>
+														<ul class="checks" style="margin:var(--space-100) calc(var(--space-250) * -1) 0">
+															<li><span class="tick" aria-hidden="true"></span>
+																<div>Glazing panel on level 3 delivered cracked — replacement awaited — blocking</div>
+																<a href="#" class="btn sm">Open the issue</a></li>
+															<li><span class="tick" aria-hidden="true"></span>
+																<div>Fire sealant missing around two riser penetrations — major</div>
+																<span></span></li>
+															</ul>
+														</div>
+													</section>
+												</div>
+											<section class="card ">
+												<div class="card-h">
+													<h5 class="ct">Recent reports</h5>
+													</div>
+												<div class="tbl-wrap">
+													<table class="tbl">
+														<thead>
+															<tr>
+																<th class="num" aria-sort="descending">Day<span class="ico">
+																		<svg class="i sm" aria-hidden="true"><use href="#i-sort"/></svg>
+																	</span></th>
+																<th>Site</th>
+																<th class="num">On site</th>
+																<th class="num">Issues open</th>
+																<th></th>
+																</tr>
+															</thead>
+														<tbody>
+															<tr class="row-link">
+																<td class="num">Sun 13 Sep</td>
+																<td><span class="nowrap">ANU-01</span></td>
+																<td class="num">24</td>
+																<td class="num"><span class="stock-low">2</span></td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															<tr class="row-link">
+																<td class="num">Sun 13 Sep</td>
+																<td><span class="nowrap">ANU-02</span></td>
+																<td class="num">22</td>
+																<td class="num">0</td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															<tr class="row-link">
+																<td class="num">Sun 13 Sep</td>
+																<td><span class="nowrap">KRA-01</span></td>
+																<td class="num">25</td>
+																<td class="num">0</td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															<tr class="row-link">
+																<td class="num">Sun 13 Sep</td>
+																<td><span class="nowrap">NCB-01</span></td>
+																<td class="num">12</td>
+																<td class="num">0</td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															<tr class="row-link">
+																<td class="num">Sat 12 Sep</td>
+																<td><span class="nowrap">ANU-01</span></td>
+																<td class="num">18</td>
+																<td class="num"><span class="stock-low">2</span></td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															<tr class="row-link">
+																<td class="num">Sat 12 Sep</td>
+																<td><span class="nowrap">ANU-02</span></td>
+																<td class="num">26</td>
+																<td class="num">0</td>
+																<td><a href="#">Open</a></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												<div class="pager">
+													<p class="count">Total <b>20</b> reports · 6 per page · <b>1–6</b></p>
+													<nav class="pages" aria-label="Pages">
+															<button class="pg" type="button" disabled aria-label="Previous page"><span class="ico">
+															<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+														</button><span class="sr-only">Page 1 of 4</span>
+															<button class="pg" type="button"  aria-label="Next page"><span class="ico">
+															<svg class="i sm" aria-hidden="true"><use href="#i-right"/></svg></span>
+														</button></nav>
+													</div>
+												</section>
+											</main>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="dsx-sample" data-renders="imprest">
+						<h3>Site › Imprest — the site cash ledger<span class="dsx-h3-note">Not seeded — the design’s ledger on the seed’s
+								names</span></h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Know where the site cash went, and which spends still have no receipt behind them.</p>
+						<div class="dsx-frame web" data-app="web">
+							<div class="bar"><i></i><i></i><i></i><span class="lbl">Site · Imprest</span>
+								<span class="meta url">
+								<code>/site-controls?project=3f6c2a1e-8b4d-4c2a-9e71-2d5b8a0c4f13</code>
+								</span></div>
+							<div class="app">
+								<header class="topbar" data-theme="dark" data-app="web">
+										<button class="btn icon ghost nav-open" type="button" aria-label="Open menu">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+									</span></button><a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="scope on">
+											<button class="scope-btn" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Working in ANU-01, R&amp;D laboratory interiors, Genome Valley, Hyderabad. Change
+													project"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-projects"/>
+											</svg></span><span class="sc"><span class="nowrap">ANU-01</span></span>
+										<span class="sn">· R&amp;D laboratory interiors</span><span class="ico">
+											<svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+										</button></div>
+									<div class="history-wrap">
+											<button class="btn icon ghost history" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Recent history"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-clock"/></svg></span></button></div>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search in Imprest · ANU-01" placeholder="Search in Imprest · ANU-01 ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="The organisation signed in">Bhitarang Interiors
+										</span><span class="bar-div" role="presentation"></span>
+									<div class="new-wrap">
+											<button class="new-sq" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="New · C"
+												 title="New · C"><span class="ico" data-theme="light"><svg class="i" aria-hidden="true">
+											<use href="#i-plus"/></svg></span></button></div>
+									<button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<a class="btn icon ghost settings-link" href="#"  aria-label="Settings"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-settings"/></svg></span>
+									</a>
+										<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Manjit, Procurement"><span class="avatar">M</span>
+									</button></header>
+								<div class="body">
+									<aside class="side">
+										<nav class="side-nav" aria-label="Main"><a class="nav-back" href="#"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+											<span class="nav-t">All projects</span></a>
+											<div class="nav-proj"><b class="code"><span class="nowrap">ANU-01</span></b>
+												<span class="name">R&amp;D laboratory interiors, Genome Valley, Hyderabad</span>
+												<span class="pill active">In progress</span><small>Anuvanshik Life Sciences ·
+													<span class="num">₹6,40,00,000.00</span></small></div>
+											<a href="#"  title="Overview"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-home"/></svg></span><span class="nav-t">Overview</span>
+											</a>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-design-241"
+														 title="Design"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-pen"/>
+													</svg></span><span class="nav-t">Design</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-design-241" hidden>
+													<li><a href="#"  title="Brief"><span class="nav-t">Brief</span></a></li>
+													<li><a href="#"  title="Design"><span class="nav-t">Design</span></a></li>
+													<li><a href="#"  title="Drawings"><span class="nav-t">Drawings</span>
+														</a></li>
+													<li><a href="#"  title="Selections"><span class="nav-t">Selections</span>
+														</a></li>
+													<li><a href="#"  title="Joinery"><span class="nav-t">Joinery</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec open">
+													<button class="nav-h has-current" type="button" aria-expanded="true" aria-controls="nav-build-242"
+														 title="Build"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-hammer"/>
+													</svg></span><span class="nav-t">Build</span>
+													<span class="badge nav-sum" title="2 need attention inside">2<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-build-242">
+													<li><a href="#"  title="BOQ"><span class="nav-t">BOQ</span></a></li>
+													<li><a href="#"  title="Takeoff"><span class="nav-t">Takeoff</span></a></li>
+													<li><a href="#"  title="Orders"><span class="nav-t">Orders</span>
+															<span class="badge" title="2 waiting for approval">2<span class="sr-only"> waiting for approval
+															</span></span></a></li>
+													<li>
+														<div class="nav-cur"><a href="#" aria-current="page" title="Site"><span class="nav-t">Site
+																</span></a><button class="nav-plus" type="button" aria-label="File today’s report">
+																<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-plus"/></svg>
+															</span></button></div>
+														</li>
+													<li><a href="#"  title="Recce"><span class="nav-t">Recce</span></a></li>
+													<li><a href="#"  title="Milestones"><span class="nav-t">Milestones</span>
+														</a></li>
+													<li><a href="#"  title="Stock"><span class="nav-t">Stock</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-commercial-243"
+														 title="Commercial"><span class="ico"><svg class="i" aria-hidden="true">
+													<use href="#i-rupee"/></svg></span><span class="nav-t">Commercial</span>
+												<span class="nav-chev"><span class="ico"><svg class="i sm" aria-hidden="true">
+													<use href="#i-caret"/></svg></span></span></button>
+												<ul class="nav-pages" id="nav-commercial-243" hidden>
+													<li><a href="#"  title="Commercials"><span class="nav-t">Commercials</span>
+														</a></li>
+													<li><a href="#"  title="Variations"><span class="nav-t">Variations</span>
+														</a></li>
+													<li><a href="#"  title="Client actions"><span class="nav-t">Client actions</span>
+														</a></li>
+													<li><a href="#"  title="Bills"><span class="nav-t">Bills</span></a></li>
+													<li><a href="#"  title="Client billing"><span class="nav-t">Client billing</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-people-244"
+														 title="People"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-users"/>
+													</svg></span><span class="nav-t">People</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-people-244" hidden>
+													<li><a href="#"  title="Team"><span class="nav-t">Team</span></a></li>
+													<li><a href="#"  title="Timesheets"><span class="nav-t">Timesheets</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-close-245"
+														 title="Close"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-flag"/>
+													</svg></span><span class="nav-t">Close</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-close-245" hidden>
+													<li><a href="#"  title="Handover"><span class="nav-t">Handover</span>
+														</a></li>
+													<li><a href="#"  title="Warranty"><span class="nav-t">Warranty</span>
+														</a></li>
+													</ul>
+												</div>
+											</nav>
+										<div class="foot">
+											<nav class="side-nav" aria-label="Firm-wide"><a href="#" title="Approvals"><span class="ico">
+													<svg class="i" aria-hidden="true"><use href="#i-check-sq"/></svg></span>
+												<span class="nav-t">Approvals</span><span class="badge" title="6 waiting on you, firm-wide">6
+													<span class="sr-only"> waiting on you, firm-wide</span></span></a></nav>
+											<a class="nav-foot" href="#" title="Configure features"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-cog"/></svg></span><span class="nav-t">Configure features
+												</span></a>
+												<button class="nav-collapse" type="button" aria-label="Collapse the sidebar to its icons">
+												<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-collapse"/></svg>
+											</span><span class="nav-t">Collapse</span></button></div>
+										</aside>
+									<div class="main">
+										<main class="page">
+											<header class="pgh">
+												<div class="pgh-t">
+													<h4 class="pt">Site</h4>
+													</div>
+												<div class="pgh-a"><button class="btn" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-download"/></svg></span>
+													Export</button><button class="btn primary" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+													Record an expense</button></div>
+												<p class="ps">imprest — site cash at <span class="nowrap">ANU-01</span>, held by Manjit Bains</p>
+												</header>
+											<nav class="subtabs" aria-label="Views"><a href="#" >Daily log</a>
+													<a href="#" aria-current="page">Imprest</a><a href="#" >Measurement</a>
+												<a href="#" >Recce</a></nav>
+											<div data-hero>
+												<section class="hero " aria-label="Cash in hand · ANU-01"><span class="eyebrow">Cash in hand ·
+														<span class="nowrap">ANU-01</span></span>
+													<div class="v">₹28,450.00</div>
+													<p class="p">
+															of a ₹50,000.00 float. ₹13,810.00 spent this week across 5 expenses; one has no receipt yet. Below
+															₹20,000.00 the site asks head office for a top-up.</p>
+													<div class="hs">
+														<div class="chart spark">
+																<svg class="spark " viewBox="0 0 220 64" width="220" height="64" aria-hidden="true"
+																	 focusable="false">
+															<path class="area"
+																	 d="M2.0,63.0 L2.0,60.9 L32.9,61.0 L63.7,61.0 L94.6,60.9 L125.4,60.9 L156.3,61.0 L187.1,61.0
+																		L218.0,61.0 L218.0,63.0 Z"/>
+															<line class="thr" x1="0" x2="220" y1="60.9" y2="60.9"/>
+															<polyline class="line"
+																	 points="2.0,60.9 32.9,61.0 63.7,61.0 94.6,60.9 125.4,60.9 156.3,61.0 187.1,61.0 218.0,61.0"/>
+															<circle class="end" cx="218.0" cy="61.0" r="4"/>
+															</svg></div>
+														<div class="d down"><b>↓&nbsp;₹13,810.00</b> this week</div>
+														</div>
+													<div class="a"><button class="btn primary" type="button"><span class="ico">
+															<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+														Record an expense</button><button class="btn" type="button">Ask for a top-up</button>
+														</div>
+													<div class="foot"><span class="who"><span class="avatar">F</span><span>
+														<b>Farhan Qadri</b>
+														 approves top-ups</span></span></div>
+													</section>
+												</div>
+											<section class="card ">
+												<div class="card-h">
+													<h5 class="ct">Ledger
+														<span class="sub">this week · every line has a person on it</span>
+														</h5>
+													</div>
+												<div class="tbl-wrap">
+													<table class="tbl ledger">
+														<thead>
+															<tr>
+																<th class="num">Day</th>
+																<th>What</th>
+																<th class="num">In</th>
+																<th class="num">Out</th>
+																<th class="num">Balance</th>
+																</tr>
+															</thead>
+														<tbody>
+															<tr class="out">
+																<td class="num">13 Sep</td>
+																<td>Hardware — anchor bolts, 200 nos
+																	<span class="sub">Manjit Bains · receipt attached</span>
+																	</td>
+																<td class="num absent">—</td>
+																<td class="num"><span class="money out">-₹3,850.00</span></td>
+																<td class="num">₹28,450.00</td>
+																</tr>
+															<tr class="out">
+																<td class="num">13 Sep</td>
+																<td>Tempo hire — tile pallets from store
+																	<span class="sub">Manjit Bains · receipt attached</span>
+																	</td>
+																<td class="num absent">—</td>
+																<td class="num"><span class="money out">-₹1,500.00</span></td>
+																<td class="num">₹32,300.00</td>
+																</tr>
+															<tr class="in">
+																<td class="num">12 Sep</td>
+																<td>Top-up from head office
+																	<span class="sub">Farhan Qadri · <span class="stock-low">no receipt</span></span>
+																	</td>
+																<td class="num"><span class="money in">+₹20,000.00</span></td>
+																<td class="num absent">—</td>
+																<td class="num">₹33,800.00</td>
+																</tr>
+															<tr class="out">
+																<td class="num">12 Sep</td>
+																<td>Tea and water, site (week 37)
+																	<span class="sub">Manjit Bains · receipt attached</span>
+																	</td>
+																<td class="num absent">—</td>
+																<td class="num"><span class="money out">-₹2,200.00</span></td>
+																<td class="num">₹13,800.00</td>
+																</tr>
+															<tr class="out">
+																<td class="num">11 Sep</td>
+																<td>Cutting discs and blades
+																	<span class="sub">Manjit Bains · <span class="stock-low">no receipt</span></span>
+																	</td>
+																<td class="num absent">—</td>
+																<td class="num"><span class="money out">-₹1,460.00</span></td>
+																<td class="num">₹16,000.00</td>
+																</tr>
+															<tr class="out">
+																<td class="num">10 Sep</td>
+																<td>Electrician overtime — Sunday
+																	<span class="sub">Manjit Bains · receipt attached</span>
+																	</td>
+																<td class="num absent">—</td>
+																<td class="num"><span class="money out">-₹4,800.00</span></td>
+																<td class="num">₹17,460.00</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												<div class="pager">
+													<p class="count">Total <b>6</b> entries · 50 per page · <b>1–6</b></p>
+													<nav class="pages" aria-label="Pages">
+															<button class="pg" type="button" disabled aria-label="Previous page"><span class="ico">
+															<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+														</button><span class="sr-only">Page 1 of 1</span>
+															<button class="pg" type="button" disabled aria-label="Next page"><span class="ico">
+															<svg class="i sm" aria-hidden="true"><use href="#i-right"/></svg></span>
+														</button></nav>
+													</div>
+												</section>
+											</main>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<aside class="dsx-note">
+						<strong class="h">Design note</strong>
+						<p>
+								Imprest is site petty cash, not a statutory computation, so its figures are shown — the CA-gated surfaces are
+								TDS, payments, billing and retention. A line without a receipt says so in words; it is not hidden and not a
+								zero.</p>
+						</aside>
+					<div class="dsx-sample" data-renders="measure">
+						<h3>Site › Measurement — the sheet behind RA bill 03<span class="dsx-h3-note">Not seeded — contract quantities are
+								the seed’s BOQ, the claims are the design’s</span></h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Build the running bill from what was actually measured, so the client’s QS has nothing to argue with.</p>
+						<div class="dsx-frame web" data-app="web">
+							<div class="bar"><i></i><i></i><i></i><span class="lbl">Site · Measurement</span>
+								<span class="meta url">
+								<code>/site-controls?project=3f6c2a1e-8b4d-4c2a-9e71-2d5b8a0c4f13</code>
+								</span></div>
+							<div class="app">
+								<header class="topbar" data-theme="dark" data-app="web">
+										<button class="btn icon ghost nav-open" type="button" aria-label="Open menu">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+									</span></button><a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="scope on">
+											<button class="scope-btn" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Working in ANU-01, R&amp;D laboratory interiors, Genome Valley, Hyderabad. Change
+													project"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-projects"/>
+											</svg></span><span class="sc"><span class="nowrap">ANU-01</span></span>
+										<span class="sn">· R&amp;D laboratory interiors</span><span class="ico">
+											<svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+										</button></div>
+									<div class="history-wrap">
+											<button class="btn icon ghost history" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Recent history"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-clock"/></svg></span></button></div>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search in Measurement · ANU-01"
+												 placeholder="Search in Measurement · ANU-01 ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="The organisation signed in">Bhitarang Interiors
+										</span><span class="bar-div" role="presentation"></span>
+									<div class="new-wrap">
+											<button class="new-sq" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="New · C"
+												 title="New · C"><span class="ico" data-theme="light"><svg class="i" aria-hidden="true">
+											<use href="#i-plus"/></svg></span></button></div>
+									<button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<a class="btn icon ghost settings-link" href="#"  aria-label="Settings"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-settings"/></svg></span>
+									</a>
+										<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Manjit, Procurement"><span class="avatar">M</span>
+									</button></header>
+								<div class="body">
+									<aside class="side">
+										<nav class="side-nav" aria-label="Main"><a class="nav-back" href="#"><span class="ico">
+												<svg class="i sm" aria-hidden="true"><use href="#i-left"/></svg></span>
+											<span class="nav-t">All projects</span></a>
+											<div class="nav-proj"><b class="code"><span class="nowrap">ANU-01</span></b>
+												<span class="name">R&amp;D laboratory interiors, Genome Valley, Hyderabad</span>
+												<span class="pill active">In progress</span><small>Anuvanshik Life Sciences ·
+													<span class="num">₹6,40,00,000.00</span></small></div>
+											<a href="#"  title="Overview"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-home"/></svg></span><span class="nav-t">Overview</span>
+											</a>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-design-246"
+														 title="Design"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-pen"/>
+													</svg></span><span class="nav-t">Design</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-design-246" hidden>
+													<li><a href="#"  title="Brief"><span class="nav-t">Brief</span></a></li>
+													<li><a href="#"  title="Design"><span class="nav-t">Design</span></a></li>
+													<li><a href="#"  title="Drawings"><span class="nav-t">Drawings</span>
+														</a></li>
+													<li><a href="#"  title="Selections"><span class="nav-t">Selections</span>
+														</a></li>
+													<li><a href="#"  title="Joinery"><span class="nav-t">Joinery</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec open">
+													<button class="nav-h has-current" type="button" aria-expanded="true" aria-controls="nav-build-247"
+														 title="Build"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-hammer"/>
+													</svg></span><span class="nav-t">Build</span>
+													<span class="badge nav-sum" title="2 need attention inside">2<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-build-247">
+													<li><a href="#"  title="BOQ"><span class="nav-t">BOQ</span></a></li>
+													<li><a href="#"  title="Takeoff"><span class="nav-t">Takeoff</span></a></li>
+													<li><a href="#"  title="Orders"><span class="nav-t">Orders</span>
+															<span class="badge" title="2 waiting for approval">2<span class="sr-only"> waiting for approval
+															</span></span></a></li>
+													<li>
+														<div class="nav-cur"><a href="#" aria-current="page" title="Site"><span class="nav-t">Site
+																</span></a><button class="nav-plus" type="button" aria-label="File today’s report">
+																<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-plus"/></svg>
+															</span></button></div>
+														</li>
+													<li><a href="#"  title="Recce"><span class="nav-t">Recce</span></a></li>
+													<li><a href="#"  title="Milestones"><span class="nav-t">Milestones</span>
+														</a></li>
+													<li><a href="#"  title="Stock"><span class="nav-t">Stock</span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-commercial-248"
+														 title="Commercial"><span class="ico"><svg class="i" aria-hidden="true">
+													<use href="#i-rupee"/></svg></span><span class="nav-t">Commercial</span>
+												<span class="nav-chev"><span class="ico"><svg class="i sm" aria-hidden="true">
+													<use href="#i-caret"/></svg></span></span></button>
+												<ul class="nav-pages" id="nav-commercial-248" hidden>
+													<li><a href="#"  title="Commercials"><span class="nav-t">Commercials</span>
+														</a></li>
+													<li><a href="#"  title="Variations"><span class="nav-t">Variations</span>
+														</a></li>
+													<li><a href="#"  title="Client actions"><span class="nav-t">Client actions</span>
+														</a></li>
+													<li><a href="#"  title="Bills"><span class="nav-t">Bills</span></a></li>
+													<li><a href="#"  title="Client billing"><span class="nav-t">Client billing</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-people-249"
+														 title="People"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-users"/>
+													</svg></span><span class="nav-t">People</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-people-249" hidden>
+													<li><a href="#"  title="Team"><span class="nav-t">Team</span></a></li>
+													<li><a href="#"  title="Timesheets"><span class="nav-t">Timesheets</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-close-250"
+														 title="Close"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-flag"/>
+													</svg></span><span class="nav-t">Close</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-close-250" hidden>
+													<li><a href="#"  title="Handover"><span class="nav-t">Handover</span>
+														</a></li>
+													<li><a href="#"  title="Warranty"><span class="nav-t">Warranty</span>
+														</a></li>
+													</ul>
+												</div>
+											</nav>
+										<div class="foot">
+											<nav class="side-nav" aria-label="Firm-wide"><a href="#" title="Approvals"><span class="ico">
+													<svg class="i" aria-hidden="true"><use href="#i-check-sq"/></svg></span>
+												<span class="nav-t">Approvals</span><span class="badge" title="6 waiting on you, firm-wide">6
+													<span class="sr-only"> waiting on you, firm-wide</span></span></a></nav>
+											<a class="nav-foot" href="#" title="Configure features"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-cog"/></svg></span><span class="nav-t">Configure features
+												</span></a>
+												<button class="nav-collapse" type="button" aria-label="Collapse the sidebar to its icons">
+												<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-collapse"/></svg>
+											</span><span class="nav-t">Collapse</span></button></div>
+										</aside>
+									<div class="main">
+										<main class="page">
+											<header class="pgh">
+												<div class="pgh-t">
+													<h4 class="pt">Site</h4>
+													</div>
+												<div class="pgh-a"><button class="btn" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-download"/></svg></span>
+													Export</button><button class="btn primary" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+													New measurement sheet</button></div>
+												<p class="ps">measurement — <span class="nowrap">ANU-01</span> · RA bill 03 · 1–30 September</p>
+												</header>
+											<nav class="subtabs" aria-label="Views"><a href="#" >Daily log</a><a href="#" >Imprest</a>
+												<a href="#" aria-current="page">Measurement</a><a href="#" >Recce</a>
+												</nav>
+											<div class="stats">
+												<div class="stat "><span class="disc green" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-due"/></svg>
+													</span>
+													<div class="l">Measured to date, this project</div>
+													<div class="vbox">
+														<div class="v">58%</div>
+														</div>
+													<div class="d up"><b>↑&nbsp;6 points</b> this period</div>
+													<div class="chart spark">
+															<svg class="spark " viewBox="0 0 96 36" width="96" height="36" aria-hidden="true"
+																 focusable="false">
+														<path class="area"
+																 d="M2.0,35.0 L2.0,27.2 L15.1,24.3 L28.3,21.4 L41.4,18.0 L54.6,15.1 L67.7,11.8 L80.9,7.9 L94.0,5.0
+																	L94.0,35.0 Z"/>
+														<polyline class="line"
+																 points="2.0,27.2 15.1,24.3 28.3,21.4 41.4,18.0 54.6,15.1 67.7,11.8 80.9,7.9 94.0,5.0"/>
+														<circle class="end" cx="94.0" cy="5.0" r="4"/>
+														</svg></div>
+													</div>
+												<div class="stat "><span class="disc gray" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-count"/></svg>
+													</span>
+													<div class="l">This period</div>
+													<div class="vbox">
+														<div class="v">6<small
+																	 style="font-size:var(--font-size-heading-small); color:var(--ink-soft);
+																		margin-left:var(--space-050)">items</small></div>
+														</div>
+													<div class="d "><b>Manjit Bains · procurement</b> · checked by Shalini Kamath</div>
+													</div>
+												<div class="stat "><span class="disc gray" aria-hidden="true">
+														<svg class="duo" aria-hidden="true" focusable="false"><use href="#d-count"/></svg>
+													</span>
+													<div class="l">Goes into</div>
+													<div class="vbox">
+														<div class="v txt">RA bill 03</div>
+														</div>
+													<div class="d ">the bill is raised from this sheet, never typed</div>
+													</div>
+												</div>
+											<div data-hero>
+												<section class="card ">
+													<div class="card-h">
+														<h5 class="ct">Measurement sheet
+															<span class="sub">6 items · quantities only; rates come from the contract</span>
+															</h5>
+														<div class="actions"><button class="btn" type="button"><span class="ico">
+																<svg class="i" aria-hidden="true"><use href="#i-download"/></svg>
+															</span>Export</button><button class="btn primary" type="button"><span class="ico">
+																<svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>
+															Approve sheet</button></div>
+														</div>
+													<div class="tbl-wrap">
+														<table class="tbl sheet">
+															<thead>
+																<tr>
+																	<th class="num">#</th>
+																	<th>Item</th>
+																	<th class="num">Contract</th>
+																	<th class="num">Previous</th>
+																	<th class="num">This period</th>
+																	<th class="num">To date</th>
+																	<th class="num">Of contract</th>
+																	</tr>
+																</thead>
+															<tbody>
+																<tr>
+																	<td class="num">1.1</td>
+																	<td>Blockwork 100mm
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">474</td>
+																	<td class="num">286</td>
+																	<td class="num">38</td>
+																	<td class="num ">324</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress">
+																				<div class="bar"><i style="--w:68%"></i></div>
+																				</div>
+																			<small>68%</small>
+																			</div>
+																		</td>
+																	</tr>
+																<tr>
+																	<td class="num">1.2</td>
+																	<td>Screed to falls
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">201.5</td>
+																	<td class="num">120</td>
+																	<td class="num">92.5</td>
+																	<td class="num diff-up">212.5</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress low">
+																				<div class="bar"><i style="--w:100%"></i></div>
+																				</div>
+																			<small>105%</small>
+																			</div>
+																		</td>
+																	</tr>
+																<tr>
+																	<td class="num">2.2</td>
+																	<td>Cable tray, GI 300mm
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">158</td>
+																	<td class="num">96</td>
+																	<td class="num">48</td>
+																	<td class="num ">144</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress">
+																				<div class="bar"><i style="--w:91%"></i></div>
+																				</div>
+																			<small>91%</small>
+																			</div>
+																		</td>
+																	</tr>
+																<tr>
+																	<td class="num">2.3</td>
+																	<td>DB wiring, 2.5 sqmm
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">775</td>
+																	<td class="num">420</td>
+																	<td class="num">210</td>
+																	<td class="num ">630</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress">
+																				<div class="bar"><i style="--w:81%"></i></div>
+																				</div>
+																			<small>81%</small>
+																			</div>
+																		</td>
+																	</tr>
+																<tr>
+																	<td class="num">4.2</td>
+																	<td>Storage wall, laminate
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">311.5</td>
+																	<td class="num">0</td>
+																	<td class="num">208</td>
+																	<td class="num ">208</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress">
+																				<div class="bar"><i style="--w:67%"></i></div>
+																				</div>
+																			<small>67%</small>
+																			</div>
+																		</td>
+																	</tr>
+																<tr>
+																	<td class="num">5.1</td>
+																	<td>Vitrified tile 600x600
+																		<span class="sub">per sqm</span>
+																		</td>
+																	<td class="num">713.5</td>
+																	<td class="num">400</td>
+																	<td class="num">212</td>
+																	<td class="num ">612</td>
+																	<td class="num">
+																		<div class="rate-bar" style="justify-content:flex-end">
+																			<div class="chart progress">
+																				<div class="bar"><i style="--w:86%"></i></div>
+																				</div>
+																			<small>86%</small>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</section>
+												</div>
+											</main>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<aside class="dsx-note">
+						<strong class="h">Design note</strong>
+						<p>
+								A measurement sheet is quantities, never money: the RA bill applies the contract rates to it. Measured beyond
+								the contract quantity is shown in the error colour and blocks the bill until a variation covers it. The seed has
+								no quantity surveyor; procurement plays the sheet here.</p>
+						</aside>
+					<div class="dsx-sample" data-renders="recce">
+						<h3>Site › Recce — the survey that starts a proposal<span class="dsx-h3-note">Not seeded — a survey on a seeded
+								lead</span></h3>
+						<p class="vline">
+							<span class="vl-l">What this is for</span>
+							Price the job from what the site actually is — the levels, the access, what is already there — instead of from
+								the brief.</p>
+						<div class="dsx-frame web" data-app="web">
+							<div class="bar"><i></i><i></i><i></i><span class="lbl">Site · Recce</span>
+								<span class="meta">apps/web · rail under 1000px · hidden under 640px</span>
+								</div>
+							<div class="app">
+								<header class="topbar" data-theme="dark" data-app="web">
+										<button class="btn icon ghost nav-open" type="button" aria-label="Open menu">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+									</span></button><a class="brand-bar" href="#" aria-label="Construct-O-Genie, home">
+										<span class="mark" aria-hidden="true"><span class="ico"><svg class="i" aria-hidden="true">
+										<use href="#i-mark"/></svg></span></span><span class="brand-t">Construct-O-Genie</span>
+									</a>
+									<div class="scope">
+											<button class="scope-btn" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Working across all projects. Choose a project"><span class="ico">
+											<svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>
+										<span class="sc">All projects</span><span class="ico"><svg class="i sm" aria-hidden="true">
+											<use href="#i-chevron"/></svg></span></button></div>
+									<div class="history-wrap">
+											<button class="btn icon ghost history" type="button" aria-haspopup="dialog" aria-expanded="false"
+												 aria-label="Recent history"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-clock"/></svg></span></button></div>
+									<div class="search"><span class="ico"><span class="ico"><svg class="i" aria-hidden="true">
+											<use href="#i-search"/></svg></span></span>
+											<input type="search" aria-label="Search in Recce" placeholder="Search in Recce ( / )">
+											<button class="search-scope" type="button" aria-label="Choose where to search">
+											<span class="ico"><svg class="i sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+										</span></button></div>
+									<button class="btn icon ghost search-btn" type="button" aria-label="Search"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span></button>
+									<span class="spacer"></span><span class="tenant" title="The organisation signed in">Bhitarang Interiors
+										</span><span class="bar-div" role="presentation"></span>
+									<div class="new-wrap">
+											<button class="new-sq" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="New · C"
+												 title="New · C"><span class="ico" data-theme="light"><svg class="i" aria-hidden="true">
+											<use href="#i-plus"/></svg></span></button></div>
+									<button class="btn icon ghost bell" type="button" aria-label="Notifications, 3 unread">
+										<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
+									</span><span class="badge important" aria-hidden="true">3</span></button>
+									<a class="btn icon ghost settings-link" href="#"  aria-label="Settings"><span class="ico">
+										<svg class="i" aria-hidden="true"><use href="#i-settings"/></svg></span>
+									</a>
+										<button class="me" type="button" aria-haspopup="menu"
+											 aria-label="Account menu for Shalini, Admin"><span class="avatar">S</span>
+									</button></header>
+								<div class="body">
+									<aside class="side">
+										<nav class="side-nav" aria-label="Main"><a href="#"  title="Today"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-home"/></svg></span><span class="nav-t">Today
+												</span></a><a href="#"  title="Approvals"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-check-sq"/></svg></span>
+											<span class="nav-t">Approvals</span><span class="badge" title="6 waiting on you">6
+												<span class="sr-only"> waiting on you</span></span></a>
+											<div class="nav-sep" role="presentation"></div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-sales-251"
+														 title="Sales"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-sales"/>
+													</svg></span><span class="nav-t">Sales</span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-sales-251" hidden>
+													<li><a href="#"  title="Pipeline"><span class="nav-t">Pipeline</span>
+														</a></li>
+													<li><a href="#"  title="Leads"><span class="nav-t">Leads</span></a></li>
+													<li><a href="#"  title="Rate analysis"><span class="nav-t">Rate analysis</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-projects-252"
+														 title="Projects"><span class="ico"><svg class="i" aria-hidden="true">
+													<use href="#i-projects"/></svg></span><span class="nav-t">Projects</span>
+												<span class="nav-chev"><span class="ico"><svg class="i sm" aria-hidden="true">
+													<use href="#i-caret"/></svg></span></span></button>
+												<ul class="nav-pages" id="nav-projects-252" hidden>
+													<li><a href="#"  title="All projects"><span class="nav-t">All projects</span>
+														</a></li>
+													<li><a href="#"  title="Documents"><span class="nav-t">Documents</span>
+														</a></li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-buying-253"
+														 title="Buying"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-cart"/>
+													</svg></span><span class="nav-t">Buying</span>
+													<span class="badge nav-sum" title="4 need attention inside">4<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-buying-253" hidden>
+													<li><a href="#"  title="Orders"><span class="nav-t">Orders</span>
+															<span class="badge" title="1 received and not checked">1<span class="sr-only"> received and not checked
+															</span></span></a></li>
+													<li><a href="#"  title="Vendors"><span class="nav-t">Vendors</span></a></li>
+													<li><a href="#"  title="Agreed rates"><span class="nav-t">Agreed rates</span>
+														</a></li>
+													<li><a href="#"  title="Stock"><span class="nav-t">Stock</span>
+															<span class="badge" title="3 below their reorder level">3<span class="sr-only"> below their reorder level
+															</span></span></a></li>
+													</ul>
+												</div>
+											<div class="nav-sec open">
+													<button class="nav-h has-current" type="button" aria-expanded="true" aria-controls="nav-site-254"
+														 title="Site"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-site"/>
+													</svg></span><span class="nav-t">Site</span>
+													<span class="badge nav-sum" title="2 need attention inside">2<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-site-254">
+													<li><a href="#"  title="Daily reports"><span class="nav-t">Daily reports</span>
+														<span class="badge" title="2 sites that have never filed a report">2<span class="sr-only"> sites that have
+															never filed a report</span></span></a></li>
+													<li>
+														<div class="nav-cur"><a href="#" aria-current="page" title="Measurements &amp; imprest">
+																<span class="nav-t">Measurements &amp; imprest</span></a></div>
+														</li>
+													</ul>
+												</div>
+											<div class="nav-sec">
+													<button class="nav-h" type="button" aria-expanded="false" aria-controls="nav-money-255"
+														 title="Money"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-rupee"/>
+													</svg></span><span class="nav-t">Money</span>
+													<span class="badge nav-sum" title="1 need attention inside">1<span class="sr-only"> need attention inside
+													</span></span><span class="nav-chev"><span class="ico">
+													<svg class="i sm" aria-hidden="true"><use href="#i-caret"/></svg></span>
+												</span></button>
+												<ul class="nav-pages" id="nav-money-255" hidden>
+													<li><a href="#"  title="Bills"><span class="nav-t">Bills</span>
+															<span class="badge" title="1 past their due date">1<span class="sr-only"> past their due date
+															</span></span></a></li>
+													<li><a href="#"  title="Payments"><span class="nav-t">Payments</span>
+														</a></li>
+													<li><a href="#"  title="Tax deducted"><span class="nav-t">Tax deducted</span>
+														</a></li>
+													<li><a href="#"  title="Client billing"><span class="nav-t">Client billing</span>
+														</a></li>
+													<li><a href="#"  title="Retention"><span class="nav-t">Retention</span>
+														</a></li>
+													</ul>
+												</div>
+											<a href="#"  title="Reports"><span class="ico"><svg class="i" aria-hidden="true">
+												<use href="#i-chart"/></svg></span><span class="nav-t">Reports</span>
+											</a></nav>
+										<div class="foot"><a class="nav-foot" href="#" title="Configure features"><span class="ico">
+												<svg class="i" aria-hidden="true"><use href="#i-cog"/></svg></span><span class="nav-t">Configure features
+												</span></a>
+												<button class="nav-collapse" type="button" aria-label="Collapse the sidebar to its icons">
+												<span class="ico"><svg class="i" aria-hidden="true"><use href="#i-collapse"/></svg>
+											</span><span class="nav-t">Collapse</span></button></div>
+										</aside>
+									<div class="main">
+										<main class="page">
+											<header class="pgh">
+												<div class="pgh-t">
+													<h4 class="pt">Site</h4>
+													</div>
+												<div class="pgh-a"><button class="btn" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-download"/></svg></span>
+													Export</button><button class="btn primary" type="button"><span class="ico">
+														<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+													New recce</button></div>
+												<p class="ps">recce — site surveys before a proposal</p>
+												</header>
+											<nav class="subtabs" aria-label="Views"><a href="#" >Daily log</a><a href="#" >Imprest</a>
+												<a href="#" >Measurement</a><a href="#" aria-current="page">Recce</a>
+												</nav>
+											<div class="recce">
+												<div data-hero>
+													<section class="card ">
+														<div class="card-h">
+															<h5 class="ct">Upabhogika Stores Private Limited — Retail rollout, Kharadi
+																<span class="sub">Pune · Thu 1 Oct, 11:00 · Shalini · Manjit</span>
+																</h5>
+															<div class="actions"><a href="#" class="btn">Open lead</a>
+																	<button class="btn primary" type="button">Start the BOQ</button>
+																</div>
+															</div>
+														<div class="card-b">
+															<dl class="kv">
+																<dt>Carpet area</dt>
+																<dd>1,840 sqm</dd>
+																<dt>Floors</dt>
+																<dd>1 (14th)</dd>
+																<dt>Ceiling height</dt>
+																<dd>3.2 m slab · 2.7 m false</dd>
+																<dt>Power</dt>
+																<dd>2 × 200 A, one DB</dd>
+																<dt>Access</dt>
+																<dd>Service lift 1,000 kg · loading 22:00–06:00</dd>
+																<dt>Working hours</dt>
+																<dd>Nights and weekends only</dd>
+																</dl>
+															<p style="margin-top:var(--space-200);color:var(--ink-soft)">
+																	Existing raised floor stays. Retail fixtures are client-supplied; we do the floor, ceiling, power and
+																	data. Two columns in the east bay limit the fixture runs to 6.</p>
+															</div>
+														<div class="photos">
+															<div><span>East bay, columns</span></div>
+															<div><span>Raised floor</span></div>
+															<div><span>Ceiling void</span></div>
+															<div><span>Service lift</span></div>
+															</div>
+														</section>
+													</div>
+												<section class="card ">
+													<div class="card-h">
+														<h5 class="ct">Checklist
+															<span class="sub">3 of 5 done</span>
+															</h5>
+														</div>
+													<ul class="checks">
+														<li class="done"><span class="tick" aria-hidden="true"><span class="ico">
+																<svg class="i sm" aria-hidden="true"><use href="#i-check"/></svg>
+															</span></span>
+															<div>Existing drawings received<small>From the client’s facilities team</small></div>
+															<span></span></li>
+														<li class="done"><span class="tick" aria-hidden="true"><span class="ico">
+																<svg class="i sm" aria-hidden="true"><use href="#i-check"/></svg>
+															</span></span>
+															<div>Floor plan measured<small>Laser, 48 points</small></div>
+															<span></span></li>
+														<li class="done"><span class="tick" aria-hidden="true"><span class="ico">
+																<svg class="i sm" aria-hidden="true"><use href="#i-check"/></svg>
+															</span></span>
+															<div>Photos taken<small>24 photos, tagged by zone</small></div>
+															<span></span></li>
+														<li class=""><span class="tick" aria-hidden="true"></span>
+															<div>Services traced<small>HVAC ducts, sprinkler, data</small></div>
+															<span></span></li>
+														<li class=""><span class="tick" aria-hidden="true"></span>
+															<div>Client sign-off on scope<small>Awaiting the facilities head</small></div>
+															<span></span></li>
+														</ul>
+													</section>
+												</div>
+											</main>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<aside class="dsx-note">
+						<strong class="h">Design note</strong>
+						<p>
+								A recce belongs to a lead, so it is reachable from Sales too; it lives under Site because the people who do it
+								are the site team. Its quantities seed the proposal BOQ.</p>
+						</aside>
+					</section>
+				<nav class="dsx-pager" aria-label="Across the set">
+						<a class="pg-prev" href="07-buying.html" rel="prev"><small>Previous</small>
+					<b>7 · Buying</b></a><a class="pg-up" href="index.html">All 15 parts</a>
+						<a class="pg-next" href="09-approvals-money.html" rel="next"><small>Next</small>
+					<b>9 · Approvals, Tasks & Money</b></a></nav>
+				</main>
+			</div>
+		<script src="design.js"></script>
+		</body>
+	</html>

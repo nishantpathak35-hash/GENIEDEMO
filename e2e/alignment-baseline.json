@@ -1,0 +1,221 @@
+{
+ "web /crm \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /crm/board \u00b7 400x900 light": {
+  "g": 3
+ },
+ "web /inventory \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /money/bills \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /money/client-billing \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /money/payments \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /projects \u00b7 400x900 light": {
+  "g": 1,
+  "f": 1
+ },
+ "web /projects/[projectId]/boq \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /projects/[projectId]/brief \u00b7 1280x900 light": {
+  "g": 1
+ },
+ "web /projects/[projectId]/client-billing \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /projects/[projectId]/commercials \u00b7 1280x900 light": {
+  "g": 1
+ },
+ "web /projects/[projectId]/orders \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /purchase-orders \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /retention \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /settings/approvals \u00b7 400x900 light": {
+  "g": 16
+ },
+ "web /settings/client-access \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /settings/modules \u00b7 400x900 light": {
+  "g": 11,
+  "f": 3
+ },
+ "web /settings/vendor-access \u00b7 400x900 light": {
+  "g": 5,
+  "f": 3
+ },
+ "web /site-reports \u00b7 400x900 light": {
+  "g": 1
+ },
+ "web /vendors \u00b7 400x900 light": {
+  "g": 2
+ },
+ "web /vendors/rate-contracts \u00b7 400x900 light": {
+  "g": 1
+ },
+ "client-portal / \u00b7 640x900 light": {
+  "f": 1
+ },
+ "client-portal / \u00b7 768x900 light": {
+  "f": 1
+ },
+ "client-portal / \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "client-portal / \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web / \u00b7 400x900 light": {
+  "f": 1
+ },
+ "web / \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web / \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web / \u00b7 400x900 dark": {
+  "f": 1
+ },
+ "web / \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web / \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /documents \u00b7 400x900 light": {
+  "f": 1
+ },
+ "web /documents \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /documents \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web /documents \u00b7 400x900 dark": {
+  "f": 1
+ },
+ "web /documents \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /documents \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /inventory \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /inventory \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /preferences \u00b7 400x900 light": {
+  "f": 1
+ },
+ "web /preferences \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /preferences \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web /preferences \u00b7 400x900 dark": {
+  "f": 1
+ },
+ "web /preferences \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /preferences \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /projects \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /projects \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web /projects \u00b7 400x900 dark": {
+  "f": 1
+ },
+ "web /projects \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /projects \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 400x900 light": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 400x900 dark": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /projects/[projectId] \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /settings/approvals \u00b7 640x900 light": {
+  "f": 4
+ },
+ "web /settings/approvals \u00b7 640x900 dark": {
+  "f": 4
+ },
+ "web /settings/modules \u00b7 400x900 dark": {
+  "f": 3
+ },
+ "web /settings/number-series \u00b7 400x900 light": {
+  "f": 2
+ },
+ "web /settings/number-series \u00b7 768x900 light": {
+  "f": 2
+ },
+ "web /settings/number-series \u00b7 400x900 dark": {
+  "f": 2
+ },
+ "web /settings/number-series \u00b7 768x900 dark": {
+  "f": 2
+ },
+ "web /settings/trade-packages \u00b7 640x900 light": {
+  "f": 7
+ },
+ "web /settings/trade-packages \u00b7 768x900 light": {
+  "f": 1
+ },
+ "web /settings/trade-packages \u00b7 640x900 dark": {
+  "f": 7
+ },
+ "web /settings/trade-packages \u00b7 768x900 dark": {
+  "f": 1
+ },
+ "web /settings/vendor-access \u00b7 400x900 dark": {
+  "f": 3
+ },
+ "web /tasks \u00b7 640x900 light": {
+  "f": 1
+ },
+ "web /tasks \u00b7 768x900 light": {
+  "f": 2
+ },
+ "web /tasks \u00b7 640x900 dark": {
+  "f": 1
+ },
+ "web /tasks \u00b7 768x900 dark": {
+  "f": 2
+ }
+}

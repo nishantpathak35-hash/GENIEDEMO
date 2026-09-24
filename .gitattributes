@@ -1,0 +1,21 @@
+# One line ending in the repository: LF.
+#
+# Containers and CI are Linux; the development machine is Windows. Without this,
+# a Windows checkout rewrites files to CRLF and anything copied into an image
+# that the shell reads — entrypoints, seed scripts, SQL run by psql — fails with
+# a `\r: not found` that reads like a missing file.
+* text=auto eol=lf
+
+# Never normalise these.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.woff binary
+*.woff2 binary
+
+# The lockfile is reviewed as code (ADR-0015), so it is deliberately NOT marked
+# generated or diff-suppressed — a reviewer must see what changed.
+pnpm-lock.yaml text eol=lf

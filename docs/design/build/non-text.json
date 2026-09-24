@@ -1,0 +1,1184 @@
+{
+ "rows": [
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Control border — input, select",
+   "r": 3.5,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Focus ring",
+   "r": 3.5,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Focus ring on the page",
+   "r": 3.3,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Icon beside text",
+   "r": 14.34,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart series 1 — the default line",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart series 2",
+   "r": 3.35,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart series 3",
+   "r": 3.34,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart series 1 against its own track",
+   "r": 3.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart — the watch line, as its border paints it",
+   "r": 3.24,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart — the series fill (a meter)",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Chart — the marker where a series crossed",
+   "r": 5.16,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Legend — the watch-line swatch, as its border paints it",
+   "r": 3.24,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Legend — the series swatch",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sparkline — the threshold stroke",
+   "r": 3.24,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sparkline — the crossing marker",
+   "r": 5.16,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sparkline — the series stroke",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Bars — a bar",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar — on track",
+   "r": 4.66,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar — off track",
+   "r": 5.16,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar — paused",
+   "r": 3.24,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar legend — on track",
+   "r": 4.66,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar legend — off track",
+   "r": 5.16,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stacked bar legend — paused",
+   "r": 3.24,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Progress bar — fill against track",
+   "r": 3.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Progress bar — boundary",
+   "r": 3.46,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Illustration — the line",
+   "r": 14.34,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Unread dot",
+   "r": 5.2,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Status — done",
+   "r": 6.12,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Status — caution ink on its own fill",
+   "r": 5.47,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Status — waiting",
+   "r": 6.62,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Status — bad",
+   "r": 6.53,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sidebar — the current page’s pill on the sidebar",
+   "r": 4.89,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Top bar — the search’s boundary against the bar",
+   "r": 3.65,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Top bar — an icon on the bar",
+   "r": 6.2,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Top bar — the quick-create square against the bar (a control boundary)",
+   "r": 4.07,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Top bar — the plus on the square (the only thing that identifies it)",
+   "r": 3.5,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Top bar — the avatar’s disc against the bar",
+   "r": 7.14,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sidebar — the plus on the current page’s pill",
+   "r": 5.2,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Sidebar — the icon and badge on the pill",
+   "r": 5.2,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Owed bar — the not-yet-due part, as it paints",
+   "r": 4,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the blue icon on its disc",
+   "r": 3.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the teal icon on its disc",
+   "r": 3.07,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the green icon on its disc",
+   "r": 3.11,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the purple icon on its disc",
+   "r": 3.49,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the magenta icon on its disc",
+   "r": 3.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the red icon on its disc",
+   "r": 4.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the yellow icon on its disc",
+   "r": 3.06,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "obligated",
+   "label": "Stat disc — the gray icon on its disc",
+   "r": 3.45,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Owed bar — the overdue part, amber, its figure beneath — granted: “₹44,23,500.00” in Total payables",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Chart — the overrun band, amber, the overrun printed beside it — granted: “₹6,91,200.00 over” in chart",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Legend — the band swatch, named in words — granted: “Past the contract” in ",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Sparkline — the band, its stat’s value beside it — granted: “104%” in Ordered against contract",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Stacked bar — at risk, amber, its count in the legend — granted: “At risk3” in Projects by health15 projects",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "labelled-redundant",
+   "label": "Stacked bar legend — at risk, named with its count — granted: “At risk3” in ",
+   "r": 1.57,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Illustration — block a (blue)",
+   "r": 1.33,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Illustration — block b (yellow)",
+   "r": 1.52,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Illustration — block c (teal)",
+   "r": 1.24,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Illustration — paper (grey)",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Illustration — the highlight (magenta)",
+   "r": 2.76,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "raised",
+   "label": "Table and card hairline on a card",
+   "r": 1.96,
+   "ok": true,
+   "min": 1.4
+  },
+  {
+   "theme": "light",
+   "cls": "raised",
+   "label": "Table and card hairline on the page",
+   "r": 1.94,
+   "ok": true,
+   "min": 1.4
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Card against the page",
+   "r": 1.06,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Drawer and menu against the page",
+   "r": 1.06,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Grouped rows against a card",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Selected row against a card",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Loading placeholder",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Meter track against a card (a backdrop)",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Legend — the track swatch (a backdrop’s swatch)",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Filled area under a single-series line (a backdrop)",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Bars — a gridline (a backdrop)",
+   "r": 1.95,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Card header strip against its card",
+   "r": 1.06,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "Row waiting on this person against a card",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "light",
+   "cls": "exempt",
+   "label": "An open section’s tint against the sidebar",
+   "r": 1.06,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Control border — input, select",
+   "r": 8.11,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Focus ring",
+   "r": 8.11,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Focus ring on the page",
+   "r": 8.68,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Icon beside text",
+   "r": 10.56,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart series 1 — the default line",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart series 2",
+   "r": 4.9,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart series 3",
+   "r": 4.93,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart series 1 against its own track",
+   "r": 4.01,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart — the watch line, as its border paints it",
+   "r": 4.22,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart — the series fill (a meter)",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Chart — the marker where a series crossed",
+   "r": 4.98,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Legend — the watch-line swatch, as its border paints it",
+   "r": 4.22,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Legend — the series swatch",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sparkline — the threshold stroke",
+   "r": 4.22,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sparkline — the crossing marker",
+   "r": 4.98,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sparkline — the series stroke",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Bars — a bar",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar — on track",
+   "r": 10.75,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar — off track",
+   "r": 4.98,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar — paused",
+   "r": 4.22,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar legend — on track",
+   "r": 10.75,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar legend — off track",
+   "r": 4.98,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stacked bar legend — paused",
+   "r": 4.22,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Progress bar — fill against track",
+   "r": 4.02,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Progress bar — boundary",
+   "r": 3.6,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Illustration — the line",
+   "r": 10.56,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Unread dot",
+   "r": 6,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Status — done",
+   "r": 10.75,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Status — caution ink on its own fill",
+   "r": 6.89,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Status — waiting",
+   "r": 8.06,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Status — bad",
+   "r": 7.9,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sidebar — the current page’s pill on the sidebar",
+   "r": 6.42,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Top bar — the search’s boundary against the bar",
+   "r": 3.65,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Top bar — an icon on the bar",
+   "r": 6.2,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Top bar — the quick-create square against the bar (a control boundary)",
+   "r": 4.07,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Top bar — the plus on the square (the only thing that identifies it)",
+   "r": 3.5,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Top bar — the avatar’s disc against the bar",
+   "r": 7.14,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sidebar — the plus on the current page’s pill",
+   "r": 6,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Sidebar — the icon and badge on the pill",
+   "r": 6,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Owed bar — the not-yet-due part, as it paints",
+   "r": 4.7,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the blue icon on its disc",
+   "r": 4.07,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the teal icon on its disc",
+   "r": 5.54,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the green icon on its disc",
+   "r": 5.47,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the purple icon on its disc",
+   "r": 4.27,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the magenta icon on its disc",
+   "r": 4.29,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the red icon on its disc",
+   "r": 3.53,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the yellow icon on its disc",
+   "r": 8.91,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "obligated",
+   "label": "Stat disc — the gray icon on its disc",
+   "r": 3.33,
+   "ok": true,
+   "min": 3
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Owed bar — the overdue part, amber, its figure beneath — granted: “₹44,23,500.00” in Total payables",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Chart — the overrun band, amber, the overrun printed beside it — granted: “₹6,91,200.00 over” in chart",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Legend — the band swatch, named in words — granted: “Past the contract” in ",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Sparkline — the band, its stat’s value beside it — granted: “104%” in Ordered against contract",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Stacked bar — at risk, amber, its count in the legend — granted: “At risk3” in Projects by health15 projects",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "labelled-redundant",
+   "label": "Stacked bar legend — at risk, named with its count — granted: “At risk3” in ",
+   "r": 10.5,
+   "ok": null,
+   "min": 0,
+   "granted": true
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Illustration — block a (blue)",
+   "r": 1.3,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Illustration — block b (yellow)",
+   "r": 2.77,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Illustration — block c (teal)",
+   "r": 1.58,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Illustration — paper (grey)",
+   "r": 1.27,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Illustration — the highlight (magenta)",
+   "r": 2.49,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "raised",
+   "label": "Table and card hairline on a card",
+   "r": 1.7,
+   "ok": true,
+   "min": 1.4
+  },
+  {
+   "theme": "dark",
+   "cls": "raised",
+   "label": "Table and card hairline on the page",
+   "r": 1.68,
+   "ok": true,
+   "min": 1.4
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Card against the page",
+   "r": 1.07,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Drawer and menu against the page",
+   "r": 1.26,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Grouped rows against a card",
+   "r": 1.07,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Selected row against a card",
+   "r": 1.15,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Loading placeholder",
+   "r": 1.17,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Meter track against a card (a backdrop)",
+   "r": 1.17,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Legend — the track swatch (a backdrop’s swatch)",
+   "r": 1.17,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Filled area under a single-series line (a backdrop)",
+   "r": 1.13,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Bars — a gridline (a backdrop)",
+   "r": 1.7,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Card header strip against its card",
+   "r": 1.07,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "Row waiting on this person against a card",
+   "r": 1.16,
+   "ok": null,
+   "min": 0
+  },
+  {
+   "theme": "dark",
+   "cls": "exempt",
+   "label": "An open section’s tint against the sidebar",
+   "r": 1.24,
+   "ok": null,
+   "min": 0
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+# Local development stack. `docker compose up` is the entire setup.
+#
+# No Redis: jobs run on pg-boss, backed by the same Postgres (ADR-0010).
+# MinIO stands in for S3 so signed-URL code paths are exercised locally
+# exactly as they are in ap-south-1.
+
+name: construct-o-genie
+
+# The database name is overridable too, and for a different reason than the
+# ports: an end-to-end run wants a database it can throw away.
+#
+# `POSTGRES_DB=cog_e2e docker compose up -d` migrates and seeds a disposable
+# database in the same server, leaving `cog` — and whatever a developer has in
+# it — untouched. The postgres image only creates POSTGRES_DB on FIRST
+# initialisation, so on an existing pgdata volume the database has to be created
+# once by hand:
+#
+#   docker compose exec postgres psql -U cog -d postgres -c 'CREATE DATABASE cog_e2e OWNER cog'
+#
+# pgbouncer resolves the database by name at connect time, so it needs no change.
+
+# Host ports are overridable; the defaults are unchanged.
+#
+# Every published port here is a HOST port, and a developer machine is not
+# empty. Found the hard way: `docker compose up` failed with
+#
+#   Bind for 0.0.0.0:9000 failed: port is already allocated
+#
+# because an unrelated project's MinIO already held 9000. Compose then created
+# every container and started none of the ones that mattered, which reads
+# exactly like the repo being broken.
+#
+# `${MINIO_PORT:-9000}` keeps the default identical and lets that machine set
+# MINIO_PORT=9010 in a local .env instead. Container-to-container addressing is
+# untouched — services still reach each other on the internal network by service
+# name and the real port (`http://minio:9000`), so overriding a host port cannot
+# desynchronise anything inside the network.
+
+# One volume per workspace node_modules, not just the root — declared ONCE.
+#
+# `.:/app` mounts the Windows tree over the image, and pnpm puts a node_modules
+# in EVERY workspace package whose entries are absolute symlinks into
+# /d/TechSmiths/... — paths that do not exist in the container, so they dangle
+# and resolution fails with ERR_MODULE_NOT_FOUND. A volume mounted over each one
+# is initialised from the image, which is where `pnpm install` already ran.
+#
+# Adding a workspace package still means adding a line — but one line, here,
+# rather than the same line in three places and remembering the third. It was
+# copied per service until there were three copies and a fourth was about to be
+# written for the seed service below.
+#
+# A named volume is initialised from the image ONCE and never refreshed, so a
+# dependency added later leaves the volume holding the old tree. The symptom is
+# ERR_MODULE_NOT_FOUND for a package that is plainly in package.json. The repair
+# is an install in place, NOT deleting the volume — `construct-o-genie_pgdata`
+# lives alongside these and holds the local database:
+#
+#   docker compose run --rm --no-deps -e CI=true --entrypoint sh migrate \
+#     -c 'cd /app && pnpm install --frozen-lockfile --ignore-scripts \
+#         --config.confirmModulesPurge=false'
+#
+# CI=true and --config.confirmModulesPurge=false are both required, or pnpm
+# prompts and hangs on a non-interactive exec.
+#
+# YAML merges maps, not sequences, so the bind mount lives inside the anchor
+# rather than beside it. That is why this is the whole `volumes:` value.
+x-workspace-volumes: &workspace-volumes
+      - .:/app
+      - nm_root:/app/node_modules
+      - nm_contracts:/app/packages/contracts/node_modules
+      - nm_design_system:/app/packages/design-system/node_modules
+      - nm_money:/app/packages/money/node_modules
+      - nm_service_kit:/app/packages/service-kit/node_modules
+      - nm_finance:/app/services/finance/node_modules
+      - nm_host:/app/services/host/node_modules
+      - nm_identity:/app/services/identity/node_modules
+      - nm_procurement:/app/services/procurement/node_modules
+      - nm_projects:/app/services/projects/node_modules
+      - nm_siteops:/app/services/siteops/node_modules
+      - nm_tenancy:/app/services/tenancy/node_modules
+      - nm_worker:/app/services/worker/node_modules
+      - nm_workflow:/app/services/workflow/node_modules
+      - nm_web:/app/apps/web/node_modules
+      - nm_admin:/app/apps/admin/node_modules
+      - nm_vendor_portal:/app/apps/vendor-portal/node_modules
+      - nm_client_portal:/app/apps/client-portal/node_modules
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: cog
+      POSTGRES_PASSWORD: cog_local_dev
+      POSTGRES_DB: ${POSTGRES_DB:-cog}
+    ports: ["${POSTGRES_PORT:-5432}:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Runs ONLY when pgdata is empty. It gives `app_runtime` the login this
+      # file has always assumed it had — see the file for why that was invisible
+      # until a throwaway volume was tried. Read-only: nothing should be able to
+      # edit a bootstrap credential from inside the container.
+      - ./docker/postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cog -d cog"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Transaction-mode pooling is the default on most managed Postgres, and it is
+  # what silently discards the session variable RLS depends on. It is in the
+  # local stack so the hazard is exercised in development, not discovered in
+  # production. Migrations bypass it and talk to postgres:5432 directly.
+  pgbouncer:
+    image: edoburu/pgbouncer:latest
+    # Starts after migrate, because app_runtime holds no grants until 0001 has
+    # run. Its LOGIN comes from `docker/postgres-init/01-runtime-role.sql`,
+    # which runs when the volume is first created — this comment used to say
+    # the seed minted it, and the seed has never done anything of the kind.
+    environment:
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      # Follows POSTGRES_DB. The pooler resolves a database from ITS OWN config,
+      # not from the connection string, so leaving this pinned to `cog` while the
+      # rest of the stack pointed at `cog_e2e` produced `no such database:
+      # cog_e2e` from pgbouncer for a database that existed in postgres.
+      DB_NAME: ${POSTGRES_DB:-cog}
+      # Runtime traffic authenticates as app_runtime — a role that owns nothing
+      # and holds no BYPASSRLS. Pointing the pooler at the bootstrap superuser
+      # would make every policy in the system inert.
+      DB_USER: app_runtime
+      DB_PASSWORD: runtime_local_dev
+      POOL_MODE: transaction
+      AUTH_TYPE: scram-sha-256
+      MAX_CLIENT_CONN: "200"
+      DEFAULT_POOL_SIZE: "20"
+      # DISCARD ALL between transactions, not just between sessions. Without
+      # it, session state (a non-LOCAL SET, a temp table, an advisory lock)
+      # rides the server connection to whichever tenant is served next.
+      SERVER_RESET_QUERY_ALWAYS: "1"
+    ports: ["${PGBOUNCER_PORT:-6432}:5432"]
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  # One-shot. Runs to completion, then api starts.
+  migrate:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+      target: dev
+    environment:
+      MIGRATION_DATABASE_URL: postgres://cog:cog_local_dev@postgres:5432/${POSTGRES_DB:-cog}
+      APP_RUNTIME_PASSWORD: runtime_local_dev
+    # Migrations only.
+    #
+    # This used to be `pnpm migrate && pnpm --filter @cog/tenancy seed`, and it
+    # DEADLOCKED the whole stack. The tenancy seed was rewritten to provision
+    # through the product over HTTP rather than by hand-written SQL (M6), so it
+    # now needs the API — and `api` waits on this service completing. migrate
+    # waited for an API that was waiting for migrate, and `docker compose up`
+    # exited 1 with every container created and nothing serving.
+    #
+    # Seeding is a separate service under the `seed` profile, after the API is
+    # healthy. See below.
+    command: pnpm migrate
+    depends_on:
+      postgres: { condition: service_healthy }
+    volumes: *workspace-volumes
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: cog
+      MINIO_ROOT_PASSWORD: cog_local_dev
+    ports: ["${MINIO_PORT:-9000}:9000", "${MINIO_CONSOLE_PORT:-9001}:9001"]
+    volumes:
+      - miniodata:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+      target: dev
+    environment:
+      # Runtime traffic goes through the pooler; migrations do not.
+      DATABASE_URL: postgres://app_runtime:runtime_local_dev@pgbouncer:5432/${POSTGRES_DB:-cog}
+      MIGRATION_DATABASE_URL: postgres://cog:cog_local_dev@postgres:5432/${POSTGRES_DB:-cog}
+      S3_ENDPOINT: http://minio:9000
+      S3_BUCKET: cog-local
+      LOG_LEVEL: debug
+      # LOCAL DEVELOPMENT ONLY, and the stack says so in three other ways
+      # already — the database passwords in this file are literals ending
+      # `_local_dev`, and nothing here is reachable off this machine.
+      #
+      # `AUTH_PROVIDER=local` accepts a bearer token as an external id with no
+      # verification; `verifyLocalBearer` calls `assertNotProduction` and throws
+      # if NODE_ENV is production, so this cannot be shipped by accident.
+      # Without it the default is `verifyNobody` and every request is anonymous.
+      #
+      # `PLATFORM_CONSOLE=on` mounts /platform/v1. Without it the tenancy seed
+      # provisions against a route that is not mounted and reports a bare
+      # `404 Not Found`, which reads like a broken script rather than a
+      # deliberately absent surface.
+      NODE_ENV: development
+      # Statutory outputs — TDS deducted, a challan, 26Q content, a tax invoice —
+      # computed from provisional values are produced, marked as drafts, only
+      # because this says `draft`. Unset, or anything else, refuses them with
+      # PROVISIONAL_OUTPUT_REFUSED (ADR-0014, addendums). NODE_ENV plays no part.
+      STATUTORY_OUTPUTS: draft
+      AUTH_PROVIDER: local
+      PLATFORM_CONSOLE: "on"
+    ports: ["${API_PORT:-4000}:4000"]
+    # `node -e` rather than curl or wget: neither is installed in the dev image,
+    # and a healthcheck that fails because its own tool is missing reports the
+    # service unhealthy forever.
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:4000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 20s
+    depends_on:
+      postgres: { condition: service_healthy }
+      minio: { condition: service_healthy }
+      migrate: { condition: service_completed_successfully }
+    volumes: *workspace-volumes
+
+
+  # Provisioning the two local tenants and the demo data, THROUGH the product.
+  #
+  # Profile-gated, so `docker compose up` brings up a working empty stack and
+  # `docker compose --profile seed up seed` fills it. Opt-in because seeding is
+  # not part of starting the system, and because it is the step that must run
+  # AFTER the API rather than before it.
+  seed:
+    profiles: ["seed"]
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+      target: dev
+    environment:
+      MIGRATION_DATABASE_URL: postgres://cog:cog_local_dev@postgres:5432/${POSTGRES_DB:-cog}
+      # By service name on the internal network. `localhost` inside this
+      # container is this container, which is what the old arrangement was
+      # really asking the migrate step to talk to.
+      API_URL: http://api:4000
+    command: sh -c "pnpm --filter @cog/tenancy seed && node scripts/seed-demo.mjs"
+    depends_on:
+      api: { condition: service_healthy }
+    volumes: *workspace-volumes
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/worker.Dockerfile
+      target: dev
+    environment:
+      DATABASE_URL: postgres://cog:cog_local_dev@postgres:5432/${POSTGRES_DB:-cog}
+      S3_ENDPOINT: http://minio:9000
+      S3_BUCKET: cog-local
+    depends_on:
+      postgres: { condition: service_healthy }
+      minio: { condition: service_healthy }
+    volumes: *workspace-volumes
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      target: dev
+    environment:
+      API_URL: http://api:4000
+      NEXT_PUBLIC_API_URL: http://localhost:${API_PORT:-4000}
+    ports: ["${WEB_PORT:-3000}:3000"]
+    depends_on: [api]
+    volumes: *workspace-volumes
+
+# The other three surfaces.
+#
+# `docker/web.Dockerfile` already says it: "The three other surfaces build
+# identically with a different --filter." They were missing from compose anyway,
+# so three of the four deployables had no container at all and eight screens
+# could not be reached in the supported environment — which is how they went
+# 39-screens-never-rendered.
+#
+# Same image, same target, different filter. Separate ORIGINS rather than paths
+# on one, because they are separate deployables holding separate cookies
+# (`cog_credential`, `cog_admin_credential`, `cog_vendor_credential`,
+# `cog_client_credential`); one origin would put a staff session and a vendor
+# session one `document.cookie` apart.
+
+  # The platform console — provisioning organisations. Not a tenant surface.
+  admin:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      target: dev
+    command: pnpm --filter @cog/admin dev
+    environment:
+      # Server-side: the service name on the internal network.
+      # Browser-side: the published host port, baked into the bundle.
+      API_URL: http://api:4000
+      NEXT_PUBLIC_API_URL: http://localhost:${API_PORT:-4000}
+    ports: ["${ADMIN_PORT:-3001}:3001"]
+    depends_on: [api]
+    volumes: *workspace-volumes
+
+  # A vendor's own orders and bills, scoped by a principal link and never by a request parameter.
+  vendor-portal:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      target: dev
+    command: pnpm --filter @cog/vendor-portal dev
+    environment:
+      # Server-side: the service name on the internal network.
+      # Browser-side: the published host port, baked into the bundle.
+      API_URL: http://api:4000
+      NEXT_PUBLIC_API_URL: http://localhost:${API_PORT:-4000}
+    ports: ["${VENDOR_PORTAL_PORT:-3002}:3002"]
+    depends_on: [api]
+    volumes: *workspace-volumes
+
+  # A client's own projects and variations, scoped the same way.
+  client-portal:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      target: dev
+    command: pnpm --filter @cog/client-portal dev
+    environment:
+      # Server-side: the service name on the internal network.
+      # Browser-side: the published host port, baked into the bundle.
+      API_URL: http://api:4000
+      NEXT_PUBLIC_API_URL: http://localhost:${API_PORT:-4000}
+    ports: ["${CLIENT_PORTAL_PORT:-3003}:3003"]
+    depends_on: [api]
+    volumes: *workspace-volumes
+
+volumes:
+  # Durable local state. Destroying these loses the local database.
+  pgdata:
+  miniodata:
+  # Dependency caches, rebuilt from the image whenever they are removed.
+  # ONE set, shared by api, migrate, seed, worker and web — they mount the same
+  # tree, and separate per-service copies meant the same staleness bug had to be
+  # repaired three times.
+  nm_root:
+  nm_contracts:
+  nm_design_system:
+  nm_money:
+  nm_service_kit:
+  nm_finance:
+  nm_host:
+  nm_identity:
+  nm_procurement:
+  nm_projects:
+  nm_siteops:
+  nm_tenancy:
+  nm_worker:
+  nm_workflow:
+  nm_web:
+  nm_admin:
+  nm_vendor_portal:
+  nm_client_portal:

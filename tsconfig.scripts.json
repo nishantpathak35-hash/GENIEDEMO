@@ -1,0 +1,25 @@
+// Every `.mjs` in the repo. They belong to no workspace member's `include`, so
+// `pnpm typecheck` had never looked at any of them — the migration runner, the
+// seed the browser suite asserts against, and the gate script itself all ran
+// unchecked. Same hole as defect 17, one file extension over.
+//
+// `checkJs` is what makes this more than a parse: without it TypeScript reads
+// the files and reports nothing. Errors are fixed by ANNOTATING, never by
+// widening this config or adding a suppression — the point is that the types
+// are written down, not that the step is green.
+//
+// Read by the turbo ROOT task `//#typecheck:scripts`, which `scripts/verify.mjs`
+// runs alongside the per-package `typecheck` and `//#typecheck:e2e`.
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "lib": ["ES2022"]
+  },
+  "include": ["scripts/**/*.mjs", "eslint.config.mjs", "apps/*/next.config.mjs", "packages/*/scripts/*.mjs", "services/*/scripts/*.mjs"]
+}

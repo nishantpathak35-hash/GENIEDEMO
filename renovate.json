@@ -1,0 +1,49 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "Asia/Kolkata",
+  "schedule": ["before 6am on monday"],
+  "prConcurrentLimit": 3,
+  "labels": ["dependencies"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on the first day of the month"]
+  },
+  "packageRules": [
+    {
+      "description": "Server workspaces pin exact versions (ADR-0015). .npmrc sets save-exact=true; this keeps Renovate from widening a pin back to a range.",
+      "matchFileNames": [
+        "package.json",
+        "services/**/package.json",
+        "packages/**/package.json"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "Never group updates. Lockfile diffs are reviewed as code (ADR-0015), and a batched PR is the one nobody reads line by line.",
+      "matchPackageNames": ["*"],
+      "groupName": null
+    },
+    {
+      "description": "The database, the pooler and the object store are pinned deliberately and moved on purpose. Major bumps stay manual.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["postgres", "edoburu/pgbouncer", "minio/minio"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "description": "Security fixes bypass the 7-day quarantine. The window exists because hijacked versions are yanked within days; a published advisory is the case the window was not protecting against.",
+      "matchDatasources": ["npm"],
+      "isVulnerabilityAlert": true,
+      "minimumReleaseAge": null
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "schedule": ["at any time"]
+  },
+  "postUpdateOptions": ["pnpmDedupe"],
+  "ignorePaths": ["**/node_modules/**", "_legacy/**"]
+}

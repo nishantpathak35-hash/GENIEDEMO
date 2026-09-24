@@ -1,0 +1,59 @@
+-- Give `app_runtime` a login, ONCE, when the volume is created.
+--
+-- ---------------------------------------------------------------------------
+-- WHY THIS FILE EXISTS
+-- ---------------------------------------------------------------------------
+--
+-- Migration 0001 creates `app_runtime` **NOLOGIN and with no password**, which
+-- is correct: a migration runs in production, and a production password is not
+-- something a repository may contain. But `docker-compose.yml` connects the
+-- pooler as `app_runtime:runtime_local_dev`, and nothing anywhere granted that
+-- role a login. `docker-compose.yml` said "app_runtime has no login until the
+-- seed mints one" — the seed does no such thing and never did.
+--
+-- So the local stack only ever started because somebody, once, ran
+-- `ALTER ROLE app_runtime LOGIN PASSWORD …` by hand against their own `pgdata`
+-- and it has been carried in that volume ever since. On any machine that has
+-- never had that done, `docker compose up` gives:
+--
+--     pgbouncer  WARNING server login failed: FATAL password authentication
+--                failed for user "app_runtime"
+--     api        /readyz 503 {"status":"degraded", … "password authentication
+--                failed for user \"app_runtime\""}
+--
+-- That was invisible to every check in the gate, because every check ran
+-- against the volume that had been fixed by hand. `scripts/compose-check.mjs`
+-- phase 2 — a throwaway compose project with its own empty volume — is what
+-- found it, on its first run.
+--
+-- ---------------------------------------------------------------------------
+-- WHY HERE AND NOT IN A MIGRATION
+-- ---------------------------------------------------------------------------
+--
+-- `runtime_local_dev` is a development credential. It is already written in
+-- `docker-compose.yml` beside the postgres superuser's, and it belongs to the
+-- local container stack, not to the schema. Putting it in a migration would
+-- ship it to every environment that runs migrations, which is the whole set.
+--
+-- `/docker-entrypoint-initdb.d/` runs ONLY when the data directory is empty, so
+-- this cannot touch an existing database, cannot re-run, and does not exist at
+-- all in a deployment that does not use this compose file.
+--
+-- ---------------------------------------------------------------------------
+-- WHY IT DOES NOT CONFLICT WITH MIGRATION 0001
+-- ---------------------------------------------------------------------------
+--
+-- 0001 creates the role inside `IF NOT EXISTS`, so it finds this one and leaves
+-- it alone — then goes on to set its statement timeouts and every GRANT it
+-- holds. **0001 is still the authority on what this role may do.** This file
+-- decides one thing only: that it can connect.
+--
+-- The attributes are repeated verbatim from 0001 and the repetition is
+-- deliberate: `CREATE ROLE` defaults to NOSUPERUSER and NOBYPASSRLS, but a
+-- role that serves every untrusted request should say so where it is created,
+-- not rely on a default. `/readyz` refuses to report ready if either is wrong,
+-- so a mistake here is caught rather than assumed.
+
+CREATE ROLE app_runtime
+  LOGIN PASSWORD 'runtime_local_dev'
+  NOBYPASSRLS NOSUPERUSER NOCREATEDB NOCREATEROLE;

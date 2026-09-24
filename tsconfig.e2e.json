@@ -1,0 +1,16 @@
+// The browser suite's own types. `e2e/` belongs to no workspace member, so no
+// package tsconfig includes it and `pnpm typecheck` never saw it — the same
+// hole as defect 17, one directory over. It is read by the turbo ROOT task
+// `//#typecheck:e2e`, which `scripts/verify.mjs` runs alongside the per-package
+// `typecheck`.
+//
+// Measured when first added: zero errors. It is here so it stays that way.
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true, "module": "ESNext", "moduleResolution": "Bundler",
+    "types": ["node"], "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true
+  },
+  "include": ["e2e/**/*.ts", "scripts/demo-principals.mjs"]
+}

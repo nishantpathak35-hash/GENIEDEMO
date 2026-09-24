@@ -1,0 +1,34 @@
+// What `pnpm typecheck` reads. **`tsconfig.json` is what `pnpm build` reads.**
+//
+// They have to be two files. `tsconfig.json` carries `rootDir: "./src"` because
+// it emits to `dist/`, and TypeScript refuses to compile a file outside
+// `rootDir`:
+//
+//   error TS6059: File '.../tests/format.test.ts' is not under rootDir
+//   '.../src'. 'rootDir' is expected to contain all source files.
+//
+// So adding `tests/**` to the build config is not an option, and leaving it out
+// is how ~1,000 tests went unchecked by a gate step named `typecheck` — see
+// docs/TOOLING-DEFECTS.md defect 17. This config emits nothing, so it is free
+// to look at both.
+//
+// It covers `src/` as well as `tests/`, so `typecheck` still means what its
+// name says. `build` remains the only thing that reads the emitting config, and
+// it is its own gate step.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

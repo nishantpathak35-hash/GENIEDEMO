@@ -1,0 +1,17 @@
+{
+  "rule": "gst-head-to-the-paise",
+  "status": "provisional",
+  "statute": "No section: the CA's answer to CA-02 keeps each GST head at its calculated value, and paise are the smallest amount held",
+  "effective_from": "2026-04-01",
+  "verified_by": null,
+  "verified_on": null,
+  "question_ref": "docs/statutory/QUESTIONS-FOR-CA.md#ca-02--where-rounding-happens-in-the-invoice-pipeline",
+  "notes": "From the CA's answer to CA-02 (CA answers document, reviewed by the CA; CA details to follow): 'The taxable/basic value and the GST components shall retain their calculated values and shall not be individually rounded to the nearest rupee.' A head is rounded only to whole paise, halves away from zero. effective_from is the date this system applies the rule from (the rate table's, CA-05). Nothing here is verified.",
+  "cases": [
+    { "numerator": 111110400, "denominator": 10000, "expect": 11111, "comment": "9% of 1,234.56 is 111.1104 -> 111.11" },
+    { "numerator": 45, "denominator": 1, "expect": 45, "comment": "45 paise stays 45 paise; it is not rounded to 0 rupees" },
+    { "numerator": 9, "denominator": 2, "expect": 5, "comment": "4.5 paise -> 5 paise, half away from zero" },
+    { "numerator": 1, "denominator": 3, "expect": 0, "comment": "a third of a paisa -> 0" },
+    { "numerator": -9, "denominator": 2, "expect": -5, "comment": "PROVISIONAL (CA-01): a credit note mirrors it" }
+  ]
+}

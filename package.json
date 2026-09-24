@@ -1,0 +1,39 @@
+{
+  "name": "construct-o-genie",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "eslint .",
+    "design:gates": "node scripts/design-gates.mjs",
+    "typecheck": "turbo run typecheck typecheck:e2e typecheck:scripts",
+    "test": "turbo run test",
+    "test:isolation": "node scripts/test-isolation.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:fast": "node scripts/verify.mjs --fast",
+    "seed:demo": "node scripts/seed-demo.mjs",
+    "test:e2e": "node scripts/e2e.mjs",
+    "compose:check": "node scripts/compose-check.mjs",
+    "typecheck:e2e": "tsc -p tsconfig.e2e.json",
+    "typecheck:scripts": "tsc -p tsconfig.scripts.json"
+  },
+  "devDependencies": {
+    "@cyclonedx/cdxgen": "12.8.4",
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.1",
+    "@types/pg": "8.23.1",
+    "eslint": "^9.16.0",
+    "eslint-import-resolver-typescript": "4.4.5",
+    "eslint-plugin-import": "^2.31.0",
+    "pg": "8.23.0",
+    "prettier": "^3.4.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "8.69.0"
+  }
+}

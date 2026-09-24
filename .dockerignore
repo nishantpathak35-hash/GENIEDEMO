@@ -1,0 +1,35 @@
+# Build context hygiene. Without this, `COPY . .` in the build stages drags in
+# .git and node_modules — slow builds and a fatter image than necessary.
+
+node_modules
+**/node_modules
+.pnpm-store
+
+.git
+.github
+
+.next
+**/.next
+dist
+**/dist
+build
+coverage
+.turbo
+.vercel
+
+.env
+.env.*
+!.env.example
+
+*.sqlite
+*.sqlite-*
+*.db
+
+*.log
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+
+# Never buildable, never needed in an image
+docker-compose.yml

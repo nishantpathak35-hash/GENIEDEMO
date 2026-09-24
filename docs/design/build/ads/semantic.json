@@ -1,0 +1,2957 @@
+{
+"border.width": {
+"light": "1px",
+"dark": "",
+"desc": "The default width for all standard component borders and dividers.Introduced v1.5.2"
+},
+"border.width.selected": {
+"light": "2px",
+"dark": "",
+"desc": "The width used to indicate a selected element, such as an active tab or a chosen item.Introduced v6.1.0"
+},
+"border.width.focused": {
+"light": "2px",
+"dark": "",
+"desc": "The width used for the focus ring on interactive elements.Introduced v6.1.0"
+},
+"color.background.accent.lime.subtlest": {
+"light": "Lime100",
+"dark": "Lime1000",
+"desc": ""
+},
+"color.background.accent.lime.subtlest.hovered": {
+"light": "Lime200",
+"dark": "Lime900",
+"desc": ""
+},
+"color.background.accent.lime.subtlest.pressed": {
+"light": "Lime250",
+"dark": "Lime850",
+"desc": ""
+},
+"color.background.accent.lime.subtler": {
+"light": "Lime200",
+"dark": "Lime900",
+"desc": ""
+},
+"color.background.accent.lime.subtler.hovered": {
+"light": "Lime250",
+"dark": "Lime850",
+"desc": ""
+},
+"color.background.accent.lime.subtler.pressed": {
+"light": "Lime300",
+"dark": "Lime800",
+"desc": ""
+},
+"color.background.accent.lime.subtle": {
+"light": "Lime400",
+"dark": "Lime800",
+"desc": ""
+},
+"color.background.accent.lime.subtle.hovered": {
+"light": "Lime300",
+"dark": "Lime850",
+"desc": ""
+},
+"color.background.accent.lime.subtle.pressed": {
+"light": "Lime250",
+"dark": "Lime900",
+"desc": ""
+},
+"color.background.accent.lime.bolder": {
+"light": "Lime700",
+"dark": "Lime400",
+"desc": ""
+},
+"color.background.accent.lime.bolder.hovered": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": ""
+},
+"color.background.accent.lime.bolder.pressed": {
+"light": "Lime850",
+"dark": "Lime250",
+"desc": ""
+},
+"color.background.accent.red.subtlest": {
+"light": "Red100",
+"dark": "Red1000",
+"desc": ""
+},
+"color.background.accent.red.subtlest.hovered": {
+"light": "Red200",
+"dark": "Red900",
+"desc": ""
+},
+"color.background.accent.red.subtlest.pressed": {
+"light": "Red250",
+"dark": "Red850",
+"desc": ""
+},
+"color.background.accent.red.subtler": {
+"light": "Red200",
+"dark": "Red900",
+"desc": ""
+},
+"color.background.accent.red.subtler.hovered": {
+"light": "Red250",
+"dark": "Red850",
+"desc": ""
+},
+"color.background.accent.red.subtler.pressed": {
+"light": "Red300",
+"dark": "Red800",
+"desc": ""
+},
+"color.background.accent.red.subtle": {
+"light": "Red400",
+"dark": "Red800",
+"desc": ""
+},
+"color.background.accent.red.subtle.hovered": {
+"light": "Red300",
+"dark": "Red850",
+"desc": ""
+},
+"color.background.accent.red.subtle.pressed": {
+"light": "Red250",
+"dark": "Red900",
+"desc": ""
+},
+"color.background.accent.red.bolder": {
+"light": "Red700",
+"dark": "Red400",
+"desc": ""
+},
+"color.background.accent.red.bolder.hovered": {
+"light": "Red800",
+"dark": "Red300",
+"desc": ""
+},
+"color.background.accent.red.bolder.pressed": {
+"light": "Red850",
+"dark": "Red250",
+"desc": ""
+},
+"color.background.accent.orange.subtlest": {
+"light": "Orange100",
+"dark": "Orange1000",
+"desc": ""
+},
+"color.background.accent.orange.subtlest.hovered": {
+"light": "Orange200",
+"dark": "Orange900",
+"desc": ""
+},
+"color.background.accent.orange.subtlest.pressed": {
+"light": "Orange250",
+"dark": "Orange850",
+"desc": ""
+},
+"color.background.accent.orange.subtler": {
+"light": "Orange200",
+"dark": "Orange900",
+"desc": ""
+},
+"color.background.accent.orange.subtler.hovered": {
+"light": "Orange250",
+"dark": "Orange850",
+"desc": ""
+},
+"color.background.accent.orange.subtler.pressed": {
+"light": "Orange300",
+"dark": "Orange800",
+"desc": ""
+},
+"color.background.accent.orange.subtle": {
+"light": "Orange400",
+"dark": "Orange800",
+"desc": ""
+},
+"color.background.accent.orange.subtle.hovered": {
+"light": "Orange300",
+"dark": "Orange850",
+"desc": ""
+},
+"color.background.accent.orange.subtle.pressed": {
+"light": "Orange250",
+"dark": "Orange900",
+"desc": ""
+},
+"color.background.accent.orange.bolder": {
+"light": "Orange700",
+"dark": "Orange400",
+"desc": ""
+},
+"color.background.accent.orange.bolder.hovered": {
+"light": "Orange800",
+"dark": "Orange300",
+"desc": ""
+},
+"color.background.accent.orange.bolder.pressed": {
+"light": "Orange850",
+"dark": "Orange250",
+"desc": ""
+},
+"color.background.accent.yellow.subtlest": {
+"light": "Yellow100",
+"dark": "Yellow1000",
+"desc": ""
+},
+"color.background.accent.yellow.subtlest.hovered": {
+"light": "Yellow200",
+"dark": "Yellow900",
+"desc": ""
+},
+"color.background.accent.yellow.subtlest.pressed": {
+"light": "Yellow250",
+"dark": "Yellow850",
+"desc": ""
+},
+"color.background.accent.yellow.subtler": {
+"light": "Yellow200",
+"dark": "Yellow900",
+"desc": ""
+},
+"color.background.accent.yellow.subtler.hovered": {
+"light": "Yellow250",
+"dark": "Yellow850",
+"desc": ""
+},
+"color.background.accent.yellow.subtler.pressed": {
+"light": "Yellow300",
+"dark": "Yellow800",
+"desc": ""
+},
+"color.background.accent.yellow.subtle": {
+"light": "Yellow300",
+"dark": "Yellow800",
+"desc": ""
+},
+"color.background.accent.yellow.subtle.hovered": {
+"light": "Yellow400",
+"dark": "Yellow850",
+"desc": ""
+},
+"color.background.accent.yellow.subtle.pressed": {
+"light": "Yellow250",
+"dark": "Yellow900",
+"desc": ""
+},
+"color.background.accent.yellow.bolder": {
+"light": "Yellow700",
+"dark": "Yellow400",
+"desc": ""
+},
+"color.background.accent.yellow.bolder.hovered": {
+"light": "Yellow800",
+"dark": "Yellow300",
+"desc": ""
+},
+"color.background.accent.yellow.bolder.pressed": {
+"light": "Yellow850",
+"dark": "Yellow250",
+"desc": ""
+},
+"color.background.accent.green.subtlest": {
+"light": "Green100",
+"dark": "Green1000",
+"desc": ""
+},
+"color.background.accent.green.subtlest.hovered": {
+"light": "Green200",
+"dark": "Green900",
+"desc": ""
+},
+"color.background.accent.green.subtlest.pressed": {
+"light": "Green250",
+"dark": "Green850",
+"desc": ""
+},
+"color.background.accent.green.subtler": {
+"light": "Green200",
+"dark": "Green900",
+"desc": ""
+},
+"color.background.accent.green.subtler.hovered": {
+"light": "Green250",
+"dark": "Green850",
+"desc": ""
+},
+"color.background.accent.green.subtler.pressed": {
+"light": "Green300",
+"dark": "Green800",
+"desc": ""
+},
+"color.background.accent.green.subtle": {
+"light": "Green400",
+"dark": "Green800",
+"desc": ""
+},
+"color.background.accent.green.subtle.hovered": {
+"light": "Green300",
+"dark": "Green850",
+"desc": ""
+},
+"color.background.accent.green.subtle.pressed": {
+"light": "Green250",
+"dark": "Green900",
+"desc": ""
+},
+"color.background.accent.green.bolder": {
+"light": "Green700",
+"dark": "Green400",
+"desc": ""
+},
+"color.background.accent.green.bolder.hovered": {
+"light": "Green800",
+"dark": "Green300",
+"desc": ""
+},
+"color.background.accent.green.bolder.pressed": {
+"light": "Green850",
+"dark": "Green250",
+"desc": ""
+},
+"color.background.accent.teal.subtlest": {
+"light": "Teal100",
+"dark": "Teal1000",
+"desc": ""
+},
+"color.background.accent.teal.subtlest.hovered": {
+"light": "Teal200",
+"dark": "Teal900",
+"desc": ""
+},
+"color.background.accent.teal.subtlest.pressed": {
+"light": "Teal250",
+"dark": "Teal850",
+"desc": ""
+},
+"color.background.accent.teal.subtler": {
+"light": "Teal200",
+"dark": "Teal900",
+"desc": ""
+},
+"color.background.accent.teal.subtler.hovered": {
+"light": "Teal250",
+"dark": "Teal850",
+"desc": ""
+},
+"color.background.accent.teal.subtler.pressed": {
+"light": "Teal300",
+"dark": "Teal800",
+"desc": ""
+},
+"color.background.accent.teal.subtle": {
+"light": "Teal400",
+"dark": "Teal800",
+"desc": ""
+},
+"color.background.accent.teal.subtle.hovered": {
+"light": "Teal300",
+"dark": "Teal850",
+"desc": ""
+},
+"color.background.accent.teal.subtle.pressed": {
+"light": "Teal250",
+"dark": "Teal900",
+"desc": ""
+},
+"color.background.accent.teal.bolder": {
+"light": "Teal700",
+"dark": "Teal400",
+"desc": ""
+},
+"color.background.accent.teal.bolder.hovered": {
+"light": "Teal800",
+"dark": "Teal300",
+"desc": ""
+},
+"color.background.accent.teal.bolder.pressed": {
+"light": "Teal850",
+"dark": "Teal250",
+"desc": ""
+},
+"color.background.accent.blue.subtlest": {
+"light": "Blue100",
+"dark": "Blue1000",
+"desc": ""
+},
+"color.background.accent.blue.subtlest.hovered": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.accent.blue.subtlest.pressed": {
+"light": "Blue250",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.accent.blue.subtler": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.accent.blue.subtler.hovered": {
+"light": "Blue250",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.accent.blue.subtler.pressed": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": ""
+},
+"color.background.accent.blue.subtle": {
+"light": "Blue400",
+"dark": "Blue800",
+"desc": ""
+},
+"color.background.accent.blue.subtle.hovered": {
+"light": "Blue300",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.accent.blue.subtle.pressed": {
+"light": "Blue250",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.accent.blue.bolder": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.background.accent.blue.bolder.hovered": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.background.accent.blue.bolder.pressed": {
+"light": "Blue850",
+"dark": "Blue250",
+"desc": ""
+},
+"color.background.accent.purple.subtlest": {
+"light": "Purple100",
+"dark": "Purple1000",
+"desc": ""
+},
+"color.background.accent.purple.subtlest.hovered": {
+"light": "Purple200",
+"dark": "Purple900",
+"desc": ""
+},
+"color.background.accent.purple.subtlest.pressed": {
+"light": "Purple250",
+"dark": "Purple850",
+"desc": ""
+},
+"color.background.accent.purple.subtler": {
+"light": "Purple200",
+"dark": "Purple900",
+"desc": ""
+},
+"color.background.accent.purple.subtler.hovered": {
+"light": "Purple250",
+"dark": "Purple850",
+"desc": ""
+},
+"color.background.accent.purple.subtler.pressed": {
+"light": "Purple300",
+"dark": "Purple800",
+"desc": ""
+},
+"color.background.accent.purple.subtle": {
+"light": "Purple400",
+"dark": "Purple800",
+"desc": ""
+},
+"color.background.accent.purple.subtle.hovered": {
+"light": "Purple300",
+"dark": "Purple850",
+"desc": ""
+},
+"color.background.accent.purple.subtle.pressed": {
+"light": "Purple250",
+"dark": "Purple900",
+"desc": ""
+},
+"color.background.accent.purple.bolder": {
+"light": "Purple700",
+"dark": "Purple400",
+"desc": ""
+},
+"color.background.accent.purple.bolder.hovered": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": ""
+},
+"color.background.accent.purple.bolder.pressed": {
+"light": "Purple850",
+"dark": "Purple250",
+"desc": ""
+},
+"color.background.accent.magenta.subtlest": {
+"light": "Magenta100",
+"dark": "Magenta1000",
+"desc": ""
+},
+"color.background.accent.magenta.subtlest.hovered": {
+"light": "Magenta200",
+"dark": "Magenta900",
+"desc": ""
+},
+"color.background.accent.magenta.subtlest.pressed": {
+"light": "Magenta250",
+"dark": "Magenta850",
+"desc": ""
+},
+"color.background.accent.magenta.subtler": {
+"light": "Magenta200",
+"dark": "Magenta900",
+"desc": ""
+},
+"color.background.accent.magenta.subtler.hovered": {
+"light": "Magenta250",
+"dark": "Magenta850",
+"desc": ""
+},
+"color.background.accent.magenta.subtler.pressed": {
+"light": "Magenta300",
+"dark": "Magenta800",
+"desc": ""
+},
+"color.background.accent.magenta.subtle": {
+"light": "Magenta400",
+"dark": "Magenta800",
+"desc": ""
+},
+"color.background.accent.magenta.subtle.hovered": {
+"light": "Magenta300",
+"dark": "Magenta850",
+"desc": ""
+},
+"color.background.accent.magenta.subtle.pressed": {
+"light": "Magenta250",
+"dark": "Magenta900",
+"desc": ""
+},
+"color.background.accent.magenta.bolder": {
+"light": "Magenta700",
+"dark": "Magenta400",
+"desc": ""
+},
+"color.background.accent.magenta.bolder.hovered": {
+"light": "Magenta800",
+"dark": "Magenta300",
+"desc": ""
+},
+"color.background.accent.magenta.bolder.pressed": {
+"light": "Magenta850",
+"dark": "Magenta250",
+"desc": ""
+},
+"color.background.accent.gray.subtlest": {
+"light": "Neutral200",
+"dark": "DarkNeutral300",
+"desc": ""
+},
+"color.background.accent.gray.subtlest.hovered": {
+"light": "Neutral300",
+"dark": "DarkNeutral350",
+"desc": ""
+},
+"color.background.accent.gray.subtlest.pressed": {
+"light": "Neutral400",
+"dark": "DarkNeutral400",
+"desc": ""
+},
+"color.background.accent.gray.subtler": {
+"light": "Neutral300",
+"dark": "DarkNeutral400",
+"desc": ""
+},
+"color.background.accent.gray.subtler.hovered": {
+"light": "Neutral400",
+"dark": "DarkNeutral500",
+"desc": ""
+},
+"color.background.accent.gray.subtler.pressed": {
+"light": "Neutral500",
+"dark": "DarkNeutral600",
+"desc": ""
+},
+"color.background.accent.gray.subtle": {
+"light": "Neutral500",
+"dark": "DarkNeutral500",
+"desc": ""
+},
+"color.background.accent.gray.subtle.hovered": {
+"light": "Neutral400",
+"dark": "DarkNeutral400",
+"desc": ""
+},
+"color.background.accent.gray.subtle.pressed": {
+"light": "Neutral300",
+"dark": "DarkNeutral350",
+"desc": ""
+},
+"color.background.accent.gray.bolder": {
+"light": "Neutral700",
+"dark": "DarkNeutral700",
+"desc": ""
+},
+"color.background.accent.gray.bolder.hovered": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": ""
+},
+"color.background.accent.gray.bolder.pressed": {
+"light": "Neutral900",
+"dark": "DarkNeutral900",
+"desc": ""
+},
+"color.background.code.added.highlight": {
+"light": "Green100",
+"dark": "Green1000",
+"desc": "Use for highlighted added code lines.Introduced v16.0.0"
+},
+"color.background.code.added.line": {
+"light": "Green200A40",
+"dark": "Green900A70",
+"desc": "Use for added code lines.Introduced v16.0.0"
+},
+"color.background.code.default": {
+"light": "Neutral0",
+"dark": "DarkNeutral100",
+"desc": "Use for the default background of code blocks and code diffs.Introduced v16.0.0"
+},
+"color.background.code.gutter": {
+"light": "Neutral200",
+"dark": "DarkNeutral200",
+"desc": "Use for the background of code gutters.Introduced v16.0.0"
+},
+"color.background.code.highlight": {
+"light": "Neutral200",
+"dark": "DarkNeutral200",
+"desc": "Use for highlighted unchanged code lines.Introduced v16.0.0"
+},
+"color.background.code.removed.highlight": {
+"light": "Red100",
+"dark": "Red1000",
+"desc": "Use for highlighted removed code lines.Introduced v16.0.0"
+},
+"color.background.code.removed.line": {
+"light": "Red200A40",
+"dark": "Red900A70",
+"desc": "Use for removed code lines.Introduced v16.0.0"
+},
+"color.background.disabled": {
+"light": "Neutral200A",
+"dark": "DarkNeutral300A",
+"desc": "Use for backgrounds of elements in a disabled state.Introduced v0.0.15"
+},
+"color.background.input": {
+"light": "Neutral0",
+"dark": "DarkNeutral200",
+"desc": ""
+},
+"color.background.input.hovered": {
+"light": "Neutral100",
+"dark": "DarkNeutral250",
+"desc": ""
+},
+"color.background.input.pressed": {
+"light": "Neutral0",
+"dark": "DarkNeutral200",
+"desc": ""
+},
+"color.background.inverse.subtle": {
+"light": "#00000029",
+"dark": "#FFFFFF29",
+"desc": ""
+},
+"color.background.inverse.subtle.hovered": {
+"light": "#0000003D",
+"dark": "#FFFFFF3D",
+"desc": ""
+},
+"color.background.inverse.subtle.pressed": {
+"light": "#00000052",
+"dark": "#FFFFFF52",
+"desc": ""
+},
+"color.background.neutral": {
+"light": "Neutral200A",
+"dark": "DarkNeutral200A",
+"desc": ""
+},
+"color.background.neutral.hovered": {
+"light": "Neutral300A",
+"dark": "DarkNeutral300A",
+"desc": ""
+},
+"color.background.neutral.pressed": {
+"light": "Neutral400A",
+"dark": "DarkNeutral400A",
+"desc": ""
+},
+"color.background.neutral.subtle": {
+"light": "transparent",
+"dark": "transparent",
+"desc": ""
+},
+"color.background.neutral.subtle.hovered": {
+"light": "Neutral200A",
+"dark": "DarkNeutral200A",
+"desc": ""
+},
+"color.background.neutral.subtle.pressed": {
+"light": "Neutral300A",
+"dark": "DarkNeutral300A",
+"desc": ""
+},
+"color.background.neutral.bold": {
+"light": "Neutral1000",
+"dark": "DarkNeutral1000",
+"desc": ""
+},
+"color.background.neutral.bold.hovered": {
+"light": "Neutral900",
+"dark": "DarkNeutral900",
+"desc": ""
+},
+"color.background.neutral.bold.pressed": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": ""
+},
+"color.background.selected": {
+"light": "Blue100",
+"dark": "Blue1000",
+"desc": ""
+},
+"color.background.selected.hovered": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.selected.pressed": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": ""
+},
+"color.background.selected.bold": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.background.selected.bold.hovered": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.background.selected.bold.pressed": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": ""
+},
+"color.background.brand.subtlest": {
+"light": "Blue100",
+"dark": "Blue1000",
+"desc": ""
+},
+"color.background.brand.subtlest.hovered": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.brand.subtlest.pressed": {
+"light": "Blue250",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.brand.bold": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.background.brand.bold.hovered": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.background.brand.bold.pressed": {
+"light": "Blue850",
+"dark": "Blue250",
+"desc": ""
+},
+"color.background.brand.boldest": {
+"light": "Blue1000",
+"dark": "Blue100",
+"desc": ""
+},
+"color.background.brand.boldest.hovered": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": ""
+},
+"color.background.brand.boldest.pressed": {
+"light": "Blue850",
+"dark": "Blue250",
+"desc": ""
+},
+"color.background.danger": {
+"light": "Red100",
+"dark": "Red1000",
+"desc": ""
+},
+"color.background.danger.hovered": {
+"light": "Red200",
+"dark": "Red900",
+"desc": ""
+},
+"color.background.danger.pressed": {
+"light": "Red250",
+"dark": "Red850",
+"desc": ""
+},
+"color.background.danger.subtler": {
+"light": "Red200",
+"dark": "Red900",
+"desc": ""
+},
+"color.background.danger.subtler.hovered": {
+"light": "Red250",
+"dark": "Red850",
+"desc": ""
+},
+"color.background.danger.subtler.pressed": {
+"light": "Red300",
+"dark": "Red800",
+"desc": ""
+},
+"color.background.danger.subtle": {
+"light": "Red300",
+"dark": "Red800",
+"desc": "Background colour for non-interactive elements communicating critical danger information (e.g. semantic badges, status pills, callout chips). Sits between subtl"
+},
+"color.background.danger.bold": {
+"light": "Red700",
+"dark": "Red400",
+"desc": ""
+},
+"color.background.danger.bold.hovered": {
+"light": "Red800",
+"dark": "Red300",
+"desc": ""
+},
+"color.background.danger.bold.pressed": {
+"light": "Red850",
+"dark": "Red250",
+"desc": ""
+},
+"color.background.warning": {
+"light": "Orange100",
+"dark": "Orange1000",
+"desc": ""
+},
+"color.background.warning.hovered": {
+"light": "Orange200",
+"dark": "Orange900",
+"desc": ""
+},
+"color.background.warning.pressed": {
+"light": "Orange250",
+"dark": "Orange850",
+"desc": ""
+},
+"color.background.warning.subtler": {
+"light": "Orange200",
+"dark": "Orange900",
+"desc": ""
+},
+"color.background.warning.subtler.hovered": {
+"light": "Orange250",
+"dark": "Orange850",
+"desc": ""
+},
+"color.background.warning.subtler.pressed": {
+"light": "Orange300",
+"dark": "Orange800",
+"desc": ""
+},
+"color.background.warning.subtle": {
+"light": "Orange250",
+"dark": "Orange800",
+"desc": "Background colour for non-interactive elements communicating caution (e.g. status pills, callout chips). Sits between subtler and bold in visual emphasis. Not f"
+},
+"color.background.warning.bold": {
+"light": "Orange300",
+"dark": "Orange300",
+"desc": ""
+},
+"color.background.warning.bold.hovered": {
+"light": "Orange400",
+"dark": "Orange400",
+"desc": ""
+},
+"color.background.warning.bold.pressed": {
+"light": "Orange500",
+"dark": "Orange500",
+"desc": ""
+},
+"color.background.success": {
+"light": "Lime100",
+"dark": "Lime1000",
+"desc": ""
+},
+"color.background.success.hovered": {
+"light": "Lime200",
+"dark": "Lime900",
+"desc": ""
+},
+"color.background.success.pressed": {
+"light": "Lime250",
+"dark": "Lime850",
+"desc": ""
+},
+"color.background.success.subtler": {
+"light": "Lime200",
+"dark": "Lime900",
+"desc": ""
+},
+"color.background.success.subtler.hovered": {
+"light": "Lime250",
+"dark": "Lime850",
+"desc": ""
+},
+"color.background.success.subtler.pressed": {
+"light": "Lime300",
+"dark": "Lime800",
+"desc": ""
+},
+"color.background.success.subtle": {
+"light": "Lime300",
+"dark": "Lime800",
+"desc": "Background colour for non-interactive elements communicating success (e.g. semantic badges, status pills, callout chips). Sits between subtler and bold in visua"
+},
+"color.background.success.bold": {
+"light": "Lime700",
+"dark": "Lime400",
+"desc": ""
+},
+"color.background.success.bold.hovered": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": ""
+},
+"color.background.success.bold.pressed": {
+"light": "Lime850",
+"dark": "Lime250",
+"desc": ""
+},
+"color.background.discovery": {
+"light": "Purple100",
+"dark": "Purple1000",
+"desc": ""
+},
+"color.background.discovery.hovered": {
+"light": "Purple200",
+"dark": "Purple900",
+"desc": ""
+},
+"color.background.discovery.pressed": {
+"light": "Purple250",
+"dark": "Purple850",
+"desc": ""
+},
+"color.background.discovery.subtler": {
+"light": "Purple200",
+"dark": "Purple900",
+"desc": ""
+},
+"color.background.discovery.subtler.hovered": {
+"light": "Purple250",
+"dark": "Purple850",
+"desc": ""
+},
+"color.background.discovery.subtler.pressed": {
+"light": "Purple300",
+"dark": "Purple800",
+"desc": ""
+},
+"color.background.discovery.subtle": {
+"light": "Purple300",
+"dark": "Purple800",
+"desc": "Background colour for non-interactive elements communicating discovery (e.g. semantic badges, status pills, callout chips). Sits between subtler and bold in vis"
+},
+"color.background.discovery.bold": {
+"light": "Purple700",
+"dark": "Purple400",
+"desc": ""
+},
+"color.background.discovery.bold.hovered": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": ""
+},
+"color.background.discovery.bold.pressed": {
+"light": "Purple850",
+"dark": "Purple250",
+"desc": ""
+},
+"color.background.information": {
+"light": "Blue100",
+"dark": "Blue1000",
+"desc": ""
+},
+"color.background.information.hovered": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.information.pressed": {
+"light": "Blue250",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.information.subtler": {
+"light": "Blue200",
+"dark": "Blue900",
+"desc": ""
+},
+"color.background.information.subtler.hovered": {
+"light": "Blue250",
+"dark": "Blue850",
+"desc": ""
+},
+"color.background.information.subtler.pressed": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": ""
+},
+"color.background.information.subtle": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": "Background colour for non-interactive elements communicating information (e.g. semantic badges, status pills, callout chips). Sits between subtler and bold in v"
+},
+"color.background.information.bold": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.background.information.bold.hovered": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.background.information.bold.pressed": {
+"light": "Blue850",
+"dark": "Blue250",
+"desc": ""
+},
+"color.border": {
+"light": "Neutral300A",
+"dark": "DarkNeutral300A",
+"desc": "Use to visually group or separate UI elements, such as flat cards or side panel dividers.Introduced v0.6.0"
+},
+"color.border.accent.lime": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for lime borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v1.6.0"
+},
+"color.border.accent.lime.subtle": {
+"light": "Lime300",
+"dark": "Lime800",
+"desc": "Use for decorative lime borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.red": {
+"light": "Red600",
+"dark": "Red500",
+"desc": "Use for red borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.red.subtle": {
+"light": "Red300",
+"dark": "Red800",
+"desc": "Use for decorative red borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.orange": {
+"light": "Orange600",
+"dark": "Orange500",
+"desc": "Use for orange borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.orange.subtle": {
+"light": "Orange300",
+"dark": "Orange800",
+"desc": "Use for decorative orange borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.yellow": {
+"light": "Yellow600",
+"dark": "Yellow500",
+"desc": "Use for yellow borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.yellow.subtle": {
+"light": "Yellow300",
+"dark": "Yellow800",
+"desc": "Use for decorative yellow borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.green": {
+"light": "Green600",
+"dark": "Green500",
+"desc": "Use for green borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.green.subtle": {
+"light": "Green300",
+"dark": "Green800",
+"desc": "Use for decorative green borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.teal": {
+"light": "Teal600",
+"dark": "Teal500",
+"desc": "Use for teal borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.teal.subtle": {
+"light": "Teal300",
+"dark": "Teal800",
+"desc": "Use for decorative teal borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.blue": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": "Use for blue borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.blue.subtle": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": "Use for decorative blue borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.purple": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for purple borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.purple.subtle": {
+"light": "Purple300",
+"dark": "Purple800",
+"desc": "Use for decorative purple borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.magenta": {
+"light": "Magenta600",
+"dark": "Magenta500",
+"desc": "Use for magenta borders on non-bold backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.border.accent.magenta.subtle": {
+"light": "Magenta300",
+"dark": "Magenta800",
+"desc": "Use for decorative magenta borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.accent.gray": {
+"light": "Neutral600",
+"dark": "DarkNeutral600",
+"desc": "Use for borders on non-bold gray accent backgrounds.Introduced v0.10.5"
+},
+"color.border.accent.gray.subtle": {
+"light": "Neutral400",
+"dark": "DarkNeutral400",
+"desc": "Use for decorative gray borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.code": {
+"light": "Neutral300A",
+"dark": "DarkNeutral300A",
+"desc": "Use for code block and code diff borders.Introduced v16.0.0"
+},
+"color.border.disabled": {
+"light": "Neutral200A",
+"dark": "DarkNeutral200A",
+"desc": "Use for borders of elements in a disabled state.Introduced v0.6.0"
+},
+"color.border.focused": {
+"light": "Blue500",
+"dark": "Blue300",
+"desc": "Use for focus rings of elements in a focus state.Introduced v0.6.0"
+},
+"color.border.input": {
+"light": "Neutral500",
+"dark": "DarkNeutral600",
+"desc": "Use for borders of form UI elements, such as text fields, checkboxes, and radio buttons.Introduced v0.6.0"
+},
+"color.border.input.search": {
+"light": "Neutral300A",
+"dark": "DarkNeutral300A",
+"desc": "Use for the border of search inputs.Introduced v16.12.0"
+},
+"color.border.inverse": {
+"light": "Neutral0",
+"dark": "DarkNeutral0",
+"desc": "Use for borders on bold backgrounds.Introduced v0.6.0"
+},
+"color.border.selected": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for borders or visual indicators of elements in a selected or opened state, such as in tabs or menu items.Introduced v0.6.2"
+},
+"color.border.brand": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for borders or visual indicators of elements that reinforce our brand, such as logos or primary buttons.Introduced v0.6.0"
+},
+"color.border.danger": {
+"light": "Red600",
+"dark": "Red500",
+"desc": "Use for borders communicating critical information, such as the borders on invalid text fields.Introduced v0.6.0"
+},
+"color.border.danger.subtle": {
+"light": "Red300",
+"dark": "Red800",
+"desc": "Use for decorative danger borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.warning": {
+"light": "Orange600",
+"dark": "Orange500",
+"desc": "Use for borders communicating caution.Introduced v0.6.0"
+},
+"color.border.warning.subtle": {
+"light": "Orange300",
+"dark": "Orange800",
+"desc": "Use for decorative warning borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.success": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for borders communicating a favorable outcome, such as the borders on validated text fields.Introduced v0.6.0"
+},
+"color.border.success.subtle": {
+"light": "Lime300",
+"dark": "Lime800",
+"desc": "Use for decorative success borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.discovery": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for borders communicating change or something new, such as the borders in onboarding spotlights.Introduced v0.6.0"
+},
+"color.border.discovery.subtle": {
+"light": "Purple300",
+"dark": "Purple800",
+"desc": "Use for decorative discovery borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.information": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": "Use for borders communicating information or something in-progress.Introduced v0.6.0"
+},
+"color.border.information.subtle": {
+"light": "Blue300",
+"dark": "Blue800",
+"desc": "Use for decorative information borders that do not need to meet 3:1 contrast requirements.Introduced v13.2.0"
+},
+"color.border.bold": {
+"light": "Neutral600",
+"dark": "DarkNeutral600",
+"desc": "A neutral border option that passes min 3:1 contrast ratios.Introduced v0.10.8"
+},
+"color.text": {
+"light": "Neutral1000",
+"dark": "DarkNeutral1000",
+"desc": "Use for primary text, such as body copy, sentence case headers, and buttons.Introduced v0.6.0"
+},
+"color.text.accent.lime": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": "Use for lime text on subtlest and subtler lime accent backgrounds when there is no meaning tied to the color.Introduced v1.8.0"
+},
+"color.text.accent.lime.bolder": {
+"light": "Lime900",
+"dark": "Lime200",
+"desc": "Use for lime text on subtle lime accent backgrounds when there is no meaning tied to the color.Introduced v1.8.0"
+},
+"color.text.accent.red": {
+"light": "Red800",
+"dark": "Red300",
+"desc": "Use for red text on subtlest and subtler red accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.red.bolder": {
+"light": "Red900",
+"dark": "Red200",
+"desc": "Use for red text on subtle red accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.orange": {
+"light": "Orange800",
+"dark": "Orange300",
+"desc": "Use for orange text on subtlest and subtler orange accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.orange.bolder": {
+"light": "Orange900",
+"dark": "Orange200",
+"desc": "Use for orange text on subtle orange accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.yellow": {
+"light": "Yellow800",
+"dark": "Yellow300",
+"desc": "Use for yellow text on subtlest and subtler yellow accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.yellow.bolder": {
+"light": "Yellow900",
+"dark": "Yellow200",
+"desc": "Use for yellow text on subtle yellow accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.green": {
+"light": "Green800",
+"dark": "Green300",
+"desc": "Use for green text on subtlest and subtler green accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.green.bolder": {
+"light": "Green900",
+"dark": "Green200",
+"desc": "Use for green text on subtle green accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.teal": {
+"light": "Teal800",
+"dark": "Teal300",
+"desc": "Use for teal text on subtlest and subtler teal accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.teal.bolder": {
+"light": "Teal900",
+"dark": "Teal200",
+"desc": "Use for teal text on subtle teal accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.blue": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": "Use for blue text on subtlest and subtler blue accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.blue.bolder": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": "Use for blue text on subtle blue accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.purple": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": "Use for purple text on subtlest and subtler purple accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.purple.bolder": {
+"light": "Purple900",
+"dark": "Purple200",
+"desc": "Use for purple text on subtle purple accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.magenta": {
+"light": "Magenta800",
+"dark": "Magenta300",
+"desc": "Use for magenta text on subtlest and subtler magenta accent backgrounds when there is no meaning tied to the color.Introduced v0.6.0"
+},
+"color.text.accent.magenta.bolder": {
+"light": "Magenta900",
+"dark": "Magenta200",
+"desc": "Use for magenta text on subtle magenta accent backgrounds when there is no meaning tied to the color.Introduced v0.7.0"
+},
+"color.text.accent.gray": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": "Use for text on non-bold gray accent backgrounds, such as colored tags.Introduced v0.10.5"
+},
+"color.text.accent.gray.bolder": {
+"light": "Neutral1100",
+"dark": "DarkNeutral1100",
+"desc": "Use for text and icons on gray subtle accent backgrounds.Introduced v0.10.5"
+},
+"color.text.code.accent.1": {
+"light": "Magenta800",
+"dark": "Magenta300",
+"desc": "Use for an additional syntax-highlighting text color.Introduced v16.0.0"
+},
+"color.text.code.accent.2": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": "Use for an additional syntax-highlighting text color.Introduced v16.0.0"
+},
+"color.text.code.comments": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": "Use for comments in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.default": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": "Use for default text in code blocks and code diffs.Introduced v16.0.0"
+},
+"color.text.code.functions": {
+"light": "Green800",
+"dark": "Green300",
+"desc": "Use for functions in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.gutter": {
+"light": "Neutral700",
+"dark": "DarkNeutral700",
+"desc": "Use for line numbers and other code gutter text.Introduced v16.0.0"
+},
+"color.text.code.keywords": {
+"light": "Red800",
+"dark": "Red300",
+"desc": "Use for language keywords in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.numbers": {
+"light": "Yellow800",
+"dark": "Yellow300",
+"desc": "Use for numeric values in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.operators": {
+"light": "Neutral1000",
+"dark": "DarkNeutral1000",
+"desc": "Use for operators and punctuation in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.strings": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": "Use for string values in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.code.tags": {
+"light": "Orange800",
+"dark": "Orange400",
+"desc": "Use for tags in syntax-highlighted code.Introduced v16.0.0"
+},
+"color.text.disabled": {
+"light": "Neutral400A",
+"dark": "DarkNeutral400A",
+"desc": "Use for text in a disabled state.Introduced v0.0.15"
+},
+"color.text.inverse": {
+"light": "Neutral0",
+"dark": "DarkNeutral100",
+"desc": "Use for text on bold backgrounds.Introduced v0.6.0"
+},
+"color.text.selected": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for text in selected or opened states, such as tabs and dropdown buttons.Introduced v0.6.0"
+},
+"color.text.brand": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for text that reinforces our brand.Introduced v0.6.0"
+},
+"color.text.danger": {
+"light": "Red800",
+"dark": "Red300",
+"desc": "Use for critical text, such as input field error messaging.Introduced v0.0.15"
+},
+"color.text.danger.bolder": {
+"light": "Red900",
+"dark": "Red200",
+"desc": "Use for text on top of danger semantic labels to ensure accessibility and desired visual appearance.Introduced v8.1.0"
+},
+"color.text.warning": {
+"light": "Orange800",
+"dark": "Orange300",
+"desc": "Use for text to emphasize caution, such as in moved lozenges.Introduced v0.0.15"
+},
+"color.text.warning.inverse": {
+"light": "Neutral1000",
+"dark": "DarkNeutral100",
+"desc": "Use for text when on bold warning backgrounds.Introduced v0.6.0"
+},
+"color.text.warning.bolder": {
+"light": "Orange900",
+"dark": "Orange200",
+"desc": "Use for text on top of warning semantic labels to ensure accessibility and desired visual appearance.Introduced v8.1.0"
+},
+"color.text.success": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": "Use for text to communicate a favorable outcome, such as input field success messaging.Introduced v0.0.15"
+},
+"color.text.success.bolder": {
+"light": "Lime900",
+"dark": "Lime200",
+"desc": "Use for text on top of success semantic labels to ensure accessibility and desired visual appearance.Introduced v8.1.0"
+},
+"color.text.discovery": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": "Use for text to emphasize change or something new, such as in new lozenges.Introduced v0.0.15"
+},
+"color.text.discovery.bolder": {
+"light": "Purple900",
+"dark": "Purple200",
+"desc": "Use for text on top of discovery semantic labels to ensure accessibility and desired visual appearance.Introduced v8.1.0"
+},
+"color.text.information": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": "Use for informative text or to communicate something is in progress, such as in-progress lozenges.Introduced v0.6.0"
+},
+"color.text.information.bolder": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": "Use for text on top of information semantic labels to ensure accessibility and desired visual appearance.Introduced v8.1.0"
+},
+"color.text.subtlest": {
+"light": "Neutral700",
+"dark": "DarkNeutral700",
+"desc": "Use for tertiary text, such as meta-data, breadcrumbs, input field placeholder and helper text.Introduced v0.6.0"
+},
+"color.text.subtle": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": "Use for secondary text, such as navigation, subtle button links, input field labels, and all caps subheadings.Introduced v0.6.0"
+},
+"color.icon": {
+"light": "Neutral1000",
+"dark": "DarkNeutral1000",
+"desc": "Use for icon-only buttons, or icons paired with color.textIntroduced v0.6.0"
+},
+"color.icon.accent.lime": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for lime icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v1.6.0"
+},
+"color.icon.accent.red": {
+"light": "Red700",
+"dark": "Red600",
+"desc": "Use for red icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.orange": {
+"light": "Orange600",
+"dark": "Orange500",
+"desc": "Use for orange icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.yellow": {
+"light": "Yellow600",
+"dark": "Yellow300",
+"desc": "Use for yellow icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.green": {
+"light": "Green600",
+"dark": "Green500",
+"desc": "Use for green icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.teal": {
+"light": "Teal600",
+"dark": "Teal500",
+"desc": "Use for teal icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.blue": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": "Use for blue icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.purple": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for purple icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.magenta": {
+"light": "Magenta600",
+"dark": "Magenta500",
+"desc": "Use for magenta icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.Introduced v0.6.0"
+},
+"color.icon.accent.gray": {
+"light": "Neutral600",
+"dark": "DarkNeutral600",
+"desc": "Use for icons on non-bold gray accent backgrounds, such as file type icons.Introduced v0.10.5"
+},
+"color.icon.disabled": {
+"light": "Neutral400A",
+"dark": "DarkNeutral400A",
+"desc": "Use for icons in a disabled state.Introduced v0.6.0"
+},
+"color.icon.inverse": {
+"light": "Neutral0",
+"dark": "DarkNeutral100",
+"desc": "Use for icons on bold backgrounds.Introduced v0.6.0"
+},
+"color.icon.selected": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for icons in selected or opened states, such as those used in dropdown buttons.Introduced v0.6.2"
+},
+"color.icon.brand": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": "Use for icons that reinforce our brand.Introduced v0.6.0"
+},
+"color.icon.danger": {
+"light": "Red700",
+"dark": "Red500",
+"desc": "Use for icons communicating critical information, such as those used in error handing.Introduced v0.6.0"
+},
+"color.icon.warning": {
+"light": "Orange600",
+"dark": "Orange300",
+"desc": "Use for icons communicating caution, such as those used in warning section messages.Introduced v0.6.0"
+},
+"color.icon.warning.inverse": {
+"light": "Neutral1000",
+"dark": "DarkNeutral100",
+"desc": "Use for icons when on bold warning backgrounds.Introduced v0.6.0"
+},
+"color.icon.success": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for icons communicating a favorable outcome, such as those used in success section messaged.Introduced v0.6.0"
+},
+"color.icon.discovery": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for icons communicating change or something new, such as discovery section messages.Introduced v0.6.0"
+},
+"color.icon.information": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": "Use for icons communicating information or something in-progress, such as information section messages.Introduced v0.6.0"
+},
+"color.icon.subtlest": {
+"light": "Neutral700",
+"dark": "DarkNeutral700",
+"desc": "Use for icons paired with color.text.subtlestIntroduced v1.54.0"
+},
+"color.icon.subtle": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": "Use for icons paired with color.text.subtleIntroduced v0.6.0"
+},
+"color.link": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.link.pressed": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.link.visited": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": ""
+},
+"color.link.visited.pressed": {
+"light": "Purple900",
+"dark": "Purple200",
+"desc": ""
+},
+"color.interaction.hovered": {
+"light": "#00000029",
+"dark": "#ffffff33",
+"desc": "Use as a background overlay for elements in a hovered state when their background color cannot change, such as avatars.Introduced v0.6.0"
+},
+"color.interaction.pressed": {
+"light": "#00000052",
+"dark": "#ffffff5c",
+"desc": "Use as a background overlay for elements in a pressed state when their background color cannot change, such as avatars.Introduced v0.6.0"
+},
+"color.skeleton": {
+"light": "Neutral200A",
+"dark": "DarkNeutral200A",
+"desc": "Use for skeleton loading statesIntroduced v0.8.0"
+},
+"color.skeleton.subtle": {
+"light": "Neutral100A",
+"dark": "DarkNeutral100A",
+"desc": "Use for the pulse or shimmer effect in skeleton loading statesIntroduced v0.8.0"
+},
+"color.blanket": {
+"light": "Neutral500A",
+"dark": "#10121499",
+"desc": "Use for the screen overlay that appears with modal dialogsIntroduced v0.0.15"
+},
+"color.blanket.selected": {
+"light": "#388BFF14",
+"dark": "#1D7AFC14",
+"desc": "Use as an overlay to communicate selected states when a simple background color change isn't possible, such as in Editor block elementsIntroduced v0.6.0"
+},
+"color.blanket.danger": {
+"light": "#EF5C4814",
+"dark": "#E3493514",
+"desc": "Use as an overlay to communicate danger states when a simple background color change isn't possible, such as deletion of Editor block elementsIntroduced v0.6.0"
+},
+"color.chart.categorical.1": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": ""
+},
+"color.chart.categorical.1.hovered": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.chart.categorical.2": {
+"light": "Lime500",
+"dark": "Lime400",
+"desc": ""
+},
+"color.chart.categorical.2.hovered": {
+"light": "Lime600",
+"dark": "Lime300",
+"desc": ""
+},
+"color.chart.categorical.3": {
+"light": "Purple500",
+"dark": "Purple400",
+"desc": ""
+},
+"color.chart.categorical.3.hovered": {
+"light": "Purple600",
+"dark": "Purple300",
+"desc": ""
+},
+"color.chart.categorical.4": {
+"light": "Orange500",
+"dark": "Orange400",
+"desc": ""
+},
+"color.chart.categorical.4.hovered": {
+"light": "Orange600",
+"dark": "Orange300",
+"desc": ""
+},
+"color.chart.categorical.5": {
+"light": "Blue800",
+"dark": "Blue800",
+"desc": ""
+},
+"color.chart.categorical.5.hovered": {
+"light": "Blue900",
+"dark": "Blue700",
+"desc": ""
+},
+"color.chart.categorical.6": {
+"light": "Purple700",
+"dark": "Purple700",
+"desc": ""
+},
+"color.chart.categorical.6.hovered": {
+"light": "Purple800",
+"dark": "Purple600",
+"desc": ""
+},
+"color.chart.categorical.7": {
+"light": "Teal500",
+"dark": "Teal500",
+"desc": ""
+},
+"color.chart.categorical.7.hovered": {
+"light": "Teal600",
+"dark": "Teal400",
+"desc": ""
+},
+"color.chart.categorical.8": {
+"light": "Orange700",
+"dark": "Orange600",
+"desc": ""
+},
+"color.chart.categorical.8.hovered": {
+"light": "Orange850",
+"dark": "Orange250",
+"desc": ""
+},
+"color.chart.lime.bold": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": ""
+},
+"color.chart.lime.bold.hovered": {
+"light": "Lime700",
+"dark": "Lime400",
+"desc": ""
+},
+"color.chart.lime.bolder": {
+"light": "Lime700",
+"dark": "Lime400",
+"desc": ""
+},
+"color.chart.lime.bolder.hovered": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": ""
+},
+"color.chart.lime.boldest": {
+"light": "Lime800",
+"dark": "Lime300",
+"desc": ""
+},
+"color.chart.lime.boldest.hovered": {
+"light": "Lime900",
+"dark": "Lime200",
+"desc": ""
+},
+"color.chart.neutral": {
+"light": "Neutral500",
+"dark": "DarkNeutral600",
+"desc": ""
+},
+"color.chart.neutral.hovered": {
+"light": "Neutral600",
+"dark": "DarkNeutral700",
+"desc": ""
+},
+"color.chart.red.bold": {
+"light": "Red500",
+"dark": "Red600",
+"desc": ""
+},
+"color.chart.red.bold.hovered": {
+"light": "Red600",
+"dark": "Red500",
+"desc": ""
+},
+"color.chart.red.bolder": {
+"light": "Red600",
+"dark": "Red500",
+"desc": ""
+},
+"color.chart.red.bolder.hovered": {
+"light": "Red700",
+"dark": "Red400",
+"desc": ""
+},
+"color.chart.red.boldest": {
+"light": "Red800",
+"dark": "Red300",
+"desc": ""
+},
+"color.chart.red.boldest.hovered": {
+"light": "Red900",
+"dark": "Red200",
+"desc": ""
+},
+"color.chart.orange.bold": {
+"light": "Orange600",
+"dark": "Orange500",
+"desc": ""
+},
+"color.chart.orange.bold.hovered": {
+"light": "Orange700",
+"dark": "Orange400",
+"desc": ""
+},
+"color.chart.orange.bolder": {
+"light": "Orange700",
+"dark": "Orange400",
+"desc": ""
+},
+"color.chart.orange.bolder.hovered": {
+"light": "Orange800",
+"dark": "Orange300",
+"desc": ""
+},
+"color.chart.orange.boldest": {
+"light": "Orange850",
+"dark": "Orange250",
+"desc": ""
+},
+"color.chart.orange.boldest.hovered": {
+"light": "Orange900",
+"dark": "Orange200",
+"desc": ""
+},
+"color.chart.yellow.bold": {
+"light": "Yellow600",
+"dark": "Yellow500",
+"desc": ""
+},
+"color.chart.yellow.bold.hovered": {
+"light": "Yellow700",
+"dark": "Yellow400",
+"desc": ""
+},
+"color.chart.yellow.bolder": {
+"light": "Yellow700",
+"dark": "Yellow400",
+"desc": ""
+},
+"color.chart.yellow.bolder.hovered": {
+"light": "Yellow800",
+"dark": "Yellow300",
+"desc": ""
+},
+"color.chart.yellow.boldest": {
+"light": "Yellow800",
+"dark": "Yellow300",
+"desc": ""
+},
+"color.chart.yellow.boldest.hovered": {
+"light": "Yellow900",
+"dark": "Yellow200",
+"desc": ""
+},
+"color.chart.green.bold": {
+"light": "Green600",
+"dark": "Green500",
+"desc": ""
+},
+"color.chart.green.bold.hovered": {
+"light": "Green700",
+"dark": "Green400",
+"desc": ""
+},
+"color.chart.green.bolder": {
+"light": "Green700",
+"dark": "Green400",
+"desc": ""
+},
+"color.chart.green.bolder.hovered": {
+"light": "Green800",
+"dark": "Green300",
+"desc": ""
+},
+"color.chart.green.boldest": {
+"light": "Green800",
+"dark": "Green300",
+"desc": ""
+},
+"color.chart.green.boldest.hovered": {
+"light": "Green900",
+"dark": "Green200",
+"desc": ""
+},
+"color.chart.teal.bold": {
+"light": "Teal600",
+"dark": "Teal500",
+"desc": ""
+},
+"color.chart.teal.bold.hovered": {
+"light": "Teal700",
+"dark": "Teal400",
+"desc": ""
+},
+"color.chart.teal.bolder": {
+"light": "Teal700",
+"dark": "Teal400",
+"desc": ""
+},
+"color.chart.teal.bolder.hovered": {
+"light": "Teal800",
+"dark": "Teal300",
+"desc": ""
+},
+"color.chart.teal.boldest": {
+"light": "Teal800",
+"dark": "Teal300",
+"desc": ""
+},
+"color.chart.teal.boldest.hovered": {
+"light": "Teal900",
+"dark": "Teal200",
+"desc": ""
+},
+"color.chart.blue.bold": {
+"light": "Blue500",
+"dark": "Blue600",
+"desc": ""
+},
+"color.chart.blue.bold.hovered": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": ""
+},
+"color.chart.blue.bolder": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": ""
+},
+"color.chart.blue.bolder.hovered": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.chart.blue.boldest": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.chart.blue.boldest.hovered": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": ""
+},
+"color.chart.purple.bold": {
+"light": "Purple500",
+"dark": "Purple600",
+"desc": ""
+},
+"color.chart.purple.bold.hovered": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": ""
+},
+"color.chart.purple.bolder": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": ""
+},
+"color.chart.purple.bolder.hovered": {
+"light": "Purple700",
+"dark": "Purple400",
+"desc": ""
+},
+"color.chart.purple.boldest": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": ""
+},
+"color.chart.purple.boldest.hovered": {
+"light": "Purple900",
+"dark": "Purple200",
+"desc": ""
+},
+"color.chart.magenta.bold": {
+"light": "Magenta500",
+"dark": "Magenta600",
+"desc": ""
+},
+"color.chart.magenta.bold.hovered": {
+"light": "Magenta600",
+"dark": "Magenta500",
+"desc": ""
+},
+"color.chart.magenta.bolder": {
+"light": "Magenta600",
+"dark": "Magenta500",
+"desc": ""
+},
+"color.chart.magenta.bolder.hovered": {
+"light": "Magenta700",
+"dark": "Magenta400",
+"desc": ""
+},
+"color.chart.magenta.boldest": {
+"light": "Magenta800",
+"dark": "Magenta300",
+"desc": ""
+},
+"color.chart.magenta.boldest.hovered": {
+"light": "Magenta900",
+"dark": "Magenta200",
+"desc": ""
+},
+"color.chart.gray.bold": {
+"light": "Neutral500",
+"dark": "DarkNeutral600",
+"desc": ""
+},
+"color.chart.gray.bold.hovered": {
+"light": "Neutral600",
+"dark": "DarkNeutral700",
+"desc": ""
+},
+"color.chart.gray.bolder": {
+"light": "Neutral600",
+"dark": "DarkNeutral700",
+"desc": ""
+},
+"color.chart.gray.bolder.hovered": {
+"light": "Neutral700",
+"dark": "DarkNeutral800",
+"desc": ""
+},
+"color.chart.gray.boldest": {
+"light": "Neutral800",
+"dark": "DarkNeutral800",
+"desc": ""
+},
+"color.chart.gray.boldest.hovered": {
+"light": "Neutral900",
+"dark": "DarkNeutral900",
+"desc": ""
+},
+"color.chart.brand": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": ""
+},
+"color.chart.brand.hovered": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.chart.danger": {
+"light": "Red600",
+"dark": "Red600",
+"desc": ""
+},
+"color.chart.danger.hovered": {
+"light": "Red700",
+"dark": "Red500",
+"desc": ""
+},
+"color.chart.danger.bold": {
+"light": "Red850",
+"dark": "Red250",
+"desc": ""
+},
+"color.chart.danger.bold.hovered": {
+"light": "Red900",
+"dark": "Red300",
+"desc": ""
+},
+"color.chart.warning": {
+"light": "Orange500",
+"dark": "Orange500",
+"desc": ""
+},
+"color.chart.warning.hovered": {
+"light": "Orange600",
+"dark": "Orange400",
+"desc": ""
+},
+"color.chart.warning.bold": {
+"light": "Orange700",
+"dark": "Orange300",
+"desc": ""
+},
+"color.chart.warning.bold.hovered": {
+"light": "Orange800",
+"dark": "Orange200",
+"desc": ""
+},
+"color.chart.success": {
+"light": "Lime500",
+"dark": "Lime500",
+"desc": ""
+},
+"color.chart.success.hovered": {
+"light": "Lime600",
+"dark": "Lime400",
+"desc": ""
+},
+"color.chart.success.bold": {
+"light": "Lime700",
+"dark": "Lime300",
+"desc": ""
+},
+"color.chart.success.bold.hovered": {
+"light": "Lime800",
+"dark": "Lime200",
+"desc": ""
+},
+"color.chart.discovery": {
+"light": "Purple500",
+"dark": "Purple500",
+"desc": ""
+},
+"color.chart.discovery.hovered": {
+"light": "Purple600",
+"dark": "Purple400",
+"desc": ""
+},
+"color.chart.discovery.bold": {
+"light": "Purple800",
+"dark": "Purple300",
+"desc": ""
+},
+"color.chart.discovery.bold.hovered": {
+"light": "Purple700",
+"dark": "Purple200",
+"desc": ""
+},
+"color.chart.information": {
+"light": "Blue600",
+"dark": "Blue500",
+"desc": ""
+},
+"color.chart.information.hovered": {
+"light": "Blue700",
+"dark": "Blue400",
+"desc": ""
+},
+"color.chart.information.bold": {
+"light": "Blue800",
+"dark": "Blue300",
+"desc": ""
+},
+"color.chart.information.bold.hovered": {
+"light": "Blue900",
+"dark": "Blue200",
+"desc": ""
+},
+"color.rovo.background.brand.bold": {
+"light": "Neutral1200",
+"dark": "DarkNeutral1200",
+"desc": ""
+},
+"color.rovo.background.brand.bold.hovered": {
+"light": "Neutral1100",
+"dark": "DarkNeutral1100",
+"desc": ""
+},
+"color.rovo.background.brand.bold.pressed": {
+"light": "Neutral1000",
+"dark": "DarkNeutral1000",
+"desc": ""
+},
+"color.rovo.border.lime": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for Rovo lime borders.Introduced v13.1.1"
+},
+"color.rovo.border.saffron": {
+"light": "Orange400",
+"dark": "Orange400",
+"desc": "Use for Rovo saffron borders.Introduced v13.1.1"
+},
+"color.rovo.border.blue": {
+"light": "Blue700",
+"dark": "Blue600",
+"desc": "Use for Rovo blue borders.Introduced v13.1.1"
+},
+"color.rovo.border.purple": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for Rovo purple borders.Introduced v13.1.1"
+},
+"color.rovo.icon.lime": {
+"light": "Lime600",
+"dark": "Lime500",
+"desc": "Use for Rovo lime icons.Introduced v13.1.1"
+},
+"color.rovo.icon.saffron": {
+"light": "Orange400",
+"dark": "Orange400",
+"desc": "Use for Rovo saffron icons.Introduced v13.1.1"
+},
+"color.rovo.icon.blue": {
+"light": "Blue700",
+"dark": "Blue600",
+"desc": "Use for Rovo blue icons.Introduced v13.1.1"
+},
+"color.rovo.icon.purple": {
+"light": "Purple600",
+"dark": "Purple500",
+"desc": "Use for Rovo purple icons.Introduced v13.1.1"
+},
+"elevation.surface": {
+"light": "Neutral0",
+"dark": "DarkNeutral100",
+"desc": ""
+},
+"elevation.surface.hovered": {
+"light": "Neutral200",
+"dark": "DarkNeutral200",
+"desc": ""
+},
+"elevation.surface.pressed": {
+"light": "Neutral300",
+"dark": "DarkNeutral250",
+"desc": ""
+},
+"elevation.surface.container": {
+"light": "Neutral100A",
+"dark": "DarkNeutral100A",
+"desc": ""
+},
+"elevation.surface.container.hovered": {
+"light": "Neutral200A",
+"dark": "DarkNeutral200A",
+"desc": ""
+},
+"elevation.surface.container.pressed": {
+"light": "Neutral300A",
+"dark": "DarkNeutral250A",
+"desc": ""
+},
+"elevation.surface.overlay": {
+"light": "Neutral0",
+"dark": "DarkNeutral250",
+"desc": ""
+},
+"elevation.surface.overlay.hovered": {
+"light": "Neutral200",
+"dark": "DarkNeutral300",
+"desc": ""
+},
+"elevation.surface.overlay.pressed": {
+"light": "Neutral300",
+"dark": "DarkNeutral350",
+"desc": ""
+},
+"elevation.surface.raised": {
+"light": "Neutral0",
+"dark": "DarkNeutral200",
+"desc": ""
+},
+"elevation.surface.raised.hovered": {
+"light": "Neutral200",
+"dark": "DarkNeutral250",
+"desc": ""
+},
+"elevation.surface.raised.pressed": {
+"light": "Neutral300",
+"dark": "DarkNeutral300",
+"desc": ""
+},
+"elevation.surface.sunken": {
+"light": "Neutral100",
+"dark": "DarkNeutral0",
+"desc": "A secondary background for the UI commonly used for grouping items, such as Jira cards in columns.Introduced v0.6.0"
+},
+"elevation.rovo.surface.overlay": {
+"light": "Neutral100",
+"dark": "DarkNeutral200",
+"desc": ""
+},
+"elevation.rovo.surface.overlay.hovered": {
+"light": "Neutral200",
+"dark": "DarkNeutral250",
+"desc": ""
+},
+"elevation.rovo.surface.overlay.pressed": {
+"light": "Neutral300",
+"dark": "DarkNeutral300",
+"desc": ""
+},
+"elevation.shadow.overflow": {
+"light": "0px 0px 8px rgba(30, 31, 33, 0.16)0px 0px 1px rgba(30, 31, 33, 0.12)",
+"dark": "0px 0px 12px rgba(1, 4, 4, 0.56)0px 0px 1px rgba(1, 4, 4, 0.5)",
+"desc": "Use to create a shadow when content scrolls under other content.Introduced v0.6.0"
+},
+"elevation.shadow.overflow.perimeter": {
+"light": "#1E1F211f",
+"dark": "#01040480",
+"desc": "Use only when elevation.shadow.overflow is not technically feasible to implement. Pair with elevation.shadow.overflow.spread to replicate the overflow shadow.In"
+},
+"elevation.shadow.overflow.spread": {
+"light": "#1E1F2129",
+"dark": "#0104048f",
+"desc": "Use only when elevation.shadow.overflow is not technically feasible to implement. Pair with elevation.shadow.overflow.perimeter to replicate the overflow shadow"
+},
+"elevation.shadow.overlay": {
+"light": "0px 8px 12px rgba(30, 31, 33, 0.15)0px 0px 1px rgba(30, 31, 33, 0.31)",
+"dark": "0px 0px 0px rgba(189, 189, 189, 0.12)0px 8px 12px rgba(1, 4, 4, 0.36)0px 0px 1px rgba(1, 4, 4, 0.5)",
+"desc": "Use for the box shadow of elements that sit on top of the UI, such as modals, dropdown menus, flags, and inline dialogs. Combine with elevation.surface.overlay\n"
+},
+"elevation.shadow.raised": {
+"light": "0px 1px 1px rgba(30, 31, 33, 0.25)0px 0px 1px rgba(30, 31, 33, 0.31)",
+"dark": "0px 0px 0px rgba(0, 0, 0, 0)0px 1px 1px rgba(1, 4, 4, 0.5)0px 0px 1px rgba(1, 4, 4, 0.5)",
+"desc": "Use for the box shadow of raised card elements, such as Jira cards on a Kanban board. Combine with elevation.surface.raisedIntroduced v0.6.0"
+},
+"font.heading.xxlarge": {
+"light": "Heading XXL",
+"dark": "",
+"desc": "For overlapping brand with app promotions, such as marketplace content. Migrate instances of H900 to Heading XXL.Token is applied using CSS font, not font-size."
+},
+"font.heading.xlarge": {
+"light": "Heading XL",
+"dark": "",
+"desc": "For overlapping brand with app promotions, such as marketplace content. Migrate instances of H800 to Heading XL.Token is applied using CSS font, not font-size.I"
+},
+"font.heading.large": {
+"light": "Heading L",
+"dark": "",
+"desc": "App page titles, such as forms. Migrate instances of H700 to Heading L.Token is applied using CSS font, not font-size.Introduced v1.14.0"
+},
+"font.heading.medium": {
+"light": "Heading M",
+"dark": "",
+"desc": "Headers in large components, such as modal dialogs. Migrate instances of H600 to Heading M.Token is applied using CSS font, not font-size.Introduced v1.14.0"
+},
+"font.heading.small": {
+"light": "Heading S",
+"dark": "",
+"desc": "For headers in small components where space is limited. Migrate instances of H500 to Heading S.Token is applied using CSS font, not font-size.Introduced v1.14.0"
+},
+"font.heading.xsmall": {
+"light": "Heading XS",
+"dark": "",
+"desc": "For headers in small components where space is limited. Migrate instances of H400 to Heading XS.Token is applied using CSS font, not font-size.Introduced v1.14."
+},
+"font.heading.xxsmall": {
+"light": "Heading XXS",
+"dark": "",
+"desc": "For headers in fine print or tight spaces. Use sparingly. Migrate instances of H100, H200 and H300 to Heading XXS.Token is applied using CSS font, not font-size"
+},
+"font.body.large": {
+"light": "Body L",
+"dark": "",
+"desc": "For long-form text, such as in blogs.Token is applied using CSS font, not font-size.Introduced v1.14.0"
+},
+"font.body": {
+"light": "Body",
+"dark": "",
+"desc": "Use in short descriptions or labels. The default size for text in components. Migrate instances of Paragraph Default and UI Text to Body M.Token is applied usin"
+},
+"font.body.small": {
+"light": "Body S",
+"dark": "",
+"desc": "Use in secondary level content such as fine print or semantic messaging. Use sparingly. Migrate instances of Small text to Body S.Token is applied using CSS fon"
+},
+"font.metric.large": {
+"light": "Metric L",
+"dark": "",
+"desc": "Use to emphasize a number within a large donut.Token is applied using CSS font, not font-size.Introduced v5.0.1"
+},
+"font.metric.medium": {
+"light": "Metric M",
+"dark": "",
+"desc": "Use to emphasize a number within a medium donut.Token is applied using CSS font, not font-size.Introduced v5.0.1"
+},
+"font.metric.small": {
+"light": "Metric S",
+"dark": "",
+"desc": "Use to emphasize a number and words in single-value tiles, or small donuts.Token is applied using CSS font, not font-size.Introduced v5.0.1"
+},
+"font.code": {
+"light": "Code",
+"dark": "",
+"desc": "For representing code only, either inline or in code blocks.Token is applied using CSS font, not font-size.Introduced v1.14.0"
+},
+"font.weight.regular": {
+"light": "Regular",
+"dark": "",
+"desc": "Default font weight for body text styles.Introduced v0.10.33"
+},
+"font.weight.medium": {
+"light": "Medium",
+"dark": "",
+"desc": "For all text that may appear beside iconography, such as in a button.Introduced v0.10.33"
+},
+"font.weight.semibold": {
+"light": "Semibold",
+"dark": "",
+"desc": "Use with caution as fallback fonts do not support this font weight and will default to bold weight.Introduced v0.10.33"
+},
+"font.weight.bold": {
+"light": "Bold",
+"dark": "",
+"desc": "Use sparingly for emphasising text, such as in a lozenge.Introduced v0.10.33"
+},
+"font.family.heading": {
+"light": "Heading",
+"dark": "",
+"desc": "For our default UI heading text.Introduced v1.14.0"
+},
+"font.family.body": {
+"light": "Body",
+"dark": "",
+"desc": "For our default UI body text.Introduced v1.14.0"
+},
+"font.family.code": {
+"light": "Code",
+"dark": "",
+"desc": "For representing code only.Introduced v1.14.0"
+},
+"font.family.brand.heading": {
+"light": "Heading",
+"dark": "",
+"desc": "For our brand heading text. Uses Charlie Display.Introduced v1.14.0"
+},
+"font.family.brand.body": {
+"light": "Body",
+"dark": "",
+"desc": "For our brand body text. Uses Charlie Text.Introduced v1.14.0"
+},
+"motion.avatar.enter": {
+"light": "ScaleIn80to100FadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for avatar group enter transitions.Introduced v11.2.0"
+},
+"motion.avatar.exit": {
+"light": "ScaleOut100to80FadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for avatar group exit transitions.Introduced v11.2.0"
+},
+"motion.avatar.hovered": {
+"light": "transform250msEaseSpring",
+"dark": "",
+"desc": "Use for hover state on avatar elements.Introduced v11.2.0"
+},
+"motion.blanket.enter": {
+"light": "FadeIn0to100250msEaseBoldInOut",
+"dark": "",
+"desc": "Use for blanket enter transitions.Introduced v11.5.0"
+},
+"motion.blanket.exit": {
+"light": "FadeOut100to0200msEasePracticalIn",
+"dark": "",
+"desc": "Use for blanket exit transitions.Introduced v11.5.0"
+},
+"motion.button.hovered": {
+"light": "background-colorborder-color150msEasePracticalOut",
+"dark": "",
+"desc": "Use for button hover state transitions.Introduced v15.1.0"
+},
+"motion.button.pressed": {
+"light": "background-colorborder-color150msEasePracticalOut",
+"dark": "",
+"desc": "Use for button pressed state transitions.Introduced v15.1.0"
+},
+"motion.duration.instant": {
+"light": "0ms",
+"dark": "",
+"desc": "Use for instant feedback with no perceptible delay, such as list item hover, selected and focus states.Introduced v11.5.0"
+},
+"motion.duration.long": {
+"light": "250ms",
+"dark": "",
+"desc": "Use for medium entrance transitions, such as modal enter and flag enter.Introduced v11.5.0"
+},
+"motion.duration.medium": {
+"light": "200ms",
+"dark": "",
+"desc": "Use for medium exit transitions, such as modal exit and flag exit.Introduced v11.5.0"
+},
+"motion.duration.short": {
+"light": "150ms",
+"dark": "",
+"desc": "Use for interactive state emphasis and small entrances, such as button hover and pressed states, popup enter, and avatar appear.Introduced v11.5.0"
+},
+"motion.duration.xlong": {
+"light": "400ms",
+"dark": "",
+"desc": "Use for large transitions, such as panel enter/exit, page transitions, and full-screen overlays.Introduced v11.5.0"
+},
+"motion.duration.xshort": {
+"light": "100ms",
+"dark": "",
+"desc": "Use for subtle pressed states and quick exits, such as component press feedback, popup dismiss, and avatar transitions.Introduced v11.5.0"
+},
+"motion.duration.xxlong": {
+"light": "600ms",
+"dark": "",
+"desc": "Use for large transitions, such as onboarding steps and full-screen overlays.Introduced v11.5.0"
+},
+"motion.duration.xxshort": {
+"light": "50ms",
+"dark": "",
+"desc": "Use for instant feedback, such as list item hover, selected and focus states.Introduced v11.5.0"
+},
+"motion.easing.in.practical": {
+"light": "cubic-bezier(0.6, 0, 0.8, 0.6)",
+"dark": "",
+"desc": "Starts slowly and accelerates away. Best for exit transitions where elements leaving the screen should feel like they are getting out of the way.Introduced v11."
+},
+"motion.easing.inout.bold": {
+"light": "cubic-bezier(0.4, 0, 0, 1)",
+"dark": "",
+"desc": "The bold in-out curve pairs naturally with scale and repositioning of elements. It controls both the start and end of the motion.Introduced v11.5.0"
+},
+"motion.easing.out.practical": {
+"light": "cubic-bezier(0.4, 1, 0.6, 1)",
+"dark": "",
+"desc": "A practical, everyday enter curve. Less dramatic than the bold variant, good for subtle transitions like content swaps, tab changes, and list reordering.Introdu"
+},
+"motion.easing.out.bold": {
+"light": "cubic-bezier(0, 0.4, 0, 1)",
+"dark": "",
+"desc": "Elements arrive quickly and decelerate to a stop. The fast start grabs attention and the gentle landing feels controlled.Introduced v11.5.0"
+},
+"motion.flag.enter": {
+"light": "SlideIn50PercentLeftFadeIn0to100250msEaseBoldOut",
+"dark": "",
+"desc": "Use for flag enter transitions.Introduced v11.2.0"
+},
+"motion.flag.exit": {
+"light": "SlideOut15PercentLeftFadeOut100to0200msEasePracticalIn",
+"dark": "",
+"desc": "Use for flag exit transitions.Introduced v11.2.0"
+},
+"motion.flag.reposition": {
+"light": "transform250msEaseBoldInOut",
+"dark": "",
+"desc": "Use for repositioning flag elements.Introduced v11.2.0"
+},
+"motion.keyframe.fade.in": {
+"light": "FadeIn0to100",
+"dark": "",
+"desc": "Use for fade-in transitions where an element goes from fully transparent to fully opaque.Introduced v11.5.0"
+},
+"motion.keyframe.fade.out": {
+"light": "FadeOut100to0",
+"dark": "",
+"desc": "Use for fade-out transitions where an element goes from fully opaque to fully transparent.Introduced v11.5.0"
+},
+"motion.keyframe.scale.in.medium": {
+"light": "ScaleIn80to100",
+"dark": "",
+"desc": "Use for medium scale-in transitions where an element grows from 80% to full size on enter.Introduced v11.5.0"
+},
+"motion.keyframe.scale.in.small": {
+"light": "ScaleIn95to100",
+"dark": "",
+"desc": "Use for small scale-in transitions where an element grows from 95% to full size on enter.Introduced v11.5.0"
+},
+"motion.keyframe.scale.out.medium": {
+"light": "ScaleOut100to80",
+"dark": "",
+"desc": "Use for medium scale-out transitions where an element shrinks from full size to 80% on exit.Introduced v11.5.0"
+},
+"motion.keyframe.scale.out.small": {
+"light": "ScaleOut100to95",
+"dark": "",
+"desc": "Use for small scale-out transitions where an element shrinks from full size to 95% on exit.Introduced v11.5.0"
+},
+"motion.keyframe.slide.in.bottom.short": {
+"light": "SlideInBottom8px",
+"dark": "",
+"desc": "Use for short slide-in transitions where an element enters from below its final position by 8px.Introduced v11.5.0"
+},
+"motion.keyframe.slide.in.left.half": {
+"light": "SlideIn50PercentLeft",
+"dark": "",
+"desc": "Use for slide-in transitions where an element enters from the left of its final position by 50%.Introduced v11.5.0"
+},
+"motion.keyframe.slide.in.left.short": {
+"light": "SlideInLeft8px",
+"dark": "",
+"desc": "Use for short slide-in transitions where an element enters from the left of its final position by 8px.Introduced v11.5.0"
+},
+"motion.keyframe.slide.in.right.short": {
+"light": "SlideInRight8px",
+"dark": "",
+"desc": "Use for short slide-in transitions where an element enters from the right of its final position by 8px.Introduced v11.5.0"
+},
+"motion.keyframe.slide.in.top.short": {
+"light": "SlideInTop8px",
+"dark": "",
+"desc": "Use for short slide-in transitions where an element enters from above its final position by 8px.Introduced v11.5.0"
+},
+"motion.keyframe.slide.out.bottom.short": {
+"light": "SlideOutBottom8px",
+"dark": "",
+"desc": "Use for short slide-out transitions where an element exits downward by 8px from its starting position.Introduced v11.5.0"
+},
+"motion.keyframe.slide.out.left.half": {
+"light": "SlideOut15PercentLeft",
+"dark": "",
+"desc": "Use for slide-out transitions where an element exits to the left of its starting position by 15%.Introduced v11.5.0"
+},
+"motion.keyframe.slide.out.left.short": {
+"light": "SlideOutLeft8px",
+"dark": "",
+"desc": "Use for short slide-out transitions where an element exits to the left by 8px from its starting position.Introduced v11.5.0"
+},
+"motion.keyframe.slide.out.right.short": {
+"light": "SlideOutRight8px",
+"dark": "",
+"desc": "Use for short slide-out transitions where an element exits to the right by 8px from its starting position.Introduced v11.5.0"
+},
+"motion.keyframe.slide.out.top.short": {
+"light": "SlideOutTop8px",
+"dark": "",
+"desc": "Use for short slide-out transitions where an element exits upward by 8px from its starting position.Introduced v11.5.0"
+},
+"motion.label.enter": {
+"light": "ScaleXIn80to100FadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for label enter transitions (e.g. tag component).Introduced v16.5.0"
+},
+"motion.label.exit": {
+"light": "ScaleXOut100to0FadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for label exit transitions (e.g. tag component).Introduced v16.5.0"
+},
+"motion.listitem.hovered": {
+"light": "background-colorborder-colorcolortext-decoration-color50msEasePracticalOut",
+"dark": "",
+"desc": "Use for list item hover state transitions.Introduced v15.4.0"
+},
+"motion.listitem.pressed": {
+"light": "background-colorborder-colorcolortext-decoration-color100msEasePracticalOut",
+"dark": "",
+"desc": "Use for list item pressed state transitions.Introduced v15.4.0"
+},
+"motion.listitem.selected": {
+"light": "background-colorborder-colorcolortext-decoration-color100msEasePracticalOut",
+"dark": "",
+"desc": "Use for list item selected state transitions.Introduced v15.4.0"
+},
+"motion.modal.enter": {
+"light": "ScaleIn95to100250msEaseBoldInOut",
+"dark": "",
+"desc": "Use for modal enter transitions.Introduced v11.2.0"
+},
+"motion.modal.exit": {
+"light": "ScaleOut100to95200msEasePracticalIn",
+"dark": "",
+"desc": "Use for modal exit transitions.Introduced v11.2.0"
+},
+"motion.panel.content.enter": {
+"light": "FadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for panel content enter.Introduced v16.6.0"
+},
+"motion.panel.content.exit": {
+"light": "FadeOut100to050msEasePracticalIn",
+"dark": "",
+"desc": "Use for panel content exit.Introduced v16.6.0"
+},
+"motion.panel.enter": {
+"light": "SlideIn100PercentRight250msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel enter transitions.Introduced v15.5.0"
+},
+"motion.panel.enter.left": {
+"light": "SlideIn100PercentLeft250msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel enter from the left.Introduced v16.6.0"
+},
+"motion.panel.enter.right": {
+"light": "SlideIn100PercentRight250msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel enter from the right.Introduced v16.6.0"
+},
+"motion.panel.exit": {
+"light": "SlideOut100PercentRight200msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel exit transitions.Introduced v15.5.0"
+},
+"motion.panel.exit.left": {
+"light": "SlideOut100PercentLeft200msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel exit towards the left.Introduced v16.6.0"
+},
+"motion.panel.exit.right": {
+"light": "SlideOut100PercentRight200msEaseBoldOut",
+"dark": "",
+"desc": "Use for panel exit towards the right.Introduced v16.6.0"
+},
+"motion.popup.enter.bottom": {
+"light": "SlideInBottom8pxFadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for popup enter from the bottom.Introduced v11.2.0"
+},
+"motion.popup.enter.left": {
+"light": "SlideInLeft8pxFadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for popup enter from the left.Introduced v11.2.0"
+},
+"motion.popup.enter.right": {
+"light": "SlideInRight8pxFadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for popup enter from the right.Introduced v11.2.0"
+},
+"motion.popup.enter.top": {
+"light": "SlideInTop8pxFadeIn0to100150msEasePracticalOut",
+"dark": "",
+"desc": "Use for popup enter from the top: popup, tooltip, dropdown, inline message, inline dialog.Introduced v11.2.0"
+},
+"motion.popup.exit.bottom": {
+"light": "SlideOutBottom8pxFadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for popup exit toward the bottom.Introduced v11.2.0"
+},
+"motion.popup.exit.left": {
+"light": "SlideOutLeft8pxFadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for popup exit toward the left.Introduced v11.2.0"
+},
+"motion.popup.exit.right": {
+"light": "SlideOutRight8pxFadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for popup exit toward the right.Introduced v11.2.0"
+},
+"motion.popup.exit.top": {
+"light": "SlideOutTop8pxFadeOut100to0100msEasePracticalIn",
+"dark": "",
+"desc": "Use for popup exit toward the top.Introduced v11.2.0"
+},
+"motion.sidenav.enter.left": {
+"light": "SlideIn100PercentLeft250msEaseBoldOut",
+"dark": "",
+"desc": "Use for side nav enter from the left.Introduced v16.4.0"
+},
+"motion.sidenav.enter.right": {
+"light": "SlideIn100PercentRight250msEaseBoldOut",
+"dark": "",
+"desc": "Use for side nav enter from the right.Introduced v16.4.0"
+},
+"motion.sidenav.exit.left": {
+"light": "SlideOut100PercentLeft200msEaseBoldOut",
+"dark": "",
+"desc": "Use for side nav exit towards the left.Introduced v16.4.0"
+},
+"motion.sidenav.exit.right": {
+"light": "SlideOut100PercentRight200msEaseBoldOut",
+"dark": "",
+"desc": "Use for side nav exit towards the right.Introduced v16.4.0"
+},
+"motion.spotlight.enter": {
+"light": "ScaleIn95to100FadeIn0to100250msEaseBoldInOut",
+"dark": "",
+"desc": "Use for spotlight enter transitions.Introduced v11.2.0"
+},
+"motion.spotlight.exit": {
+"light": "ScaleOut100to95FadeOut100to0200msEasePracticalIn",
+"dark": "",
+"desc": "Use for spotlight exit transitions.Introduced v11.2.0"
+},
+"opacity.disabled": {
+"light": "Opacity40",
+"dark": "Opacity40",
+"desc": "Apply to images when in a disabled state.Introduced v0.10.13"
+},
+"opacity.loading": {
+"light": "Opacity20",
+"dark": "Opacity20",
+"desc": "Apply to content that sits under a loading spinner.Introduced v0.10.13"
+},
+"radius.xsmall": {
+"light": "2px",
+"dark": "",
+"desc": "Use for small detail elements: badges, checkboxes, avatar labels, keyboard shortcuts.Introduced v6.1.0"
+},
+"radius.small": {
+"light": "4px",
+"dark": "",
+"desc": "Use for supporting elements: labels, lozenges, timestamps, tags, dates, tooltip containers, imagery inside a table, compact buttons.Introduced v6.1.0"
+},
+"radius.medium": {
+"light": "6px",
+"dark": "",
+"desc": "Use for interactive elements: buttons, inputs, text areas, selects, navigation items, smart links.Introduced v6.1.0"
+},
+"radius.large": {
+"light": "8px",
+"dark": "",
+"desc": "Use for containment elements: cards, in-page containers, floating UI, dropdown menus.Introduced v6.1.0"
+},
+"radius.xlarge": {
+"light": "12px",
+"dark": "",
+"desc": "Use for large page elements: full-page containers, large containers, modals, Kanban columns, tables.Introduced v6.1.0"
+},
+"radius.xxlarge": {
+"light": "16px",
+"dark": "",
+"desc": "Use for video player containers.Introduced v8.1.0"
+},
+"radius.full": {
+"light": "9999px",
+"dark": "",
+"desc": "Use for circular elements (user/people related): avatars, names, user-related UI, emoji reactions.Introduced v6.1.0"
+},
+"radius.tile": {
+"light": "25%",
+"dark": "",
+"desc": "Use this specific radius token exclusively for the tile component system.Introduced v6.2.0"
+},
+"space.0": {
+"light": "0px",
+"dark": "",
+"desc": "Equates to `0`. Use for resetting default spacing styles.Introduced v0.12.0"
+},
+"space.025": {
+"light": "2px",
+"dark": "",
+"desc": "Use for small and compact pieces of UI.Introduced v0.12.0"
+},
+"space.050": {
+"light": "4px",
+"dark": "",
+"desc": "Use for small and compact pieces of UI.Introduced v0.12.0"
+},
+"space.075": {
+"light": "6px",
+"dark": "",
+"desc": "Use for small and compact pieces of UI.Introduced v0.12.0"
+},
+"space.100": {
+"light": "8px",
+"dark": "",
+"desc": "Use for small and compact pieces of UI.Introduced v0.12.0"
+},
+"space.150": {
+"light": "12px",
+"dark": "",
+"desc": "Use for larger and less dense pieces of UI.Introduced v0.12.0"
+},
+"space.200": {
+"light": "16px",
+"dark": "",
+"desc": "Use for larger and less dense pieces of UI.Introduced v0.12.0"
+},
+"space.250": {
+"light": "20px",
+"dark": "",
+"desc": "Use for larger and less dense pieces of UI.Introduced v0.12.0"
+},
+"space.300": {
+"light": "24px",
+"dark": "",
+"desc": "Use for larger and less dense pieces of UI.Introduced v0.12.0"
+},
+"space.400": {
+"light": "32px",
+"dark": "",
+"desc": "Use for the largest pieces of UI and for layout elements.Introduced v0.12.0"
+},
+"space.500": {
+"light": "40px",
+"dark": "",
+"desc": "Use for the largest pieces of UI and for layout elements.Introduced v0.12.0"
+},
+"space.600": {
+"light": "48px",
+"dark": "",
+"desc": "Use for the largest pieces of UI and for layout elements.Introduced v0.12.0"
+},
+"space.800": {
+"light": "64px",
+"dark": "",
+"desc": "Use for the largest pieces of UI and for layout elements.Introduced v0.12.0"
+},
+"space.1000": {
+"light": "80px",
+"dark": "",
+"desc": "Use for the largest pieces of UI and for layout elements.Introduced v0.12.0"
+},
+"space.negative.025": {
+"light": "-2px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap small pieces of UI.Introduced v1.21.0"
+},
+"space.negative.050": {
+"light": "-4px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap small pieces of UI.Introduced v1.21.0"
+},
+"space.negative.075": {
+"light": "-6px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap small pieces of UI.Introduced v1.21.0"
+},
+"space.negative.100": {
+"light": "-8px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap small pieces of UI.Introduced v1.21.0"
+},
+"space.negative.150": {
+"light": "-12px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap larger pieces of UI.Introduced v1.21.0"
+},
+"space.negative.200": {
+"light": "-16px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap larger pieces of UI.Introduced v1.21.0"
+},
+"space.negative.250": {
+"light": "-20px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap larger pieces of UI.Introduced v1.21.0"
+},
+"space.negative.300": {
+"light": "-24px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap larger pieces of UI.Introduced v1.21.0"
+},
+"space.negative.400": {
+"light": "-32px",
+"dark": "",
+"desc": "Use to negate parent whitespace or overlap the largest pieces of UI.Introduced v1.21.0"
+},
+"utility.": {
+"light": "transparent",
+"dark": "transparent",
+"desc": "UNSAFE.transparentTransparent token used for backwards compatibility between new and old theming solutionsIntroduced v0.1.1"
+},
+"utility.elevation.surface.current": {
+"light": "Neutral0",
+"dark": "DarkNeutral100",
+"desc": "A dynamic token that represents the current surface color set by a parent element. It defaults to the 'elevation.surface' token value.Introduced v1.14.0"
+}
+}

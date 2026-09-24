@@ -1,0 +1,28 @@
+{
+  "name": "@cog/procurement",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
+    "test": "vitest run --project unit",
+    "test:isolation": "vitest run --project isolation"
+  },
+  "dependencies": {
+    "@cog/contracts": "workspace:*",
+    "@cog/money": "workspace:*",
+    "@cog/service-kit": "workspace:*",
+    "hono": "4.13.5",
+    "pg": "8.23.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/pg": "8.23.1",
+    "testcontainers": "12.1.0",
+    "typescript": "^5.7.0",
+    "vitest": "5.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "rule": "sec-288b-challan-drop-paise-then-nearest-ten",
+  "status": "provisional",
+  "statute": "Section 288B, Income-tax Act 1961, applied to the challan amount",
+  "effective_from": "2026-04-01",
+  "verified_by": null,
+  "verified_on": null,
+  "question_ref": "docs/statutory/QUESTIONS-FOR-CA.md#ca-04--challan-whole-rupee-constraint",
+  "notes": "From the CA's answer to CA-04 (CA answers document, reviewed by the CA; CA details to follow): 'ignore paise first and then round the rupee amount to the nearest multiple of Rs 10; where the last rupee digit is 5 or more, round up to the next Rs 10, otherwise round down to the previous Rs 10.' The CA-03 answer puts this at the challan, not at each deduction. effective_from is the date this system applies the rule from (the rate table's, CA-05); the section's own commencement is earlier and is not recorded here. Whether it applies per challan line or to the total is CA-21. Nothing here is verified.",
+  "cases": [
+    { "numerator": 10400, "denominator": 1, "expect": 10000, "comment": "104.00 -> 100 rupees; last rupee digit 4, down" },
+    { "numerator": 10500, "denominator": 1, "expect": 11000, "comment": "105.00 -> 110 rupees; last rupee digit 5, up" },
+    { "numerator": 10600, "denominator": 1, "expect": 11000, "comment": "106.00 -> 110 rupees" },
+    { "numerator": 10499, "denominator": 1, "expect": 10000, "comment": "104.99 -> paise ignored first -> 104 -> 100 rupees" },
+    { "numerator": 100460, "denominator": 1, "expect": 100000, "comment": "1,004.60 -> 1,004 -> 1,000 rupees" },
+    { "numerator": 99540, "denominator": 1, "expect": 100000, "comment": "995.40 -> 995 -> 1,000 rupees" },
+    { "numerator": 1296550, "denominator": 1, "expect": 1297000, "comment": "12,965.50 -> 12,965 -> 12,970 rupees" },
+    { "numerator": 1422999, "denominator": 1, "expect": 1423000, "comment": "14,229.99 -> 14,229 -> 14,230 rupees" },
+    { "numerator": 20999, "denominator": 2, "expect": 10000, "comment": "104.995 as an exact rational -> 104 -> 100 rupees" },
+    { "numerator": -10460, "denominator": 1, "expect": -10000, "comment": "PROVISIONAL (CA-01): -104.60 -> -104 -> -100 rupees" },
+    { "numerator": -10500, "denominator": 1, "expect": -11000, "comment": "PROVISIONAL (CA-01): a reversal mirrors the deposit, away from zero" }
+  ]
+}

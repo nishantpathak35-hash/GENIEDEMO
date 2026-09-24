@@ -1,0 +1,19 @@
+{
+  "rule": "sec-170-invoice-total-to-the-rupee",
+  "status": "provisional",
+  "statute": "Section 170, CGST Act 2017, applied to a tax invoice's total",
+  "effective_from": "2017-07-01",
+  "verified_by": null,
+  "verified_on": null,
+  "question_ref": "docs/statutory/QUESTIONS-FOR-CA.md#ca-02--where-rounding-happens-in-the-invoice-pipeline",
+  "notes": "From the CA's answer to CA-02 (CA answers document, reviewed by the CA; CA details to follow): rounding is applied only to the final total invoice value; the taxable value and each GST head keep their calculated values (gst-head-to-the-paise.provisional.json), and the round-off is posted at the invoice-total level. The positive cases follow Section 170's text. The negative cases are the symmetric rounding the CA's answer to CA-01 accepts. Replaces sec-170-cgst.provisional.json, which rounded each head per invoice. Nothing here is verified.",
+  "cases": [
+    { "numerator": 9049, "denominator": 1, "expect": 9000, "comment": "90.49 -> 90 rupees; part is less than fifty paise, ignored" },
+    { "numerator": 9050, "denominator": 1, "expect": 9100, "comment": "90.50 -> 91 rupees; part is fifty paise, increased to one rupee" },
+    { "numerator": 9051, "denominator": 1, "expect": 9100, "comment": "90.51 -> 91 rupees" },
+    { "numerator": 145678, "denominator": 1, "expect": 145700, "comment": "1,456.78 (1,234.56 taxable, 111.11 CGST, 111.11 SGST) -> 1,457.00; round-off +0.22" },
+    { "numerator": 145612, "denominator": 1, "expect": 145600, "comment": "1,456.12 -> 1,456.00; round-off -0.12" },
+    { "numerator": -9049, "denominator": 1, "expect": -9000, "comment": "PROVISIONAL (CA-01): symmetric, accepted in the CA's answer" },
+    { "numerator": -9050, "denominator": 1, "expect": -9100, "comment": "PROVISIONAL (CA-01): -90.50 becomes -91, the CA's own example" }
+  ]
+}
