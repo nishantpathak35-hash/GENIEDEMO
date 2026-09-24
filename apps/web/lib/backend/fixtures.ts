@@ -12,6 +12,14 @@ export const TENANT_SETTINGS = {
 
 export const PEOPLE = [
   {
+    id: '00000000-0000-4000-8000-000000000001',
+    email: 'superadmin@constructogenie.in',
+    displayName: 'Super Admin',
+    roles: ['admin', 'finance', 'proc'],
+    disabled: false,
+    projects: [],
+  },
+  {
     id: 'a1b2c3d4-e5f6-4a8b-9c0d-1e2f3a4b5c6d',
     email: 'shalini.kamath@bhitarang-interiors.example',
     displayName: 'Shalini Kamath',

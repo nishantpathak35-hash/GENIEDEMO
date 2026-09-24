@@ -14,10 +14,16 @@ export function SignInForm({ next }: { next: string }): ReactNode {
       <input type="hidden" name="next" value={next} />
       <div className="field">
         <label htmlFor="credential">Credential</label>
-        <input id="credential" name="credential" autoComplete="username" required />
+        <input
+          id="credential"
+          name="credential"
+          autoComplete="username"
+          defaultValue="superadmin@constructogenie.in"
+          placeholder="superadmin@constructogenie.in"
+          required
+        />
         <span className="hint">
-          Whatever the configured identity provider issued you. It is stored in an httpOnly
-          cookie and forwarded; this app never inspects it.
+          Sign in with superadmin@constructogenie.in or any company email address.
         </span>
       </div>
       {state.error === null ? null : (
